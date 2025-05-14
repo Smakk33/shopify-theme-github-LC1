@@ -387,15 +387,15 @@
         "image_3cqjPT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/FONDA_LUMA_e44c156d-2812-4153-8dd0-c9ca6d36c684_1.webp",
+            "image": "shopify://shop_images/TRAIT_VOLUMIZEUR.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Votre beauté est notre priorité",
-            "content": "<p>Si LumaLash ne vous convient pas, nous vous remboursons. Sans condition.</p><p>Vous méritez d’essayer nos produits en toute confiance — c’est pourquoi nous assumons entièrement notre formule, conçue avec des actifs testés et performants.</p><p>Chez LUMA, notre mission est simple : vous aider à sublimer votre beauté naturelle, à chaque étape de votre vie.</p>",
+            "title": "Un fini intense, net, sans paquets.",
+            "content": "<p>Fini l’effet pattes d’araignée. Sa base sérum a été conçue pour se superposer en douceur, sans surcharge.</p><p>Coup après coup, vous modulez facilement l’épaisseur de vos cils selon vos envies.</p><p>Aucune granulosité, aucun paquet.<br/><br/>La formule résistante à l’eau évite les bavures, même en fin de journée.</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
