@@ -72,6 +72,18 @@
             "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #F1E9FF; border-radius: px;\">\n    <p style=\"font-weight: bold; font-size: 16px;\">« Chaque centime en vaut la peine. Le sérum PrimeLash est tout simplement miraculeux.\nJe m’habitue à me réveiller sans maquillage… et à me trouver aussi belle.\nMes cils sont plus longs et plus fournis qu’il y a 20 ans ! »</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Mauricette, cliente du Luma Lash Serum</span>\n  </div>\n</div>"
           }
         },
+        "text_PKwzJz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Avec le sérum LumaLash, prenez soin de vos cils <strong>comme jamais auparavant</strong>. Une application quotidienne de sa formule douce et stimulante favorise la pousse pendant votre sommeil. Réveillez-vous avec <strong>un regard naturellement sublimé.</strong></p>"
+          }
+        },
+        "text_t6kP9U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>LumaLash transforme les cils clairsemés, fins ou en paquets en cils longs, denses et parfaitement séparés —<strong> comme vous les avez toujours rêvés.</strong></p>"
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -204,12 +216,14 @@
         },
         "text_Eg7Txw": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><em>Marre des cils fins et clairsemés, et du regard sans éclat ? Nous avons créé </em><em><strong>un mascara pro-âge spécialement pour les femmes matures</strong></em><em>, qui vous vaudra plus de compliments que vous ne l’auriez imaginé.</em></p>"
           }
         },
         "text_YCqw6V": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Des années de recherche ont permis de <strong>concevoir le duo parfait</strong> : une brosse qui sépare les plus petits cils pour zéro grumeaux, et une formule qui lifte et épaissit les cils existants tout en stimulant leur croissance naturelle. Équilibré en pH, 100 % naturel. Finis les irritations et les yeux de panda.</p>"
           }
@@ -225,6 +239,8 @@
         "liquid_YiPbJG",
         "liquid_CekThB",
         "liquid_UmpXd9",
+        "text_PKwzJz",
+        "text_t6kP9U",
         "badges",
         "text_4ixFdK",
         "liquid_DaYMAb",
@@ -278,8 +294,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "",
-            "content": "<h3>Pourquoi LumaLash Mascara a conquis des milliers de femmes matures !?</h3><h4>1 - Brosse magique</h4><p>Dites adieu à votre gros problème : les cils clairsemés et les brosses qui ne les attrapent pas. LumaLash est doté d'une brosse unique qui atteint les cils les plus fins et les recouvre tous.</p><h4>2 - Lift & longueur instantanés</h4><p>Sa formule modulable transforme les cils tombants en éventails fiers et volumineux. Pas de sécheresse, pas de casse, juste une belle épaisseur.</p><h4>3- Soin à long terme</h4><p>LumaLash est plus qu'un simple mascara. Il est réparateur, avec des ingrédients de qualité qui nourrissent les cils pour les rendre plus épais et plus longs.</p>",
+            "title": "Le booster de cils que les femmes matures attendaient.",
+            "content": "<p><strong>VOUS AVEZ</strong><br/><br/>Des cils fins, clairsemés, fragilisés</p><p><strong>NOUS APPORTONS</strong><br/><br/>Une formule unique, riche en vitamines, qui stimule la pousse</p><p><strong>LE RÉSULTAT</strong><br/><br/>Des cils plus longs, plus denses et plus forts — en un seul geste par jour</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
@@ -317,15 +333,15 @@
         "image_9j3W3k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/AVANT_APRES_5_MASCARA_copie.webp",
+            "image": "shopify://shop_images/BEFORE-AFTER_SERUM_5f4ceb07-2eec-496f-a0a9-b8400f83a23c.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "",
-            "content": "<h3>L'attente est terminée. Enfin, un mascara pour les yeux matures ! Les femmes de plus de 50 ans peuvent se réjouir.</h3><h5>Adieu les grandes promesses. Bonjour aux résultats impressionnants.</h5><p>LumaLash n'est pas seulement un cosmétique pour \"avoir l'air plus jeune\". C'est un soin en flacon qui révèle la croissance et l'éclat de vos cils naturels.</p><p><strong>Conçu par des experts en maquillage pro-âge, LumaLash réduira votre routine maquillage de plusieurs minutes.</strong></p>",
+            "title": "Des cils magnifiques, sans effort.",
+            "content": "<p>Le sérum PrimeLash stimule naturellement la pousse — plus besoin d’extensions ni de base de mascara.</p><p>Riche en vitamines, il épaissit, fortifie et recourbe vos cils en un seul geste, chaque jour.<br/><br/>Laissez tomber les étapes inutiles. Appliquez, maquillez, admirez.</p><p>✔ Vegan & non testé sur les animaux<br/>✔ pH équilibré pour les yeux sensibles<br/>✔ Conçu pour les femmes matures<br/>✔ Formule ultra-efficace pour la croissance</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
@@ -339,6 +355,40 @@
       },
       "block_order": [
         "image_9j3W3k"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_6pkwRx": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_3cqjPT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FONDA_LUMA_e44c156d-2812-4153-8dd0-c9ca6d36c684_1.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Votre beauté est notre priorité",
+            "content": "<p>Si LumaLash ne vous convient pas, nous vous remboursons. Sans condition.</p><p>Vous méritez d’essayer nos produits en toute confiance — c’est pourquoi nous assumons entièrement notre formule, conçue avec des actifs testés et performants.</p><p>Chez LUMA, notre mission est simple : vous aider à sublimer votre beauté naturelle, à chaque étape de votre vie.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3cqjPT"
       ],
       "settings": {
         "full_width": false,
@@ -518,6 +568,7 @@
     "media_with_text_gfPwBB",
     "custom_liquid_rjDyEF",
     "media_with_text_Gy4mEx",
+    "media_with_text_6pkwRx",
     "custom_liquid_NthLwH",
     "faq_XAEkkP",
     "custom_liquid_tdX3FB",
