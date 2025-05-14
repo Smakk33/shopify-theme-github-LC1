@@ -405,10 +405,33 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "image_4qpU9G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Prod_bross_webp.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Brosse fuselée pour une courbure spectaculaire",
+            "content": "<p>Pourquoi les cils matures tombent-ils ?</p><p>Avec l’âge, les cils deviennent plus droits, plus fins, et perdent en vitalité. Ce relâchement est un signe naturel du vieillissement des cils.</p><p>La brosse fuselée du LumaLash Volumizer a été conçue pour y répondre.</p><p>Ses picots courts densifient la racine en déposant un maximum de pigment, tandis que les plus longs peignent et séparent chaque cil pour un résultat <strong>lifté, sans paquets, et subtilement brillant.</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "image_3cqjPT"
+        "image_3cqjPT",
+        "image_4qpU9G"
       ],
       "settings": {
         "full_width": false,
