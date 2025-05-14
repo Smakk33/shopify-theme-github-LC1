@@ -69,19 +69,23 @@
         "liquid_UmpXd9": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #F1E9FF; border-radius: px;\">\n    <p style=\"font-weight: bold; font-size: 16px;\">« Chaque centime en vaut la peine. Le sérum PrimeLash est tout simplement miraculeux.\nJe m’habitue à me réveiller sans maquillage… et à me trouver aussi belle.\nMes cils sont plus longs et plus fournis qu’il y a 20 ans ! »</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Mauricette, cliente du Luma Lash Serum</span>\n  </div>\n</div>"
+            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #F1E9FF; border-radius: px;\">\n    <p style=\"font-weight: bold; font-size: 16px;\">« Mes cils étaient vraiment fins et retombants. Les mascaras classiques faisaient des paquets dès la deuxième couche. Le LumaLash Volumizeur est une vraie révolution : il épaissit, lifte et colore mes cils comme jamais. Je peux en mettre autant que je veux, sans jamais avoir les yeux de panda. Le résultat est bluffant !»</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Laurianne, cliente du LumaLash</span>\n  </div>\n</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
           }
         },
         "text_PKwzJz": {
           "type": "text",
           "settings": {
-            "text": "<p>Avec le sérum LumaLash, prenez soin de vos cils <strong>comme jamais auparavant</strong>. Une application quotidienne de sa formule douce et stimulante favorise la pousse pendant votre sommeil. Réveillez-vous avec <strong>un regard naturellement sublimé.</strong></p>"
-          }
-        },
-        "text_t6kP9U": {
-          "type": "text",
-          "settings": {
-            "text": "<p>LumaLash transforme les cils clairsemés, fins ou en paquets en cils longs, denses et parfaitement séparés —<strong> comme vous les avez toujours rêvés.</strong></p>"
+            "text": "<p><strong>Des cils plus volumineux, plus marqués, plus affirmés. LumaLash Volumizeur est LE mascara épaississant et liftant que toutes les femmes matures attendaient.</strong></p><p>Il se superpose à merveille et sépare parfaitement chaque cil. </p><p><strong>Zéro paquet. Zéro bavure.</strong></p><p>Vous rêvez de cils spectaculaires, brillants et pleins de vie ?<br/><br/><strong>Voici la seule réponse pensée pour les femmes de plus de 50 ans.</strong></p>"
           }
         },
         "badges": {
@@ -114,16 +118,6 @@
           "disabled": true,
           "settings": {
             "low_inventory_threshold": 5
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
           }
         },
         "payment_terms": {
@@ -239,14 +233,13 @@
         "liquid_YiPbJG",
         "liquid_CekThB",
         "liquid_UmpXd9",
+        "variant_picker",
         "text_PKwzJz",
-        "text_t6kP9U",
         "badges",
         "text_4ixFdK",
         "liquid_DaYMAb",
         "rating",
         "inventory_zV6jxc",
-        "variant_picker",
         "payment_terms",
         "liquid_wFzpm3",
         "separator",
