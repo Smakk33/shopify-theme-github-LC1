@@ -1,1 +1,326 @@
-{"type":"footer","name":"Footer group","sections":{"text-with-icons":{"type":"text-with-icons","blocks":{"free-shipping":{"type":"item","settings":{"icon":"picto-money","custom_icon":"shopify:\/\/shop_images\/Design_sans_titre-removebg-preview_copie.webp","mobile_icon_width":72,"icon_width":72,"icon_background_type":"none","icon_background":"","icon_color":"","title":"Paiement 100% sécurisé : Cryptage SSL","content":""}},"customer-support":{"type":"item","settings":{"icon":"picto-customer-support","custom_icon":"shopify:\/\/shop_images\/Design_sans_titre-removebg-preview_d125402c-fa51-4941-8026-872780c59c9e.webp","mobile_icon_width":72,"icon_width":72,"icon_background_type":"none","icon_background":"","icon_color":"","title":"Satisfait ou remboursé : Vous avez 30 jours pour changer d'avis.","content":""}},"discount":{"type":"item","settings":{"icon":"picto-coupon","custom_icon":"shopify:\/\/shop_images\/Design_sans_titre-removebg-preview_c8c9ff13-7df8-44ce-bebf-05e6757ef687.webp","mobile_icon_width":72,"icon_width":72,"icon_background_type":"none","icon_background":"","icon_color":"","title":"Livraison Gratuite : sous 7 à 9 jours ouvrés","content":""}},"payment":{"type":"item","settings":{"icon":"picto-lock","custom_icon":"shopify:\/\/shop_images\/Design_sans_titre-removebg-preview_1cacefad-b541-4237-aba1-1430e882b29d.webp","mobile_icon_width":72,"icon_width":72,"icon_background_type":"none","icon_background":"","icon_color":"","title":"Équipe d'assistance 24\/7 : Réponse sous 24h","content":""}}},"block_order":["free-shipping","customer-support","discount","payment"],"settings":{"full_width":true,"stack_on_mobile":false,"title":"","heading_tag":"h6","text_alignment":"center","icon_spacing":"small","background":"","background_gradient":"","text_color":""}},"footer_luma_xMNrT6":{"type":"footer_luma","blocks":{"logo_YddXah":{"type":"logo","settings":{"image_width":100,"image_width_mobile":100,"text":"<h2>section.store<\/h2>","text_custom":false,"text_font":"josefin_sans_n4","text_size":120,"text_size_mobile":40,"text_height":100,"text_color":"#67645E"}},"column_QRh7TH":{"type":"column","settings":{"heading":"QUICK LINKS","menu":"footer"}},"socials_exhkFe":{"type":"socials","settings":{"heading":"SOCIALS","twitter_text":"Twitter","twitter":"","facebook_text":"Facebook","facebook":"#","linkedin_text":"Linkedin","linkedin":"","instagram_text":"Instagram","instagram":"#","youtube_text":"Youtube","youtube":"","pinterest_text":"Pinterest","pinterest":"","whatsapp_text":"Whatsapp","whatsapp":"","tiktok_text":"Tiktok","tiktok":"#"}},"text_ex3GEe":{"type":"text","settings":{"heading":"HEADING","text":"<p>Share contact information, store details, and brand content with your customers.<\/p>"}}},"block_order":["logo_YddXah","column_QRh7TH","socials_exhkFe","text_ex3GEe"],"disabled":true,"settings":{"block_padding_vertical":34,"block_padding_vertical_mobile":40,"block_padding_horizontal":28,"block_padding_horizontal_mobile":20,"block_border_thickness":1,"text":"<p>Inscrivez-vous à notre newsletter pour profitez de nos offres.<\/p>","text_custom":true,"text_font":"poppins_n4","text_size":16,"text_size_mobile":14,"text_height":150,"text_align":"left","text_align_mobile":"center","use_newsletter":true,"newsletter_radius":10,"newsletter_border_thickness":1,"newsletter_gap":6,"newsletter_gap_mobile":0,"newsletter_mt":16,"newsletter_mt_mobile":14,"input_placeholder":"Adresse Mail","input_custom":true,"input_font":"poppins_n4","input_size":16,"input_size_mobile":16,"input_height":100,"input_padding_vertical":16,"input_padding_vertical_mobile":16,"input_padding_horizontal":16,"input_padding_horizontal_mobile":16,"input_radius":0,"input_border_thickness":0,"submit":"S'ABONNER","submit_custom":true,"submit_font":"poppins_n4","submit_size":16,"submit_size_mobile":16,"submit_height":100,"submit_padding_vertical":16,"submit_padding_vertical_mobile":16,"submit_padding_horizontal":24,"submit_padding_horizontal_mobile":24,"submit_radius":0,"submit_border_thickness":0,"privacy_text":"","privacy_text_custom":false,"privacy_text_font":"josefin_sans_n4","privacy_text_size":16,"privacy_text_size_mobile":14,"privacy_text_height":150,"privacy_text_mt":16,"privacy_text_mt_mobile":16,"privacy_text_align":"left","privacy_text_align_mobile":"left","column_heading_custom":true,"column_heading_font":"poppins_n4","column_heading_size":16,"column_heading_size_mobile":14,"column_heading_height":130,"list_mt":16,"list_mt_mobile":14,"list_gap":24,"list_gap_mobile":16,"link_custom":true,"link_font":"poppins_n4","link_size":16,"link_size_mobile":14,"link_height":130,"column_text_custom":false,"column_text_font":"josefin_sans_n4","column_text_size":16,"column_text_size_mobile":14,"column_text_height":150,"column_text_mt":16,"column_text_mt_mobile":14,"block_border_color":"#84827E","text_color":"#84827E","privacy_text_color":"#84827E","newsletter_border_color":"#84827E","input_bg_color":"#FFFFFF","input_border_color":"#84827E","input_color":"#84827E","input_placeholder_color":"#84827E","submit_color":"#84827E","submit_hover_color":"#FFFFFF","submit_bg_color":"#FFFFFF","submit_bg_hover_color":"#84827E","submit_border_color":"#84827E","submit_border_hover_color":"#84827E","column_heading_color":"#84827E","column_text_color":"#84827E","link_color":"#84827E","link_hover_color":"#84827E","background_color":"#F1F0ED","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":20,"margin_horizontal":3,"margin_horizontal_mobile":1.5,"padding_top":0,"padding_bottom":0,"padding_horizontal":0,"padding_horizontal_mobile":0,"full_width":true,"content_width":160,"border_thickness":0,"section_radius":12,"lazy":true}},"footer":{"type":"footer","blocks":{"newsletter":{"type":"newsletter","settings":{"image":"shopify:\/\/shop_images\/Design_sans_titre.webp","image_width":220,"heading_size":"h5","title":"","content":"<p>Inscrivez-vous à notre newsletter pour profitez de nos offres.<\/p>"}},"links":{"type":"links","settings":{"menu":"footer","show_menu_title":true}},"text":{"type":"text","settings":{"title":"À propos","content":"<p>Disponible du lundi au vendredi : 9h à 17h<\/p><p><strong>Mail : <\/strong>contact@luma-cosmetics.com<br\/><br\/><strong>Téléphone :<\/strong> 07 56 85 54 90<\/p>","enable_follow_on_shop":false}},"links_LeKcbr":{"type":"links","settings":{"menu":"besoin-daide","show_menu_title":true}},"links_kTHRye":{"type":"links","settings":{"menu":"","show_menu_title":true}}},"block_order":["newsletter","links","text","links_LeKcbr","links_kTHRye"],"settings":{"show_social_media":true,"show_payment_icons":true,"show_country_selector":false,"show_country_flag":true,"show_country_name":true,"show_locale_selector":true}}},"order":["text-with-icons","footer_luma_xMNrT6","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "free-shipping": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-money",
+            "mobile_icon_width": 72,
+            "icon_width": 72,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Paiement 100% sécurisé : Cryptage SSL",
+            "content": ""
+          }
+        },
+        "customer-support": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 72,
+            "icon_width": 72,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Satisfait ou remboursé : Vous avez 30 jours pour changer d'avis.",
+            "content": ""
+          }
+        },
+        "discount": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 72,
+            "icon_width": 72,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Livraison Gratuite : sous 7 à 9 jours ouvrés",
+            "content": ""
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 72,
+            "icon_width": 72,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Équipe d'assistance 24/7 : Réponse sous 24h",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "free-shipping",
+        "customer-support",
+        "discount",
+        "payment"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "footer_luma_xMNrT6": {
+      "type": "footer_luma",
+      "blocks": {
+        "logo_YddXah": {
+          "type": "logo",
+          "settings": {
+            "image_width": 100,
+            "image_width_mobile": 100,
+            "text": "<h2>section.store</h2>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 120,
+            "text_size_mobile": 40,
+            "text_height": 100,
+            "text_color": "#67645e"
+          }
+        },
+        "column_QRh7TH": {
+          "type": "column",
+          "settings": {
+            "heading": "QUICK LINKS",
+            "menu": "footer"
+          }
+        },
+        "socials_exhkFe": {
+          "type": "socials",
+          "settings": {
+            "heading": "SOCIALS",
+            "twitter_text": "Twitter",
+            "twitter": "",
+            "facebook_text": "Facebook",
+            "facebook": "#",
+            "linkedin_text": "Linkedin",
+            "linkedin": "",
+            "instagram_text": "Instagram",
+            "instagram": "#",
+            "youtube_text": "Youtube",
+            "youtube": "",
+            "pinterest_text": "Pinterest",
+            "pinterest": "",
+            "whatsapp_text": "Whatsapp",
+            "whatsapp": "",
+            "tiktok_text": "Tiktok",
+            "tiktok": "#"
+          }
+        },
+        "text_ex3GEe": {
+          "type": "text",
+          "settings": {
+            "heading": "HEADING",
+            "text": "<p>Share contact information, store details, and brand content with your customers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "logo_YddXah",
+        "column_QRh7TH",
+        "socials_exhkFe",
+        "text_ex3GEe"
+      ],
+      "disabled": true,
+      "settings": {
+        "block_padding_vertical": 34,
+        "block_padding_vertical_mobile": 40,
+        "block_padding_horizontal": 28,
+        "block_padding_horizontal_mobile": 20,
+        "block_border_thickness": 1,
+        "text": "<p>Inscrivez-vous à notre newsletter pour profitez de nos offres.</p>",
+        "text_custom": true,
+        "text_font": "poppins_n4",
+        "text_size": 16,
+        "text_size_mobile": 14,
+        "text_height": 150,
+        "text_align": "left",
+        "text_align_mobile": "center",
+        "use_newsletter": true,
+        "newsletter_radius": 10,
+        "newsletter_border_thickness": 1,
+        "newsletter_gap": 6,
+        "newsletter_gap_mobile": 0,
+        "newsletter_mt": 16,
+        "newsletter_mt_mobile": 14,
+        "input_placeholder": "Adresse Mail",
+        "input_custom": true,
+        "input_font": "poppins_n4",
+        "input_size": 16,
+        "input_size_mobile": 16,
+        "input_height": 100,
+        "input_padding_vertical": 16,
+        "input_padding_vertical_mobile": 16,
+        "input_padding_horizontal": 16,
+        "input_padding_horizontal_mobile": 16,
+        "input_radius": 0,
+        "input_border_thickness": 0,
+        "submit": "S'ABONNER",
+        "submit_custom": true,
+        "submit_font": "poppins_n4",
+        "submit_size": 16,
+        "submit_size_mobile": 16,
+        "submit_height": 100,
+        "submit_padding_vertical": 16,
+        "submit_padding_vertical_mobile": 16,
+        "submit_padding_horizontal": 24,
+        "submit_padding_horizontal_mobile": 24,
+        "submit_radius": 0,
+        "submit_border_thickness": 0,
+        "privacy_text": "",
+        "privacy_text_custom": false,
+        "privacy_text_font": "josefin_sans_n4",
+        "privacy_text_size": 16,
+        "privacy_text_size_mobile": 14,
+        "privacy_text_height": 150,
+        "privacy_text_mt": 16,
+        "privacy_text_mt_mobile": 16,
+        "privacy_text_align": "left",
+        "privacy_text_align_mobile": "left",
+        "column_heading_custom": true,
+        "column_heading_font": "poppins_n4",
+        "column_heading_size": 16,
+        "column_heading_size_mobile": 14,
+        "column_heading_height": 130,
+        "list_mt": 16,
+        "list_mt_mobile": 14,
+        "list_gap": 24,
+        "list_gap_mobile": 16,
+        "link_custom": true,
+        "link_font": "poppins_n4",
+        "link_size": 16,
+        "link_size_mobile": 14,
+        "link_height": 130,
+        "column_text_custom": false,
+        "column_text_font": "josefin_sans_n4",
+        "column_text_size": 16,
+        "column_text_size_mobile": 14,
+        "column_text_height": 150,
+        "column_text_mt": 16,
+        "column_text_mt_mobile": 14,
+        "block_border_color": "#84827e",
+        "text_color": "#84827e",
+        "privacy_text_color": "#84827e",
+        "newsletter_border_color": "#84827e",
+        "input_bg_color": "#ffffff",
+        "input_border_color": "#84827e",
+        "input_color": "#84827e",
+        "input_placeholder_color": "#84827e",
+        "submit_color": "#84827e",
+        "submit_hover_color": "#ffffff",
+        "submit_bg_color": "#ffffff",
+        "submit_bg_hover_color": "#84827e",
+        "submit_border_color": "#84827e",
+        "submit_border_hover_color": "#84827e",
+        "column_heading_color": "#84827e",
+        "column_text_color": "#84827e",
+        "link_color": "#84827e",
+        "link_hover_color": "#84827e",
+        "background_color": "#f1f0ed",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_horizontal": 3,
+        "margin_horizontal_mobile": 1.5,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 160,
+        "border_thickness": 0,
+        "section_radius": 12,
+        "lazy": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre.webp",
+            "image_width": 220,
+            "heading_size": "h5",
+            "title": "",
+            "content": "<p>Inscrivez-vous à notre newsletter pour profitez de nos offres.</p>"
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "À propos",
+            "content": "<p>Disponible du lundi au vendredi : 9h à 17h</p><p><strong>Mail : </strong>contact@luma-cosmetics.com<br/><br/><strong>Téléphone :</strong> 07 56 85 54 90</p>",
+            "enable_follow_on_shop": false
+          }
+        },
+        "links_LeKcbr": {
+          "type": "links",
+          "settings": {
+            "menu": "",
+            "show_menu_title": true
+          }
+        },
+        "links_kTHRye": {
+          "type": "links",
+          "settings": {
+            "menu": "",
+            "show_menu_title": true
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "links",
+        "text",
+        "links_LeKcbr",
+        "links_kTHRye"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_country_flag": true,
+        "show_country_name": true,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "footer_luma_xMNrT6",
+    "footer"
+  ]
+}
