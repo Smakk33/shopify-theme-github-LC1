@@ -336,6 +336,7 @@
     },
     "custom_liquid_rjDyEF": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
@@ -352,15 +353,15 @@
         "image_9j3W3k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/BEFORE-AFTER_SERUM_5f4ceb07-2eec-496f-a0a9-b8400f83a23c.webp",
+            "image": "shopify://shop_images/avant_apres_photo.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Des cils magnifiques, sans effort.",
-            "content": "<p>Le sérum PrimeLash stimule naturellement la pousse — plus besoin d’extensions ni de base de mascara.</p><p>Riche en vitamines, il épaissit, fortifie et recourbe vos cils en un seul geste, chaque jour.<br/><br/>Laissez tomber les étapes inutiles. Appliquez, maquillez, admirez.</p><p>✔ Vegan & non testé sur les animaux<br/>✔ pH équilibré pour les yeux sensibles<br/>✔ Conçu pour les femmes matures<br/>✔ Formule ultra-efficace pour la croissance</p>",
+            "title": "Des cils densifiés, sans surcharge.",
+            "content": "<p>Le LumaLash Volumizeur ne mise pas sur une grosse brosse pour saturer vos cils fins et sensibles.</p><p>Sa formule enrichie en squalane hydrate en profondeur et stimule naturellement l’épaisseur des cils.</p><p>Grâce à son applicateur à fibres précises, il dépose la juste dose de pigment au bon endroit — pour un effet jusqu’à <strong>3× plus de volume</strong>, au rendu net et professionnel.</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
