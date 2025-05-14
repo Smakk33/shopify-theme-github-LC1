@@ -39,6 +39,12 @@
             "liquid": "<!-- Container for the stars and rating text -->\n<div class=\"rating-display\">\n  <!-- Stars container -->\n  <div class=\"stars\">\n    {% assign rating = 4.7 %} <!-- Example rating, replace with dynamic value -->\n    {% assign full_stars = rating | floor %}\n    {% assign partial_star = rating | minus: full_stars %}\n    {% assign empty_stars = 5 | minus: full_stars | minus: 1 %}\n\n    <!-- Full stars -->\n    {% for i in (1..full_stars) %}\n      <span class=\"star full\">\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"#729fc5\n\">\n          <!-- Refined rounded star path -->\n          <path d=\"M12 2.5l2.755 5.583 6.162.894-4.459 4.347 1.05 6.123L12 16.75l-5.508 2.897 1.05-6.123L3.083 8.977l6.162-.894L12 2.5z\" />\n        </svg>\n      </span>\n    {% endfor %}\n    \n    <!-- Less filled star -->\n    {% if partial_star > 0 %}\n      <span class=\"star less-filled\">\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n          <defs>\n            <linearGradient id=\"grad1\">\n              <stop offset=\"65%\" style=\"stop-color:#729fc5\n;stop-opacity:1\" /> <!-- Changed offset to 60% -->\n              <stop offset=\"60%\" style=\"stop-color:#ddd;stop-opacity:1\" />\n            </linearGradient>\n          </defs>\n          <path d=\"M12 2.5l2.755 5.583 6.162.894-4.459 4.347 1.05 6.123L12 16.75l-5.508 2.897 1.05-6.123L3.083 8.977l6.162-.894L12 2.5z\" fill=\"url(#grad1)\" />\n        </svg>\n      </span>\n    {% endif %}\n    \n    <!-- Empty stars -->\n    {% for i in (1..empty_stars) %}\n      <span class=\"star empty\">\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#ddd\">\n          <path d=\"M12 2.5l2.755 5.583 6.162.894-4.459 4.347 1.05 6.123L12 16.75l-5.508 2.897 1.05-6.123L3.083 8.977l6.162-.894L12 2.5z\" />\n        </svg>\n      </span>\n    {% endfor %}\n  </div>\n  \n  <!-- Rating text -->\n  <div class=\"rating-text\">\n    <strong>Excellent {{ rating }}</strong> | 1696 Avis vérifiés\n  </div>\n</div>\n\n<!-- Add custom CSS for styling -->\n<style>\n.rating-display {\n  display: flex;\n  align-items: center;\n  font-size: 12px;\n  color: #333;\n  flex-wrap: nowrap; /* Keeps everything on one line */\n}\n\n.stars {\n  display: flex;\n  align-items: center;\n  margin-right: 8px;\n}\n\n.star {\n  margin-right: 2px;\n  display: inline-block;\n}\n\n.rating-text {\n  display: flex;\n  align-items: center;\n  font-size: 12px;\n}\n\n.rating-text strong {\n  font-weight: bold;\n  margin-right: 5px;\n}\n\n@media (max-width: 480px) {\n  .rating-display {\n    flex-wrap: nowrap; /* Keeps stars and text on one line */\n    font-size: 8px; /* Adjust font size for smaller screens */\n  }\n\n  .stars svg {\n    width: 20px; /* Smaller stars for mobile screens */\n    height: 20px;\n  }\n\n  .rating-text {\n    font-size: 13px; /* Adjust text size for mobile */\n  }\n}\n</style>"
           }
         },
+        "liquid_tHc3VL": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__liquid\">\n    <div class=\"trustpilot\">\n        <a style=\"display: flex; align-items: center;\" href=\"#shopify-section-template--16834633498880__4fa813d7-a43c-4acf-a3eb-021ace3a79b5\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0765/6738/0295/files/avis.avif?v=1689246924\" alt=\"Trustpilot Rating\" width=\"110\" height=\"25\" style=\"margin-right: 5px;\">\n            <span style=\"font-size: 12px;text-decoration: underline;text-underline-offset: 3px;\"><b></b> 4.8/5 (Excellent) | 1243 Avis vérifiés</span>\n        </a>\n    </div>\n</div>"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -212,6 +218,7 @@
         "image_PTkRzF",
         "title",
         "liquid_9LWxY3",
+        "liquid_tHc3VL",
         "price",
         "liquid_YiPbJG",
         "liquid_CekThB",
