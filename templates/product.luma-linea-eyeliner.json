@@ -77,9 +77,32 @@
         },
         "text_4ixFdK": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>🌱 Croissance rapide<br/>💦 Renforce vos cheveux<br/>🌸 Parfum naturel<br/>⭐️ Pour tous types de cheveux</p>"
+            "text": "<p>Finies les difficultés avec l'eyeliner. Luma Linea est conçu pour les femmes d'âge mûr.</p>"
+          }
+        },
+        "liquid_WFbbrF": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"features-section\">\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/EYELINER_easy_application_webp.webp?v=1738147611\" alt=\"Easy & precise application\" class=\"feature-icon\">\n      <p class=\"feature-text\">Application facile et précise</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/waterproof_icon_webp.webp?v=1738147617\" alt=\"Water-resistant and smudge-proof\" class=\"feature-icon\">\n      <p class=\"feature-text\">Résistant à l'eau et aux bavures</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/Natural_ing_webpt.webp?v=1738147613\" alt=\"Buildable, velvety, deep colors\" class=\"feature-icon\">\n      <p class=\"feature-text\">Naturel, Vegan et Cruelty Free</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .features-section {\n    display: flex;\n    justify-content: space-around;\n    padding: 5px 0;\n  }\n\n  .feature-item {\n    flex: 1;\n    display: flex;\n    justify-content: center;\n  }\n\n  .feature-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  .feature-icon {\n    margin-bottom: 10px;\n    max-width: 50px;\n  }\n\n  .feature-text {\n    font-size: 10px !important; \n  }\n\n  .text-center {\n    text-align: center;\n  }\n</style>"
+          }
+        },
+        "text_jCaPn8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Facile à appliquer, même sur les paupières ridées. Ne tire pas sur la peau relâchée. Pas de lignes parasites.</p>"
+          }
+        },
+        "text_gqeMCh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Constructible et naturelle. <em>Relevez, définissez et encadrez vos yeux sages. Même si les eyeliners n'ont jamais été votre truc</em></p>"
+          }
+        },
+        "text_LbYJ63": {
+          "type": "text",
+          "settings": {
+            "text": "<p>8 teintes éclatantes pour les reines matures.</p>"
           }
         },
         "liquid_DaYMAb": {
@@ -191,26 +214,6 @@
           "settings": {
             "liquid": "<div style=\"font-family: Poppins, sans-serif; max-width: 600px; margin: 0 auto;\">\n    <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/2_8921b470-21c7-41bb-8269-59cbaec3fd76.png?v=1721845485\" alt=\"Livraison à domicile\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong>Livraison Gratuite : sous <strong>7 à 9 jours</strong></strong><br>\n            <span style=\"color: #2BB04A; font-family: Poppins; font-weight: bold;\">Transport via La Poste</span>\n        </div>\n    </div>\n    <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/3_af5bdc9a-fc62-4ed0-a213-d1c0ff644ad5.png?v=1721845485\" alt=\"Garantie d'achat\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong>Garantie d’achat 30 jours</strong><br>\n            <span style=\"color:#2BB04A; font-family: Poppins; font-weight: bold;\">100% Satisfait ou remboursé</span>\n        </div>\n    </div>\n</div>"
           }
-        },
-        "collapsible_text_qmMEH4": {
-          "type": "collapsible_text",
-          "disabled": true,
-          "settings": {
-            "title": "Notre garantie",
-            "content": "<p>Nous voulons que vous soyez <strong>100% confiant et ravi</strong> de l'<strong>impression finale</strong>. </p><p>C'est pourquoi nous offrons des <strong>aperçus gratuits</strong> et des <strong>éditions illimitées</strong> pour toutes les commandes. </p><p>Nous travaillerons en <strong>étroite collaboration</strong> avec vous, en apportant tous les <strong>ajustements nécessaires</strong> jusqu'à ce que le <strong>portrait de votre animal</strong> dépasse vos attentes et que vous nous fassiez part de votre <strong>satisfaction</strong>.</p>"
-          }
-        },
-        "text_Eg7Txw": {
-          "type": "text",
-          "settings": {
-            "text": "<p><em>Marre des cils fins et clairsemés, et du regard sans éclat ? Nous avons créé </em><em><strong>un mascara pro-âge spécialement pour les femmes matures</strong></em><em>, qui vous vaudra plus de compliments que vous ne l’auriez imaginé.</em></p>"
-          }
-        },
-        "text_YCqw6V": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Des années de recherche ont permis de <strong>concevoir le duo parfait</strong> : une brosse qui sépare les plus petits cils pour zéro grumeaux, et une formule qui lifte et épaissit les cils existants tout en stimulant leur croissance naturelle. Équilibré en pH, 100 % naturel. Finis les irritations et les yeux de panda.</p>"
-          }
         }
       },
       "block_order": [
@@ -225,6 +228,10 @@
         "liquid_UmpXd9",
         "badges",
         "text_4ixFdK",
+        "liquid_WFbbrF",
+        "text_jCaPn8",
+        "text_gqeMCh",
+        "text_LbYJ63",
         "liquid_DaYMAb",
         "rating",
         "inventory_zV6jxc",
@@ -240,10 +247,7 @@
         "liquid_xkrNTV",
         "liquid_3KpW4E",
         "liquid_ChUBCY",
-        "liquid_g9pnE9",
-        "collapsible_text_qmMEH4",
-        "text_Eg7Txw",
-        "text_YCqw6V"
+        "liquid_g9pnE9"
       ],
       "settings": {
         "full_width": true,
@@ -261,6 +265,98 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "image_link_blocks_pByUaP": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_RUqat3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/5.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_qqfLgU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/6.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_TCnCww": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4_1.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_QYBqdE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/3_1.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_eAzVdp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2_1.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_RUqat3",
+        "item_qqfLgU",
+        "item_TCnCww",
+        "item_QYBqdE",
+        "item_eAzVdp"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "<h4>Ils parlent de nous :</h4>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "media_with_text_gfPwBB": {
@@ -498,6 +594,7 @@
   },
   "order": [
     "main",
+    "image_link_blocks_pByUaP",
     "media_with_text_gfPwBB",
     "custom_liquid_rjDyEF",
     "media_with_text_Gy4mEx",
