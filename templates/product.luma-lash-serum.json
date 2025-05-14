@@ -69,7 +69,7 @@
         "liquid_UmpXd9": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #F1E9FF; border-radius: px;\">\n    <p style=\"font-weight: bold; font-size: 16px;\">« Chaque centime en vaut la peine. Le sérum PrimeLash est tout simplement miraculeux.\nJe m’habitue à me réveiller sans maquillage… et à me trouver aussi belle.\nMes cils sont plus longs et plus fournis qu’il y a 20 ans ! »</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Mauricette, cliente du sérum pousse-cils PrimeLash</span>\n  </div>\n</div>"
+            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #F1E9FF; border-radius: px;\">\n    <p style=\"font-weight: bold; font-size: 16px;\">« Chaque centime en vaut la peine. Le sérum PrimeLash est tout simplement miraculeux.\nJe m’habitue à me réveiller sans maquillage… et à me trouver aussi belle.\nMes cils sont plus longs et plus fournis qu’il y a 20 ans ! »</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Mauricette, cliente du Luma Lash Serum</span>\n  </div>\n</div>"
           }
         },
         "badges": {
