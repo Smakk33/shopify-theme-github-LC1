@@ -1,0 +1,759 @@
+{%- style -%}
+  .eyeliner-carousel {
+    --carousel-item-count: {{ section.blocks.size }};
+  }
+  .eyeliner-carousel__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+  }
+
+  .section-title {
+    font-size: 40px;
+    font-weight: bold; 
+    color: #342c40;
+  }
+  
+  .eyeliner-carousel__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .eyeliner-carousel__filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #000000;
+    margin-bottom: 30px;
+  }
+  .eyeliner-carousel__select {
+    padding: 10px;
+    border: 2px solid #000000;
+    font-size: 16px;
+    min-width: 180px;
+  }
+
+  .eyeliner-carousel__select:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  .eyeliner-carousel__select option {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .eyeliner-carousel__select option:disabled {
+    color: #999;
+  }
+  .eyeliner-carousel__items-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  .eyeliner-carousel__items {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  .eyeliner-carousel__item {
+    flex: 0 0 25%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .eyeliner-carousel__image-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .eyeliner-carousel__image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border: 2px solid #342C40;
+  }
+  .eyeliner-carousel__badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #cebced;
+    color: #252d5f;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .eyeliner-carousel__info {
+    text-align: center;
+  }
+  .eyeliner-carousel__name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: black;
+  }
+  .eyeliner-carousel__description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  .eyeliner-carousel__finish {
+    font-size: 12px;
+    color: #888;
+  }
+  .is-hidden {
+    display: none;
+  }
+  .eyeliner-carousel__arrow {
+   position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: #F0E7FF;
+    color: #0A090A;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    border: 1px solid #342C40;
+  }
+  .eyeliner-carousel__arrow--left {
+    left: 10px;
+  }
+  .eyeliner-carousel__arrow--right {
+    right: 10px;
+  }
+
+  .eyeliner-carousel__add-to-cart {
+   margin-top: 10px;
+        background-color: #A58FCB;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0.9rem 0.9rem;
+        width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .eyeliner-carousel__add-to-cart:hover {
+    background-color: #333333;
+  }
+
+ @media screen and (max-width: 768px) {
+   .eyeliner-carousel__image {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: cover;
+     border: 2px solid #342C40;
+  }
+
+
+ .eyeliner-carousel__add-to-cart {
+   margin-top: 10px;
+        background-color: #A58FCB;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3sease;
+        padding: 0.9rem 0.9rem;
+        width: 100%;
+  }
+   
+}
+
+
+  @media screen and (max-width: 360px) {
+
+.eyeliner-carousel__add-to-cart {
+    margin-top: 10px;
+    padding: 12px 30px;
+    background-color: #8d6fbd;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+    
+  }
+
+  @media screen and (max-width: 1023px) {
+    .eyeliner-carousel__items {
+      width: calc(100% * var(--carousel-item-count));
+    }
+    .eyeliner-carousel__item {
+      flex: 0 0 100%;
+    }
+    .eyeliner-carousel__arrow--left,
+    .eyeliner-carousel__arrow--right {
+      display: flex;
+    }
+
+
+  .section-title {
+    font-size: 35px;
+    font-weight: bold; 
+    color: #342c40;
+    line-height: 1.3;
+  }
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    .eyeliner-carousel__items-wrapper {
+      overflow: hidden;
+    }
+    .eyeliner-carousel__items {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+    .eyeliner-carousel__item {
+      margin-right: 20px;
+    }
+  }
+
+.eyeliner-badge {
+   display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border-radius: 7px;
+    background-color: #F0E7FF;
+    font-weight: 600;
+    border: 1px solid #342C40;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+.eyeliner-guarantee-container {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .eyeliner-guarantee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .eyeliner-guarantee img {
+    flex-shrink: 0;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .eyeliner-guarantee span {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .eyeliner-guarantee-container {
+      display: flex; 
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .eyeliner-guarantee span {
+      font-size: 12px;
+    }
+  }
+  
+{%- endstyle -%}
+
+<div class="eyeliner-carousel" id="eyeliner-section" data-section-id="{{ section.id }}" data-section-type="eyeliner-carousel">
+  <div class="eyeliner-carousel__container">
+    <div class="eyeliner-badge">
+      8 TEINTES ADAPTÉES AUX FEMMES MATURES
+    </div>
+    <h2 class="section-title">{{ section.settings.title }}</h2>
+
+    <div class="filters">
+      <select class="filter-select js-eye-color" aria-label="Filtrer par couleur des yeux">
+        <option value="">Yeux</option>
+        <option value="blue">Bleu</option>
+        <option value="brown">Châtain</option>
+        <option value="dark-brown">Brun</option>
+        <option value="green">Vert</option>
+      </select>
+
+      <select class="filter-select js-skin-tone" aria-label="Filtrer par ton de peau">
+        <option value="">Teinte</option>
+        <option value="light">Clair</option>
+        <option value="medium" disabled>Moyen (Prochainement) </option>
+        <option value="dark" disabled>Foncé (Prochainement)</option>
+      </select>
+      <button class="button--text js-reset-filters"></button>
+    </div>
+
+    <div class="eyeliner-carousel__items-wrapper">
+      <div class="eyeliner-carousel__items js-eyeliner-carousel">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'eyeliner' -%}
+            <div class="eyeliner-carousel__item" 
+                 data-eye-colors="{{ block.settings.eye_color_blue | yesno: 'true,false' }},{{ block.settings.eye_color_brown | yesno: 'true,false' }},{{ block.settings.eye_color_dark_brown | yesno: 'true,false' }},{{ block.settings.eye_color_green | yesno: 'true,false' }}"
+                 data-skin-tones="{{ block.settings.skin_tone_light | yesno: 'true,false' }},{{ block.settings.skin_tone_medium | yesno: 'true,false' }},{{ block.settings.skin_tone_dark | yesno: 'true,false' }}"
+                 data-product-id="{{ block.settings.product_id }}"
+                 data-variant-noir="{{ block.settings.variant_noir }}"
+                 data-variant-bois="{{ block.settings.variant_bois }}"
+                 data-variant-saphir="{{ block.settings.variant_saphir }}"
+                 data-variant-emeraude="{{ block.settings.variant_emeraude }}"
+                 data-variant-mocha="{{ block.settings.variant_mocha }}"
+                 data-variant-fumee="{{ block.settings.variant_fumee }}"
+                 data-variant-doree="{{ block.settings.variant_doree }}"
+                 data-variant-cuivre="{{ block.settings.variant_cuivre }}">
+              <div class="eyeliner-card">
+                <div class="eyeliner-image-wrapper">
+                  {%- if block.settings.image != blank -%}
+                    <div class="eyeliner-carousel__image-container">
+                      {{ block.settings.image | image_url: width: 300 | image_tag: 
+                         class: 'eyeliner-carousel__image',
+                         loading: 'lazy',
+                         alt: block.settings.name,
+                         width: 300,
+                         height: 300,
+                         data-variant-index: forloop.index0
+                      }}
+                      {%- if block.settings.show_mesmerise_badge -%}
+                        <div class="eyeliner-carousel__badge">Recommandée par nos expertes</div>
+                      {%- endif -%}
+                    </div>
+                  {%- else -%}
+                    <div class="eyeliner-carousel__image-container">
+                      {{ 'product-placeholder.svg' | asset_url | image_tag: 
+                         class: 'eyeliner-carousel__image',
+                         loading: 'lazy',
+                         width: 300,
+                         height: 300,
+                         data-variant-index: forloop.index0
+                      }}
+                      {%- if block.settings.show_mesmerise_badge -%}
+                        <div class="eyeliner-carousel__badge">Recommandée par nos expertes</div>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                </div>
+                <div class="eyeliner-carousel__info">
+                  <h3 class="eyeliner-carousel__name">{{ block.settings.name }}</h3>
+                  <p class="eyeliner-carousel__description">{{ block.settings.description }}</p>
+                  <p class="eyeliner-carousel__finish">{{ block.settings.finish }} - {{ block.settings.color }}</p>
+                  <button class="eyeliner-carousel__add-to-cart js-add-to-cart" data-index="{{ forloop.index0 }}">AJOUTER AU PANIER</button>
+                <div class="eyeliner-guarantee-container">
+              <div class="eyeliner-guarantee">
+                <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/7823496.webp?v=1740324757" alt="Guarantee icon" width="15" height="15">
+                <span>GARANTIE DE REMBOURSEMENT DE 60 JOURS</span>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <button class="eyeliner-carousel__arrow eyeliner-carousel__arrow--left js-carousel-prev" aria-label="Image précédente">
+      &lt;
+    </button>
+    <button class="eyeliner-carousel__arrow eyeliner-carousel__arrow--right js-carousel-next" aria-label="Image suivante">
+      &gt;
+    </button>
+  </div>
+</div>
+
+<script>
+  class EyelinerCarousel {
+    constructor(container) {
+      this.container = container;
+      this.carousel = container.querySelector('.js-eyeliner-carousel');
+      this.items = this.carousel.querySelectorAll('.eyeliner-carousel__item');
+      this.eyeColorSelect = container.querySelector('.js-eye-color');
+      this.skinToneSelect = container.querySelector('.js-skin-tone');
+      this.prevButton = container.querySelector('.js-carousel-prev');
+      this.nextButton = container.querySelector('.js-carousel-next');
+      
+      this.currentIndex = 0;
+      this.itemCount = this.items.length;
+      this.itemsPerView = 5; // Number of visible items on desktop
+      this.isDesktop = window.innerWidth >= 1024;
+
+      this.addToCartButtons = container.querySelectorAll('.js-add-to-cart');
+      this.init();
+    }
+
+    init() {
+      if (this.isDesktop) {
+        this.setupDesktopCarousel();
+      } else {
+        this.setupMobileCarousel();
+      }
+      this.bindEvents();
+      this.filterProducts();
+      this.updateArrowVisibility();
+      this.bindAddToCartEvents();
+    }
+
+    setupDesktopCarousel() {
+      this.updateCarouselPosition(false);
+    }
+
+    setupMobileCarousel() {
+      this.carousel.style.width = `${this.itemCount * 100}%`;
+      this.items.forEach(item => {
+        item.style.flex = `0 0 ${100 / this.itemCount}%`;
+      });
+    }
+
+    bindEvents() {
+      this.eyeColorSelect.addEventListener('change', () => this.filterProducts());
+      this.skinToneSelect.addEventListener('change', () => this.filterProducts());
+      this.prevButton.addEventListener('click', () => this.navigate(-1));
+      this.nextButton.addEventListener('click', () => this.navigate(1));
+      
+      // Add reset functionality
+      const resetButton = this.container.querySelector('.js-reset-filters');
+      if (resetButton) {
+        resetButton.addEventListener('click', () => this.resetFilters());
+      }
+    }
+
+    updateCarouselPosition(smooth = true) {
+      const visibleItems = this.getVisibleItems();
+      const itemWidth = this.items[0].offsetWidth;
+      const offset = -visibleItems[this.currentIndex].offsetLeft;
+      
+      this.carousel.style.transition = smooth ? 'transform 0.3s ease' : 'none';
+      this.carousel.style.transform = `translateX(${offset}px)`;
+    }
+
+    navigate(direction) {
+      const visibleItems = this.getVisibleItems();
+      let newIndex = this.currentIndex + direction;
+      
+      if (newIndex < 0) {
+        newIndex = visibleItems.length - 1;
+      } else if (newIndex >= visibleItems.length) {
+        newIndex = 0;
+      }
+      
+      this.currentIndex = newIndex;
+      this.updateCarouselPosition();
+      this.updateArrowVisibility();
+    }
+
+    getVisibleItems() {
+      return Array.from(this.items).filter(item => !item.classList.contains('is-hidden'));
+    }
+
+    filterProducts() {
+      const selectedEyeColor = this.eyeColorSelect.value;
+      const selectedSkinTone = this.skinToneSelect.value;
+
+      let visibleCount = 0;
+      this.items.forEach((item, index) => {
+        const eyeColors = item.dataset.eyeColors.split(',');
+        const skinTones = item.dataset.skinTones.split(',');
+      
+        const eyeColorIndex = ['blue', 'brown', 'dark-brown', 'green'].indexOf(selectedEyeColor);
+        const skinToneIndex = ['light', 'medium', 'dark'].indexOf(selectedSkinTone);
+        const isVisibleEyeColor = selectedEyeColor === '' || eyeColors[eyeColorIndex] === 'true';
+        const isVisibleSkinTone = selectedSkinTone === '' || skinTones[skinToneIndex] === 'true';
+
+        if (isVisibleEyeColor && isVisibleSkinTone) {
+          item.classList.remove('is-hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('is-hidden');
+        }
+      });
+
+      // Reset currentIndex to 0 after filtering
+      this.currentIndex = 0;
+      this.updateCarouselPosition(false);
+      this.updateArrowVisibility();
+
+      // Update select element text
+      this.eyeColorSelect.options[0].text = selectedEyeColor === '' ? 'Yeux' : this.eyeColorSelect.options[this.eyeColorSelect.selectedIndex].text;
+      this.skinToneSelect.options[0].text = selectedSkinTone === '' ? 'Teinte' : this.skinToneSelect.options[this.skinToneSelect.selectedIndex].text;
+    }
+
+    resetFilters() {
+      this.eyeColorSelect.selectedIndex = 0;
+      this.skinToneSelect.selectedIndex = 0;
+      this.eyeColorSelect.options[0].text = 'Yeux';
+      this.skinToneSelect.options[0].text = 'Teinte';
+      this.filterProducts();
+    }
+
+    updateArrowVisibility() {
+      const visibleItems = this.getVisibleItems();
+      this.prevButton.style.display = visibleItems.length > 1 ? 'flex' : 'none';
+      this.nextButton.style.display = visibleItems.length > 1 ? 'flex' : 'none';
+    }
+
+    bindAddToCartEvents() {
+      this.container.addEventListener('click', (event) => {
+        if (event.target.classList.contains('js-add-to-cart')) {
+          this.handleAddToCart(event);
+        }
+      });
+    }
+
+    handleAddToCart(event) {
+      const button = event.target;
+      const item = button.closest('.eyeliner-carousel__item');
+      const productId = item.dataset.productId;
+      const variantIds = [
+        item.dataset.variantNoir,
+        item.dataset.variantBois,
+        item.dataset.variantSaphir,
+        item.dataset.variantEmeraude,
+        item.dataset.variantMocha,
+        item.dataset.variantFumee,
+        item.dataset.variantDoree,
+        item.dataset.variantCuivre
+      ];
+
+      const visibleItems = Array.from(this.items).filter(i => !i.classList.contains('is-hidden'));
+      const currentItemIndex = visibleItems.indexOf(item);
+      const variantId = variantIds[currentItemIndex];
+
+      if (!variantId) {
+        console.error('Variant ID not found for the selected image');
+        return;
+      }
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          items: [{
+            id: variantId,
+            quantity: 1
+          }]
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Produit ajouté au panier:', data);
+        document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
+        
+        var cartDrawer = document.getElementById('cart-drawer');
+        if (cartDrawer) {
+          cartDrawer.style.opacity = '1';
+          cartDrawer.style.visibility = 'visible';
+          cartDrawer.removeAttribute('inert');
+          cartDrawer.setAttribute('open', '');
+        }
+      })
+      .catch(error => {
+        console.error('Erreur lors de l\'ajout au panier:', error);
+      });
+    }
+
+    updateCartUI() {
+      fetch('/cart.js')
+        .then(response => response.json())
+        .then(cart => {
+          const cartCountElements = document.querySelectorAll('.cart-count-bubble');
+          cartCountElements.forEach(element => {
+            element.textContent = cart.item_count;
+            element.classList.toggle('hide', cart.item_count === 0);
+          });
+        })
+        .catch(error => console.error('Erreur lors de la mise à jour du panier:', error));
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const carouselContainers = document.querySelectorAll('[data-section-type="eyeliner-carousel"]');
+    carouselContainers.forEach(container => new EyelinerCarousel(container));
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Eyeliner Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre de la section",
+      "default": "The Shades"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "eyeliner",
+      "name": "Eyeliner",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Nom",
+          "default": "Nom"
+        },
+        {
+          "type": "text",
+          "id": "color",
+          "label": "Couleur",
+          "default": "Soft Lilac"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Un lilas doux et mat qui illumine le regard"
+        },
+        {
+          "type": "text",
+          "id": "finish",
+          "label": "Finition",
+          "default": "Matte"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_mesmerise_badge",
+          "label": "Afficher le badge Recommandé",
+          "default": false
+        },
+        {
+          "type": "product",
+          "id": "product_id",
+          "label": "Produit"
+        },
+        {
+          "type": "text",
+          "id": "variant_noir",
+          "label": "ID de la variante NOIR",
+          "default": "50102382264667"
+        },
+        {
+          "type": "text",
+          "id": "variant_bois",
+          "label": "ID de la variante BOIS",
+          "default": "50102382297435"
+        },
+        {
+          "type": "text",
+          "id": "variant_saphir",
+          "label": "ID de la variante SAPHIR",
+          "default": "50102382330203"
+        },
+        {
+          "type": "text",
+          "id": "variant_emeraude",
+          "label": "ID de la variante ÉMERAUDE",
+          "default": "50102382362971"
+        },
+        {
+          "type": "text",
+          "id": "variant_mocha",
+          "label": "ID de la variante MOCHA",
+          "default": "50102382395739"
+        },
+        {
+          "type": "text",
+          "id": "variant_fumee",
+          "label": "ID de la variante FUMÉE",
+          "default": "50102382428507"
+        },
+        {
+          "type": "text",
+          "id": "variant_doree",
+          "label": "ID de la variante DORÉE",
+          "default": "50102382461275"
+        },
+        {
+          "type": "text",
+          "id": "variant_cuivre",
+          "label": "ID de la variante CUIVRE",
+          "default": "50102382494043"
+        },
+        {
+          "type": "checkbox",
+          "id": "eye_color_blue",
+          "label": "Recommandé pour les yeux bleus",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "eye_color_brown",
+          "label": "Recommandé pour les yeux châtains",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "eye_color_dark_brown",
+          "label": "Recommandé pour les yeux bruns",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "eye_color_green",
+          "label": "Recommandé pour les yeux verts",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "skin_tone_light",
+          "label": "Recommandé pour les peaux claires",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "skin_tone_medium",
+          "label": "Recommandé pour les peaux moyennes",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "skin_tone_dark",
+          "label": "Recommandé pour les peaux foncées",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Eyeliner Carousel",
+      "blocks": [
+        {
+          "type": "eyeliner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

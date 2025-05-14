@@ -1,0 +1,1530 @@
+{% liquid
+  assign heading = section.settings.heading
+  assign heading_size = section.settings.heading_size
+  assign heading_weight = section.settings.heading_weight
+  assign heading_color = section.settings.heading_color
+  assign heading_font = section.settings.heading_font
+
+  assign heading_size_mobile = section.settings.heading_size_mobile
+  assign heading_weight_mobile = section.settings.heading_weight_mobile
+
+  assign subheading = section.settings.subheading
+  assign subheading_size = section.settings.subheading_size
+  assign subheading_weight = section.settings.subheading_weight
+  assign subheading_color = section.settings.subheading_color
+  assign subheading_font = section.settings.subheading_font
+
+  assign subheading_size_mobile = section.settings.subheading_size_mobile
+  assign subheading_weight_mobile = section.settings.subheading_weight_mobile
+
+  assign compare_text_color = section.settings.compare_text_color
+  assign compare_text_size = section.settings.compare_text_size
+  assign compare_text_weight = section.settings.compare_text_weight
+  assign compare_text_font = section.settings.compare_text_font
+  assign compare_background = section.settings.compare_background
+  assign compare_background_active = section.settings.compare_background_active
+  assign compare_text_color_active = section.settings.compare_text_color_active
+
+  assign compare_text_size_mobile = section.settings.compare_text_size_mobile
+  assign compare_text_weight_mobile = section.settings.compare_text_weight_mobile
+
+  assign compare_radius = section.settings.compare_radius
+  assign compare_border_size = section.settings.compare_border_size
+  assign compare_border_color = section.settings.compare_border_color
+  assign compare_border_style = section.settings.compare_border_style
+
+  assign enable_logo_border = section.settings.enable_logo_border
+  assign logo_border_size = section.settings.logo_border_size
+  assign logo_border_color = section.settings.logo_border_color
+  assign logo_border_style = section.settings.logo_border_style
+
+  assign vs_bg_color = section.settings.vs_bg_color
+  assign vs_text_color = section.settings.vs_text_color
+
+  assign line_color = section.settings.line_color
+  assign line_size = section.settings.line_size
+  assign line_style = section.settings.line_style
+
+  assign bottom_text = section.settings.bottom_text
+  assign bottom_text_size = section.settings.bottom_text_size
+  assign bottom_text_weight = section.settings.bottom_text_weight
+  assign bottom_text_color = section.settings.bottom_text_color
+  assign bottom_text_font = section.settings.bottom_text_font
+
+  assign bottom_text_size_mobile = section.settings.bottom_text_size_mobile
+  assign bottom_text_weight_mobile = section.settings.bottom_text_weight_mobile
+
+  assign layout_margin_top = section.settings.layout_margin_top
+  assign layout_margin_bottom = section.settings.layout_margin_bottom
+  assign layout_width = section.settings.layout_width
+  %}
+
+<style>
+  .section-pc-{{section.id}} {
+    border: solid #000000 0px;
+    margin-top: {{ layout_margin_top }}px;
+    margin-bottom: {{ layout_margin_bottom }}px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    overflow: hidden;
+    {% if layout_width == true %}
+        max-width: 100%;
+        width: 100%;
+        {% else %}
+        max-width: 120rem;
+        width: 100%;
+      {% endif %}
+  }
+
+  .section-pc-{{section.id}}-settings {
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 54px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+
+  .comparison-heading-pc-{{section.id}} {
+    text-align: center;
+  }
+
+  .comparison-heading-pc-{{section.id}} * {
+    margin: 0;
+    font-size: {{ heading_size_mobile }}px;
+    color: {{ heading_color }};
+    line-height: 130%;
+    font-weight: {{ heading_weight_mobile }};
+    font-family: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+    text-transform: unset;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  .comparison-text-pc-{{section.id}} {
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .comparison-text-pc-{{section.id}} * {
+    margin: 0;
+    font-size: {{ subheading_size_mobile }}px;
+    color: {{ subheading_color }};
+    font-weight: {{ subheading_weight_mobile }};
+    font-family: {{ subheading_font.family }}, {{ subheading_font.fallback_families }};
+    line-height: 150%;
+    text-transform: unset;
+    text-decoration: none;
+  }
+
+  .comparison-grid-pc-{{section.id}} {
+    display: flex;
+  }
+
+  .comparison-table-wrapper-pc-{{section.id}} {
+    scrollbar-width: none;
+  }
+
+  .comparison-table-inner-pc-{{section.id}} {
+    max-width: 1440px;
+  }
+
+  .comparison-table-wrapper-pc-{{section.id}}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .comparison-table-pc-{{section.id}} {
+  
+    margin-top: 12px;
+  }
+
+  .comparison-item-pc-{{section.id}} {
+    position: relative;
+    display: flex !important;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comparison-item-pc-{{section.id}}:first-child {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} {
+    padding-top: 12px;
+  }
+
+  .comparison-grid-rows-pc-{{section.id}} {
+    border-bottom: {{ line_size }}px {{ line_style }} {{ line_color}};
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}} {
+    padding: 20px 4px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}:not(:first-child),
+  .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}}:not(:first-child) {
+    background-color: {{ compare_background }};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}}:last-child .comparison-item-pc-{{section.id}}:not(:first-child):after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    left: 0;
+    bottom: calc(-25px - 1px);
+
+    background-color: {{ compare_background }};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}}:last-child .comparison-item-pc-{{section.id}}:last-child:after {
+    border-bottom-right-radius: {{ compare_radius }}px;
+  }
+
+  .comparison-grid-rows-pc-{{section.id}}:last-child .comparison-item-pc-{{section.id}}:nth-child(3):after {
+    border-bottom-left-radius: {{ compare_radius }}px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}.active {
+    background-color: {{ compare_background_active }};
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}.active {
+    border: 0px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-column-heading-pc-{{section.id}} {
+    margin: 16px 0 0 0;
+    width: 100%;
+    font-size: 14px;
+    color: {{ compare_text_color}};
+    line-height: 130%;
+    text-transform: unset;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}.active h3 {
+    color: {{ compare_text_color_active }};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}} {
+    padding: 15px 2px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} + .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}}:first-child {
+    border-top-left-radius: {{ compare_radius }}px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}:nth-child(2) {
+    border-top-left-radius: {{ compare_radius }}px;
+
+    border-top-right-radius: {{ compare_radius }}px;
+
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}:nth-child(3) {
+    border-top-left-radius: {{ compare_radius }}px;
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}:last-child:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    right: -25px;
+    border-top-right-radius: {{ compare_radius }}px;
+    background-color: {{ compare_background }};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}}:last-child:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: calc(100% + 1px);
+    right: -25px;
+    background-color: {{ compare_background}};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}}:last-child .comparison-item-pc-{{section.id}}:nth-child(2):after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    left: 0;
+    bottom: calc(-25px - 1px);
+    border-bottom-right-radius: {{ compare_radius }}px;
+    border-bottom-left-radius: {{ compare_radius }}px;
+    background-color: {{ compare_background_active }};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}}:last-child .comparison-item-pc-{{section.id}}:last-child:after {
+    width: calc(100% + 25px);
+    border-bottom-right-radius: {{ compare_radius }}px;
+  }
+
+  .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}}.active {
+    background-color: {{ compare_background_active }};
+  }
+
+  .comparison-grid-rows-pc-{{section.id}}:last-child .comparison-item-pc-{{section.id}}:first-child:before {
+    bottom: 24px
+  }
+
+  .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}}:first-child {
+    border: 0px;
+  }
+
+  .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}}:first-child h3 {
+    display: block;
+    margin: 0;
+    font-size: {{ compare_text_size_mobile }}px;
+    color: {{ compare_color}};
+    line-height: 130%;
+    text-transform: unset;
+    text-align: center;
+    font-weight: {{ compare_text_weight_mobile }};
+    font-family: {{ compare_text_font.family }}, {{ compare_text_font.fallback_families }};
+  }
+
+  .comparison-item-heading-image-pc-{{section.id}} {
+    display: block;
+    {% if enable_logo_border == true %}
+    border: {{logo_border_size}}px {{ logo_border_style }} {{ logo_border_color }};
+    {% endif %}
+    border-radius: 100px;
+    width: 100%;
+    max-width: 70px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+  }
+
+  .comparison-item-heading-image-pc-{{section.id}} img,
+  .comparison-item-heading-image-pc-{{section.id}} svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .comparison-item-heading-image-pc-{{section.id}} svg {
+    /* background-color: #f10707; */
+  }
+
+  .comparison-value-pc-{{section.id}} {
+    margin: 0;
+    font-size: {{ compare_text_size_mobile }}px;
+    color: {{ compare_text_color}};
+    line-height: 130%;
+    font-family: {{ compare_text_font.family }}, {{ compare_text_font.fallback_families }};
+    word-break: break-word;
+    text-transform: unset;
+    text-align: center;
+  }
+
+  .comparison-item-pc-{{section.id}}.active .comparison-value-pc-{{section.id}} {
+    color: {{ compare_text_color_active}};
+  }
+
+  .comparison-value-icon-pc-{{section.id}} {
+    width: 24px;
+    height: 24px;
+  }
+
+  .comparison-value-icon-pc-{{section.id}} img,
+  .comparison-value-icon-pc-{{section.id}} svg {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .comparison-value-icon-pc-{{section.id}} svg path {
+    stroke: {{ compare_text_color}};
+  }
+
+  .comparison-item-pc-{{section.id}}.active .comparison-value-icon-pc-{{section.id}} svg path {
+    stroke: {{ compare_text_color_active}};
+  }
+
+  .comparison-versus-icon-pc-{{section.id}} {
+    position: absolute;
+    top: 50%;
+    right: calc(-24px - 5px);
+    z-index: 2;
+    transform: translateY(-50%);
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+  }
+
+  .comparison-versus-icon-pc-{{section.id}} svg {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .comparison-versus-icon-pc-{{section.id}} svg rect {
+    fill: {{ vs_bg_color }};
+  }
+
+  .comparison-versus-icon-pc-{{section.id}} svg path {
+    fill: {{vs_text_color}};
+  }
+
+  .comparison-bottom-text-pc-{{section.id}} {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .comparison-bottom-text-pc-{{section.id}} * {
+    margin: 0;
+    font-size: {{ bottom_text_size_mobile }}px;
+    color: {{ bottom_text_color}};
+    font-weight: {{ bottom_text_weight_mobile }};
+    font-family: {{ bottom_text_font.family }}, {{ bottom_text_font.fallback_families }};
+    line-height: 150%;
+    text-transform: unset;
+    text-decoration: none;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-pc-{{section.id}} {
+      margin-top: {{ layout_margin_top }}px;
+      margin-bottom: {{ layout_margin_bottom }}px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0px;
+      {% if layout_width == true %}
+        max-width: 100%;
+        width: 100%;
+        {% else %}
+        max-width: 120rem;
+        width: 100%;
+      {% endif %}
+    }
+
+    .section-pc-{{section.id}}-settings {
+     max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+    }
+
+    .comparison-heading-pc-{{section.id}} {
+      text-align: center;
+    }
+
+    .comparison-heading-pc-{{section.id}} * {
+      font-size: {{ heading_size }}px;
+      font-weight: {{ heading_weight }};
+    }
+
+    .comparison-text-pc-{{section.id}} {
+      margin-top: 16px;
+      text-align: left;
+    }
+
+    .comparison-text-pc-{{section.id}} * {
+      font-size: {{ subheading_size }}px;
+        font-weight: {{ subheading_weight }};
+    }
+
+    .comparison-table-wrapper-pc-{{section.id}} {
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+
+    .comparison-table-inner-pc-{{section.id}} {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .comparison-table-pc-{{section.id}} {
+      margin-top: 24px;
+    }
+
+    .comparison-item-heading-image-pc-{{section.id}} {
+      max-width: 70px;
+    }
+
+    .comparison-grid-header-pc-{{section.id}} {
+      padding-top: 30px;
+    }
+
+    .comparison-grid-header-pc-{{section.id}} .comparison-item-pc-{{section.id}} {
+      padding: 24px 16px;
+    }
+
+    .comparison-grid-header-pc-{{section.id}} .comparison-column-heading-pc-{{section.id}} {
+      text-align: center;
+      font-size: {{ compare_text_size }}px;
+      font-weight: {{ compare_text_weight }};
+    }
+
+    .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}} {
+      padding: 24px 16px;
+    }
+
+    .comparison-grid-rows-pc-{{section.id}} .comparison-item-pc-{{section.id}}:first-child h3 {
+      font-size: 18px;
+    }
+
+    .comparison-value-pc-{{section.id}} {
+      font-size: 20px;
+    }
+
+    .comparison-value-icon-pc-{{section.id}}{
+      width: 28px;
+      height: 28px;
+    }
+
+    .comparison-versus-icon-pc-{{section.id}} {
+      right: calc(-30px - 5px);
+      width: 60px;
+      height: 60px;
+    }
+
+    .comparison-bottom-text-pc-{{section.id}} {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .comparison-bottom-text-pc-{{section.id}} * {
+      font-size: {{ bottom_text_size }}px;
+        font-weight: {{ bottom_text_weight }};
+    }
+  }
+</style>
+
+<style>
+  .comparison-grid-pc-{{section.id}} .comparison-item-pc-{{section.id}}.active {
+    margin-right: 10px;
+  }
+
+  @media(min-width: 1024px) {
+    .comparison-grid-pc-{{section.id}} .comparison-item-pc-{{section.id}}.active {
+    margin-right: 20px;
+    }
+  }
+</style>
+
+<div
+  class="section-pc-{{section.id}} comparison-pc-{{section.id}}"
+  style=""
+>
+  <div class="section-pc-{{section.id}}-settings">
+    {% if heading != blank %}
+      <div class="comparison-heading-pc-{{section.id}}">
+        <p>{{ heading }}</p>
+      </div>
+    {% endif %}
+
+    {% if subheading != blank %}
+      <div class="comparison-text-pc-{{section.id}}">
+        <p>{{ subheading }}</p>
+      </div>
+    {% endif %}
+
+    <div class="comparison-table-wrapper-pc-{{section.id}}">
+      <div class="comparison-table-inner-pc-{{section.id}}">
+        <div class="comparison-table-pc-{{section.id}}">
+          <div class="comparison-grid-pc-{{section.id}} comparison-grid-header-pc-{{section.id}}">
+            <div class="comparison-item-pc-{{section.id}}"></div>
+
+            {% for block in section.blocks %}
+              {% if block.type == 'compare_header' %}
+                <div class="comparison-item-pc-{{section.id}} {% if forloop.index == 1 %} active{% endif %}">
+                  <div class="comparison-item-heading-image-pc-{{section.id}}">
+                    <img
+                      src="{{ block.settings.logo | img_url: '300x' }}"
+                      alt="{{ block.settings.heading }}"
+                      loading="lazy"
+                    >
+                  </div>
+                  <h3 class="comparison-column-heading-pc-{{section.id}}">{{ block.settings.heading }}</h3>
+                  {% if forloop.index == 1 %}
+                  <div class="comparison-versus-icon-pc-{{section.id}}">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 86 83" height="83" width="86">
+                    <rect fill="#6C6AB4" rx="41.2756" height="82.5513" width="85.5513"></rect>
+                    <path fill="white" d="M18.824 26.8973H23.6086L31.5069 48.6177L39.4052 26.8973H43.9619L33.6334 54.2756H29.1526L18.824 26.8973ZM55.6546 54.5794C53.7306 54.5794 51.9712 54.1997 50.3764 53.4402C48.8068 52.6808 47.5411 51.5922 46.5791 50.1746C45.6424 48.7569 45.1108 47.1114 44.9842 45.2381H49.3511C49.427 46.2507 49.7435 47.1747 50.3004 48.0101C50.8827 48.8202 51.6421 49.4658 52.5788 49.9467C53.5154 50.4277 54.5407 50.6682 55.6546 50.6682C57.3 50.6682 58.6164 50.3138 59.6037 49.605C60.6163 48.8962 61.1226 47.9468 61.1226 46.757C61.1226 44.8584 59.9202 43.5547 57.5152 42.8458L52.8066 41.4788C50.7055 40.8966 49.0473 40.0359 47.8322 38.8967C46.6424 37.7322 46.0475 36.074 46.0475 33.9223C46.0475 32.5046 46.4399 31.2389 47.2246 30.125C48.0347 29.0111 49.1486 28.1504 50.5662 27.5428C51.9839 26.91 53.604 26.5935 55.4267 26.5935C58.2367 26.5935 60.5404 27.3023 62.3378 28.72C64.1351 30.1376 65.1224 32.0616 65.2996 34.4918H60.9328C60.7302 33.302 60.1353 32.3401 59.1481 31.6059C58.1861 30.8465 56.9456 30.4667 55.4267 30.4667C53.9078 30.4667 52.718 30.7705 51.8573 31.3781C50.9966 31.9856 50.5662 32.8211 50.5662 33.8843C50.5662 34.7703 50.8573 35.4918 51.4396 36.0487C52.0218 36.5803 52.8572 36.998 53.9458 37.3018L58.7304 38.6688C60.9075 39.2764 62.6036 40.1751 63.8187 41.3649C65.0338 42.5547 65.6414 44.3141 65.6414 46.6431C65.6414 48.2127 65.2237 49.605 64.3883 50.8201C63.5782 52.0099 62.4137 52.9339 60.8948 53.5921C59.4012 54.2503 57.6545 54.5794 55.6546 54.5794Z"></path>
+                    </svg>
+                  </div>
+              {% endif %}
+                  </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% for block in section.blocks %}
+            {% if block.type == 'compare_content' %}
+              <div class="comparison-grid-pc-{{section.id}} comparison-grid-rows-pc-{{section.id}}">
+                <div class="comparison-item-pc-{{section.id}}">
+                  <h3>{{ block.settings.heading }}</h3>
+                </div>
+
+                      <div class="comparison-item-pc-{{section.id}} active">
+                        <div class="comparison-value-icon-pc-{{section.id}}">
+                          {% if block.settings.active_1 == true %}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="31"
+                              height="31"
+                              viewBox="0 0 31 31"
+                              fill="none"
+                            >
+                              <path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          {% else %}
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 49 49"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M36.5 12.5L12.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.5 12.5L36.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          {% endif %}
+                        </div>
+                      </div>
+
+
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 2 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <div class="comparison-value-icon-pc-{{section.id}}">
+                          {% if block.settings.active_2 == true %}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="31"
+                              height="31"
+                              viewBox="0 0 31 31"
+                              fill="none"
+                            >
+                              <path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          {% else %}
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 49 49"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M36.5 12.5L12.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.5 12.5L36.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 3 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <div class="comparison-value-icon-pc-{{section.id}}">
+                          {% if block.settings.active_3 == true %}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="31"
+                              height="31"
+                              viewBox="0 0 31 31"
+                              fill="none"
+                            >
+                              <path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          {% else %}
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 49 49"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M36.5 12.5L12.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.5 12.5L36.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 4 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <div class="comparison-value-icon-pc-{{section.id}}">
+                          {% if block.settings.active_4 == true %}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="31"
+                              height="31"
+                              viewBox="0 0 31 31"
+                              fill="none"
+                            >
+                              <path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          {% else %}
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 49 49"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M36.5 12.5L12.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.5 12.5L36.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 5 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <div class="comparison-value-icon-pc-{{section.id}}">
+                          {% if block.settings.active_5 == true %}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="31"
+                              height="31"
+                              viewBox="0 0 31 31"
+                              fill="none"
+                            >
+                              <path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          {% else %}
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 49 49"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M36.5 12.5L12.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.5 12.5L36.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 6 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <div class="comparison-value-icon-pc-{{section.id}}">
+                          {% if block.settings.active_6 == true %}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="31"
+                              height="31"
+                              viewBox="0 0 31 31"
+                              fill="none"
+                            >
+                              <path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          {% else %}
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 49 49"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M36.5 12.5L12.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12.5 12.5L36.5 36.5" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+
+          {% for block in section.blocks %}
+            {% if block.type == 'compare_price' %}
+              <div class="comparison-grid-pc-{{section.id}} comparison-grid-rows-pc-{{section.id}}">
+                <div class="comparison-item-pc-{{section.id}}">
+                  <h3>{{ block.settings.heading }}</h3>
+                </div>
+
+                      <div class="comparison-item-pc-{{section.id}} active">
+                        <p class="comparison-value-pc-{{section.id}}">{{ block.settings.active_price_1 }}</p>
+                      </div>
+
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 2 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <p class="comparison-value-pc-{{section.id}}">{{ block.settings.active_price_2 }}</p>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 3 %}
+                      <div class="comparison-item-pc-{{section.id}}">
+                        <p class="comparison-value-pc-{{section.id}}">{{ block.settings.active_price_3 }}</p>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 4 %}
+                      <div class="comparison-item-pc-{{section.id}} ">
+                        <p class="comparison-value-pc-{{section.id}}">{{ block.settings.active_price_4 }}</p>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 5 %}
+                      <div class="comparison-item-pc-{{section.id}} ">
+                        <p class="comparison-value-pc-{{section.id}}">{{ block.settings.active_price_5 }}</p>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% for item in section.blocks %}
+                  {% if item.type == 'compare_header' %}
+                    {% if forloop.index == 6 %}
+                      <div class="comparison-item-pc-{{section.id}} ">
+                        <p class="comparison-value-pc-{{section.id}}">{{ block.settings.active_price_6 }}</p>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% if bottom_text != blank %}
+      <div class="comparison-bottom-text-pc-{{section.id}}">
+        <p>{{ bottom_text }}</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "PC Nous vs Autres #2",
+    "settings": [
+      {
+            "type": "header",
+            "content": "This section is a property of PeakConversion",
+            "info": "Do not sell or reproduce. contact us at franklinjounda@gmail.com for more info"
+        },
+            {
+                "type": "header",
+                "content": "Heading"
+            },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "How are we different from other brands?"
+                },
+                {
+                    "type": "range",
+                    "id": "heading_size",
+                    "label": "Heading Size",
+                    "default": 40,
+                    "min": 10,
+                    "max": 72
+                },
+                {
+                    "type": "select",
+                    "id": "heading_weight",
+                    "label": "Heading Weight",
+                    "default": "400",
+                    "options": [
+                        {
+                            "value": "300",
+                            "label": "Light"
+                        },
+                        {
+                            "value": "400",
+                            "label": "Normal"
+                        },
+                        {
+                            "value": "700",
+                            "label": "Bold"
+                        }
+                    ]
+                },
+                {
+                    "type": "color",
+                    "id": "heading_color",
+                    "label": "Heading Color",
+                    "default": "#000000"
+                },
+                {
+                    "type": "font_picker",
+                    "id": "heading_font",
+                    "label": "Heading Font",
+                    "default": "josefin_sans_n4"
+                },
+                {
+                    "type": "range",
+                    "id": "heading_size_mobile",
+                    "label": "Heading Size Mobile",
+                    "default": 24,
+                    "min": 10,
+                    "max": 50
+                },
+                {
+                    "type": "select",
+                    "id": "heading_weight_mobile",
+                    "label": "Heading Weight Mobile",
+                    "default": "400",
+                    "options": [
+                        {
+                            "value": "300",
+                            "label": "Light"
+                        },
+                        {
+                            "value": "400",
+                            "label": "Normal"
+                        },
+                        {
+                            "value": "700",
+                            "label": "Bold"
+                        }
+                    ]
+                },
+
+            {
+                "type": "header",
+                "content": "Subheading"
+            },
+                {
+                    "type": "text",
+                    "id": "subheading",
+                    "label": "Subheading",
+                    "default": "Learn what makes our brand unique with our detailed breakdown of key features."
+                },
+                {
+                    "type": "range",
+                    "id": "subheading_size",
+                    "label": "Subheading Size",
+                    "default": 18,
+                    "min": 10,
+                    "max": 50
+                },
+                {
+                    "type": "select",
+                    "id": "subheading_weight",
+                    "label": "Subheading Weight",
+                    "default": "400",
+                    "options": [
+                        {
+                            "value": "300",
+                            "label": "Light"
+                        },
+                        {
+                            "value": "400",
+                            "label": "Normal"
+                        },
+                        {
+                            "value": "700",
+                            "label": "Bold"
+                        }
+                    ]
+                },
+                {
+                    "type": "color",
+                    "id": "subheading_color",
+                    "label": "Subheading Color",
+                    "default": "#3f3636"
+                },
+                {
+                    "type": "font_picker",
+                    "id": "subheading_font",
+                    "label": "Subheading Font",
+                    "default": "josefin_sans_n4"
+                },
+                {
+                    "type": "range",
+                    "id": "subheading_size_mobile",
+                    "label": "Subheading Size Mobile",
+                    "default": 16,
+                    "min": 10,
+                    "max": 50
+                },
+                {
+                    "type": "select",
+                    "id": "subheading_weight_mobile",
+                    "label": "Subheading Weight Mobile",
+                    "default": "400",
+                    "options": [
+                        {
+                            "value": "300",
+                            "label": "Light"
+                        },
+                        {
+                            "value": "400",
+                            "label": "Normal"
+                        },
+                        {
+                            "value": "700",
+                            "label": "Bold"
+                        }
+                    ]
+                },
+
+            {
+                "type": "header",
+                "content": "Comparison Text"
+            },
+            {
+                "type": "color",
+                "id": "compare_text_color",
+                "label": "Comparison Text Color",
+                "default": "#3f3636"
+            },
+            {
+                "type": "range",
+                "id": "compare_text_size",
+                "label": "Comparison Text Size",
+                "default": 20,
+                "min": 10,
+                "max": 50
+            },
+            {
+                "type": "select",
+                "id": "compare_text_weight",
+                "label": "Comparison Text Weight",
+                "default": "400",
+                "options": [
+                    {
+                        "value": "300",
+                        "label": "Light"
+                    },
+                    {
+                        "value": "400",
+                        "label": "Normal"
+                    },
+                    {
+                        "value": "700",
+                        "label": "Bold"
+                    }
+                ]
+            },
+            {
+                "type": "font_picker",
+                "id": "compare_text_font",
+                "label": "Comparison Text Font",
+                "default": "josefin_sans_n4"
+            },
+            {
+                "type": "color",
+                "id": "compare_background",
+                "label": "Comparison Background",
+                "default": "#f9f9ff"
+            },
+            {
+                "type": "color",
+                "id": "compare_background_active",
+                "label": "Comparison Background Active",
+                "default": "#ffe0e9"
+            },
+            {
+                "type": "color",
+                "id": "compare_text_color_active",
+                "label": "Comparison Text Color Active",
+                "default": "#e0004d"
+            },
+            {
+                "type": "range",
+                "id": "compare_text_size_mobile",
+                "label": "Comparison Text Size Mobile",
+                "default": 12,
+                "min": 10,
+                "max": 50
+            },
+            {
+                "type": "select",
+                "id": "compare_text_weight_mobile",
+                "label": "Comparison Text Weight Mobile",
+                "default": "400",
+                "options": [
+                    {
+                        "value": "300",
+                        "label": "Light"
+                    },
+                    {
+                        "value": "400",
+                        "label": "Normal"
+                    },
+                    {
+                        "value": "700",
+                        "label": "Bold"
+                    }
+                ]
+            },
+            {
+                "type": "header",
+                "content": "Comparison Border"
+            },
+            {
+                "type": "range",
+                "id": "compare_radius",
+                "label": "Comparison Border Radius",
+                "default": 20,
+                "min": 0,
+                "max": 50
+            },
+
+            {
+                "type": "header",
+                "content": "Logo settings"
+            },
+            {
+                "type": "checkbox",
+                "id": "enable_logo_border",
+                "label": "Enable Logo Border",
+                "default": true
+            },
+            {
+                "type": "range",
+                "id": "logo_border_size",
+                "label": "Logo Border Size",
+                "default": 1,
+                "min": 0,
+                "max": 10
+            },
+            {
+                "type": "color",
+                "id": "logo_border_color",
+                "label": "Logo Border Color",
+                "default": "#000000"
+            },
+            {
+                "type": "select",
+                "id": "logo_border_style",
+                "label": "Logo Border Style",
+                "default": "solid",
+                "options": [
+                    {
+                        "value": "solid",
+                        "label": "Solid"
+                    },
+                    {
+                        "value": "dashed",
+                        "label": "Dashed"
+                    },
+                    {
+                        "value": "dotted",
+                        "label": "Dotted"
+                    }
+                ]
+            },
+            {
+                "type": "header",
+                "content": "VS settings"
+            },
+            {
+                "type": "color",
+                "id": "vs_bg_color",
+                "label": "VS Background Color",
+                "default": "#6C6AB4"
+            },
+            {
+                "type": "color",
+                "id": "vs_text_color",
+                "label": "VS Text Color",
+                "default": "#ffffff"
+            },
+            {
+                "type": "header",
+                "content": "Comparison separator line"
+            },
+            {
+                "type": "color",
+                "id": "line_color",
+                "label": "Line Color",
+                "default": "#d9d9d9"
+            },
+            {
+                "type": "range",
+                "id": "line_size",
+                "label": "Line Size",
+                "default": 1,
+                "min": 0,
+                "max": 10
+            },
+            {
+                "type": "select",
+                "id": "line_style",
+                "label": "Line Style",
+                "default": "solid",
+                "options": [
+                    {
+                        "value": "solid",
+                        "label": "Solid"
+                    },
+                    {
+                        "value": "dashed",
+                        "label": "Dashed"
+                    },
+                    {
+                        "value": "dotted",
+                        "label": "Dotted"
+                    }
+                ]
+            },
+            {
+                "type": "header",
+                "content": "Bottom Text"
+            },
+            {
+                "type": "text",
+                "id": "bottom_text",
+                "label": "Bottom Text",
+                "default": "* Average U.S. hair removal expense, according to American Laser Center"
+            },
+            {
+                "type": "range",
+                "id": "bottom_text_size",
+                "label": "Bottom Text Size",
+                "default": 12,
+                "min": 10,
+                "max": 50
+            },
+            {
+                "type": "select",
+                "id": "bottom_text_weight",
+                "label": "Bottom Text Weight",
+                "default": "400",
+                "options": [
+                    {
+                        "value": "300",
+                        "label": "Light"
+                    },
+                    {
+                        "value": "400",
+                        "label": "Normal"
+                    },
+                    {
+                        "value": "700",
+                        "label": "Bold"
+                    }
+                ]
+            },
+            {
+                "type": "color",
+                "id": "bottom_text_color",
+                "label": "Bottom Text Color",
+                "default": "#afabab"
+            },
+            {
+                "type": "font_picker",
+                "id": "bottom_text_font",
+                "label": "Bottom Text Font",
+                "default": "josefin_sans_n4"
+            },
+            {
+                "type": "range",
+                "id": "bottom_text_size_mobile",
+                "label": "Bottom Text Size Mobile",
+                "default": 10,
+                "min": 10,
+                "max": 50
+            },
+            {
+                "type": "select",
+                "id": "bottom_text_weight_mobile",
+                "label": "Bottom Text Weight Mobile",
+                "default": "400",
+                "options": [
+                    {
+                        "value": "300",
+                        "label": "Light"
+                    },
+                    {
+                        "value": "400",
+                        "label": "Normal"
+                    },
+                    {
+                        "value": "700",
+                        "label": "Bold"
+                    }
+                ]
+            },
+            {
+                "type": "header",
+                "content": "Layout settings"
+            },
+            {
+                "type": "range",
+                "id": "layout_margin_top",
+                "label": "Margin Top",
+                "default": 0,
+                "min": 0,
+                "max": 99,
+                "step": 1
+            },
+            {
+                "type": "range",
+                "id": "layout_margin_bottom",
+                "label": "Margin Bottom",
+                "default": 0,
+                "min": 0,
+                "max": 99,
+                "step": 1
+            },
+            {
+                "type": "checkbox",
+                "id": "layout_width",
+                "label": "Enable max-width",
+                "default": false
+            }
+    ],
+    "blocks": [
+        {
+            "type": "compare_header",
+            "name": "Compare header",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Logo"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "heading",
+                    "default": "lorem"
+                }
+            ]
+        },
+        {
+            "type": "compare_content",
+            "name": "Compare content",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Lorem ipsum"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active_1",
+                    "label": "Toggle Active 1",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active_2",
+                    "label": "Toggle Active 2",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active_3",
+                    "label": "Toggle Active 3",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active_4",
+                    "label": "Toggle Active 4",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active_5",
+                    "label": "Toggle Active 5",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active_6",
+                    "label": "Toggle Active 6",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "type": "compare_price",
+            "name": "Compare price",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Lorem ipsum price"
+                },
+                {
+                    "type": "text",
+                    "id": "active_price_1",
+                    "label": "Price Active 1",
+                    "default": "$0"
+                },
+                {
+                    "type": "text",
+                    "id": "active_price_2",
+                    "label": "Price Active 2",
+                    "default": "$0"
+                },
+                {
+                    "type": "text",
+                    "id": "active_price_3",
+                    "label": "Price Active 3",
+                    "default": "$0"
+                },
+                {
+                    "type": "text",
+                    "id": "active_price_4",
+                    "label": "Price Active 4",
+                    "default": "$0"
+                },
+                {
+                    "type": "text",
+                    "id": "active_price_5",
+                    "label": "Price Active 5",
+                    "default": "$0"
+                },
+                {
+                    "type": "text",
+                    "id": "active_price_6",
+                    "label": "Price Active 6",
+                    "default": "$0"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "Product comparison",
+            "name": "PC Nous vs Autres #2",
+            "blocks": [
+                {
+                    "type": "compare_header",
+                    "settings": {
+                        "logo": "",
+                        "heading": "Lorem US"
+                    }
+                },
+                {
+                    "type": "compare_header",
+                    "settings": {
+                        "logo": "",
+                        "heading": "Lorem "
+                    }
+                },
+                {
+                    "type": "compare_header",
+                    "settings": {
+                        "logo": "",
+                        "heading": "Lorem "
+                    }
+                },
+                {
+                    "type": "compare_header",
+                    "settings": {
+                        "logo": "",
+                        "heading": "Lorem "
+                    }
+                },
+                {
+                    "type": "compare_header",
+                    "settings": {
+                        "logo": "",
+                        "heading": "Top"
+                    }
+                },
+                {
+                    "type": "compare_content",
+                    "settings": {
+                        "heading": "Feature 1",
+                        "active_1": true,
+                        "active_2": false,
+                        "active_3": true,
+                        "active_4": false,
+                        "active_5": true,
+                        "active_6": false
+                    }
+                },
+                {
+                    "type": "compare_content",
+                    "settings": {
+                        "heading": "Feature 2",
+                        "active_1": false,
+                        "active_2": true,
+                        "active_3": false,
+                        "active_4": true,
+                        "active_5": false,
+                        "active_6": true
+                    }
+                },
+                {
+                    "type": "compare_content",
+                    "settings": {
+                        "heading": "Feature 3",
+                        "active_1": true,
+                        "active_2": true,
+                        "active_3": false,
+                        "active_4": false,
+                        "active_5": true,
+                        "active_6": true
+                    }
+                },
+                {
+                    "type": "compare_content",
+                    "settings": {
+                        "heading": "Feature 4",
+                        "active_1": false,
+                        "active_2": false,
+                        "active_3": true,
+                        "active_4": true,
+                        "active_5": false,
+                        "active_6": false
+                    }
+                },
+                {
+                    "type": "compare_price",
+                    "settings": {
+                        "heading": "Price",
+                        "active_price_1": "$100",
+                        "active_price_2": "$200",
+                        "active_price_3": "$150",
+                        "active_price_4": "$250",
+                        "active_price_5": "$300",
+                        "active_price_6": "$350"
+                    }
+                }
+            ]
+        }
+
+    ]
+}
+{% endschema %}

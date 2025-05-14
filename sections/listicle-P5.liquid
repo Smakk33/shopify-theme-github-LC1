@@ -1,0 +1,376 @@
+<div class="product-benefits-section-P5">
+  <h2 class="benefits-title-P5">{{ section.settings.title }}</h2>
+  
+  <div class="benefits-container-P5">
+    <div class="benefits-list-P5">
+      {% for block in section.blocks %}
+        {% if block.type == 'benefit' %}
+          <div class="benefit-item-P5">
+            <img src="{{ section.settings.icon_image | img_url: 'master' }}" alt="" class="benefit-icon-P5">
+            <p class="benefit-text-P5">{{ block.settings.benefit_text }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    
+    <div class="product-image-container-P5">
+      <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/REVIEWS_CREA.webp?v=1742037854" alt="Avis client Luma Linea" class="product-image-P5">
+    </div>
+  </div>
+  
+  <div class="cta-container-P5">
+    <div class="cta-wrapper-P5">
+      <p class="cta-text-P5">
+        <span class="bold-text-P5">{{ section.settings.bold_text }}</span> {{ section.settings.cta_text }}
+      </p>
+      <img src="{{ section.settings.badge_image | img_url: 'master' }}" alt="{{ section.settings.badge_alt }}" class="cta-badge-P5">
+    </div>
+    
+    <a href="{{ section.settings.button_link }}" class="atc-button-P5">
+      {{ section.settings.button_text }}
+    </a>
+    <div class="eyeliner-guarantee-container">
+      <div class="eyeliner-guarantee">
+        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/7823496.webp?v=1740324757" alt="Guarantee icon" width="15" height="15">
+        <span>GARANTIE DE REMBOURSEMENT DE 60 JOURS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .product-benefits-section-P5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px 16px;
+    position: relative;
+  }
+  
+  .benefits-title-P5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 20px;
+  }
+  
+  .benefits-container-P5 {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .benefits-list-P5 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .benefit-item-P5 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .benefit-icon-P5 {
+    width: 40px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .benefit-text-P5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .badge-container-P5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .badge-image-P5 {
+    width: 120px;
+    height: auto;
+  }
+  
+  .cta-container-P5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-wrapper-P5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .cta-text-P5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+  }
+  
+  .cta-badge-P5 {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .bold-text-P5 {
+    font-weight: 500;
+  }
+  
+  .atc-button-P5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: {{ section.settings.button_color }};
+    width: 290px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 14px;
+    margin-top: 20px;
+  }
+  
+  .guarantee-text-P5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .eyeliner-guarantee-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .eyeliner-guarantee {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #342C40;
+  }
+  
+  /* Masquer l'image du produit sur mobile */
+  .product-image-container-P5 {
+    display: none;
+  }
+  
+  /* Styles pour la version desktop */
+  @media screen and (min-width: 768px) {
+    .benefits-title-P5 {
+      font-size: 40px;
+      line-height: 47px;
+      margin-bottom: 40px;
+    }
+    
+    .benefits-container-P5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .benefits-list-P5 {
+      width: 55%;
+    }
+    
+    .benefit-icon-P5 {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .benefit-text-P5 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    
+    
+    .product-image-container-P5 {
+      display: block;
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .product-image-P5 {
+      max-width: 100%;
+      height: auto;
+      border: 3px solid #342C40;
+    }
+    
+    .cta-container-P5 {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+
+  .cta-wrapper-P5 {
+    display: none !important;
+  }
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .badge-container-P5 {
+      display: none;
+    }
+    
+    .cta-wrapper-P5 {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .cta-text-P5 {
+      text-align: left;
+    }
+    
+    .cta-badge-P5 {
+      width: 100px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Listicle P5",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "7 raisons pour lesquelles Luma Linea révolutionne l'eyeliner après 50 ans."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_image",
+      "label": "Benefit Icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_image",
+      "label": "Badge Image"
+    },
+    {
+      "type": "text",
+      "id": "badge_alt",
+      "label": "Badge Alt Text",
+      "default": "Badge N°1 Eyeliner"
+    },
+    {
+      "type": "text",
+      "id": "bold_text",
+      "label": "Bold Text",
+      "default": "Plus de 50 000 femmes"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "ont déjà adopté Luma Linea. Pourquoi pas vous ?"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "ESSAYEZ MAINTENANT"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "#A393D3"
+    },
+    {
+      "type": "text",
+      "id": "guarantee_text",
+      "label": "Guarantee Text",
+      "default": "⭐ GARANTIE DE REMBOURSEMENT DE 60 JOURS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "benefit_text",
+          "label": "Benefit Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Listicle P5",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Glisse sans accroc – Texture gel-crème fluide pour un tracé impeccable."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Un tracé net en un geste – Pointe adaptée aux paupières matures."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Zéro bavure, zéro transfert – Tenue parfaite contre l'humidité et les frottements."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Doux pour les yeux sensibles – Formule hypoallergénique, testée ophtalmologiquement."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Des couleurs adaptées – Nuances qui subliment sans durcir les traits."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Facile à appliquer, facile à enlever – Se démaquille en douceur, sans agresser la peau."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "benefit_text": "Formulé pour protéger votre peau – Enrichi en actifs hydratants pour un confort optimal."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

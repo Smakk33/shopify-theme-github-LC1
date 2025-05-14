@@ -1,0 +1,84 @@
+<div id="bundleSelector" class="bundle-selector">
+  <div class="bundle-options">
+    <div class="bundle-options-row">
+      <div class="bundle-option" data-bottles="1">
+        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/PROD-PNG.webp?v=1740241942" alt="LUMA LINEA Eyeliner" class="bdselect-image" />
+        <div class="bundle-title">1X LUMA LINEA</div>
+        <p><span class="price">{{ 22.95 | minus: 1 | plus: 1 | round: 2 }}€</span></p>
+        <select class="variant-css" class="variant-selector" data-bundle="1">
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}" data-image="{{ variant.image | img_url: '100x100' }}">
+              {{ variant.title }}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="bundle-option" data-bottles="2">
+        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/PROD-PNG.webp?v=1740241942" alt="LUMA LINEA Eyeliner" class="bdselect-image" />
+        <div class="most-popular-badge">
+          +1 OFFERT
+        </div>
+        <div class="bundle-title">2X LUMA LINEA</div>
+        <p><span class="price">{{ 45.95 | minus: 2 | plus: 1 | round: 2 }}€</span></p>
+        <div class="variant-selectors">
+          {% for i in (1..3) %}
+            <select class="variant-selector" data-bundle="2" data-index="{{ i }}">
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}" data-image="{{ variant.image | img_url: '100x100' }}">
+                  {{ variant.title }}
+                </option>
+              {% endfor %}
+            </select>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gifts">
+    {% assign gifts = "Livraison,Guide Beauté,Pads démaquillant,1X LUMA Eyeliner" | split: "," %}
+    {% assign gift_values = "4.95,14.95,4.95,24.95" | split: "," %}
+    {% assign min_bottles = "1,1,2,2" | split: "," %}
+    {% assign gift_images = "https://cdn.shopify.com/s/files/1/0924/0848/0091/files/PACAKGING_BOX_copie.webp?v=1740155843,https://cdn.shopify.com/s/files/1/0924/0848/0091/files/Kaching-Bundles-EYELINER_1.webp?v=1740156674,https://cdn.shopify.com/s/files/1/0924/0848/0091/files/Pas_demaq.webp?v=1740156306,https://cdn.shopify.com/s/files/1/0924/0848/0091/files/LUMA-PHOTO-PRODUIT-V3-FIN-PNG.webp?v=1740085135" | split: "," %}
+
+    {% for gift in gifts %}
+      <div class="gift" data-min-bottles="{{ min_bottles[forloop.index0] }}">
+        <div class="gift-content">
+          <div class="free-badge">GRATUIT - <span class="strikethrough">€{{ gift_values[forloop.index0] }}</span></div>
+          <div class="lock-icon">
+           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve" width="100%" height="100%">
+  <path fill="CurrentColor" d="M14.6,11c0,0.8,0,1.6,0,2.4c0,0.8-0.3,1.4-0.8,2c-0.8,0.9-1.9,1.4-3.1,1.6c-1.1,0.2-2.3,0.2-3.4-0.1
+  c-0.9-0.3-1.8-0.7-2.5-1.4c-0.6-0.6-1-1.4-0.9-2.3c0-1.5,0-3,0-4.4c0-0.9,0.4-1.5,1.2-1.9c0.1,0,0.1-0.1,0.1-0.2c0-1,0.2-2,0.7-2.9
+  c0.5-0.9,1.1-1.6,2-2c1.2-0.6,2.4-0.4,3.5,0.5c0.8,0.6,1.2,1.4,1.6,2.3c0.3,0.7,0.4,1.4,0.4,2.2c0,0.1,0,0.1,0.1,0.2
+  c0.8,0.4,1.2,1,1.2,1.8C14.6,9.5,14.6,10.3,14.6,11C14.6,11,14.6,11,14.6,11z M9.3,6.7C9.3,6.7,9.3,6.7,9.3,6.7c0.7,0,1.4,0,2,0
+  c0.4,0,0.4,0,0.3-0.4c-0.1-0.8-0.3-1.6-0.8-2.2c-0.5-0.7-1.2-0.9-2-0.8c-0.6,0.1-1,0.5-1.3,1C7.1,5,6.9,5.8,6.9,6.6
+  c0,0.1,0,0.2,0.1,0.2C7.8,6.7,8.5,6.7,9.3,6.7z M9.3,13.8C9.3,13.8,9.3,13.8,9.3,13.8c0.2,0,0.4,0,0.7,0c0.1,0,0.2,0,0.2-0.2
+  c0-0.3,0-0.7,0-1c0-0.1,0-0.2,0.1-0.3c0.9-0.7,0.7-2.2-0.4-2.6c-0.7-0.3-1.5,0-1.9,0.6c-0.4,0.6-0.2,1.5,0.4,1.9
+  c0.1,0.1,0.1,0.1,0.1,0.2c0,0.4,0,0.7,0,1.1c0,0.1,0,0.2,0.1,0.1C8.8,13.8,9,13.8,9.3,13.8z"></path>
+  </svg>
+          </div>
+
+          
+          <img src="{{ gift_images[forloop.index0] }}" alt="{{ gift }}" class="gift-image" />
+          {% if forloop.index0 > 0 %}
+            <p class="bottles-required">{{ min_bottles[forloop.index0] }} Eyeliner+</p>
+          {% endif %}
+        </div>
+        <h4 class="gift-title">{{ gift }}</h4>
+      </div>
+    {% endfor %}
+  </div>
+  
+ <div class="exclusive-sale">
+   Dites adieu aux eyeliners classiques qui tirent et qui bavent. Avec Luma Linea, offrez vous un regard intense, net et sans effort.
+  </div>
+  
+<div class="add-to-cart-container">
+  <button type="button" class="add-to-cart">
+    AJOUTER AU PANIER
+  </button>
+</div>
+</div>
+
+{{ 'bundle-selector.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'bundle-selector.js' | asset_url }}" defer></script>

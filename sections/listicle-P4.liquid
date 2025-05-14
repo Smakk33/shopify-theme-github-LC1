@@ -1,0 +1,306 @@
+{% style %}
+   
+  .luma-eyeliner-section-P4 {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #342C40;
+  }
+  
+  .luma-eyeliner-title-P4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #342C40;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  
+  .luma-eyeliner-text-P4 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: #342C40 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  p.luma-eyeliner-text-P4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #342C40;
+    margin-bottom: 15px;
+  }
+  
+  .luma-eyeliner-text-P4 p strong,
+  p.luma-eyeliner-text-P4 strong {
+    font-weight: 500 !important;
+  }
+  
+  .rte .luma-eyeliner-text-P4 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: #342C40 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .luma-eyeliner-before-after-P4 {
+    margin: 15px 0;
+    overflow: hidden;
+  }
+  
+  .luma-eyeliner-product-P4 {
+    margin: 20px 0;
+    overflow: hidden;
+    border: 2px solid #342C40;
+  }
+  
+  .luma-eyeliner-button-container-P4 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .eyeliner-button-luma-P4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: {{ section.settings.button_color }};
+    width: 290px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 14px;
+  }
+  
+  .luma-guarantee-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #342C40;
+  }
+  
+  .eyeliner-guarantee-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .eyeliner-guarantee {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #342C40;
+  }
+  
+  /* Styles pour la version desktop */
+  @media screen and (min-width: 768px) {
+    .luma-eyeliner-section-P4 {
+      max-width: 1000px;
+      padding: 40px 20px;
+    }
+    
+    .luma-eyeliner-title-P4 {
+      font-size: 32px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+    
+    .luma-eyeliner-text-P4 p {
+      font-size: 20px !important;
+      line-height: 23px !important;
+      margin-bottom: 20px !important;
+      text-align: center !important;
+    }
+    
+    p.luma-eyeliner-text-P4 {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .rte .luma-eyeliner-text-P4 p {
+      font-size: 20px !important;
+      line-height: 23px !important;
+      margin-bottom: 20px !important;
+      text-align: center !important;
+    }
+    
+    .luma-eyeliner-before-after-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .luma-eyeliner-before-after-P4 {
+      width: 48%;
+      margin: 0;
+    }
+    
+    .luma-eyeliner-button-container-P4 {
+      margin-top: 30px;
+    }
+    
+    .eyeliner-guarantee {
+      font-size: 16px;
+    }
+
+    .luma-eyeliner-product-P4.mobile-only {
+      display: none;
+    }
+  }
+{% endstyle %}
+
+<div class="luma-eyeliner-section-P4">
+  <h2 class="luma-eyeliner-title-P4">{{ section.settings.title }}</h2>
+  
+  <div class="luma-eyeliner-text-P4">{{ section.settings.main_text }}</div>
+  
+  <div class="luma-eyeliner-text-P4">{{ section.settings.before_after_text }}</div>
+  
+  
+  <div class="luma-eyeliner-before-after-P4 mobile-only" style="display: block;">
+    <img src="{{ section.settings.before_after_image_1 | default: 'https://cdn.shopify.com/s/files/1/0924/0848/0091/files/RV_1.webp?v=1742037854' }}" alt="Avant / Après application eyeliner" width="100%">
+  </div>
+  
+  <div class="luma-eyeliner-before-after-P4 mobile-only" style="display: block;">
+    <img src="{{ section.settings.before_after_image_2 | default: 'https://cdn.shopify.com/s/files/1/0924/0848/0091/files/RV_2.webp?v=1742037854' }}" alt="Avant / Après application eyeliner" width="100%">
+  </div>
+  
+  
+  <div class="luma-eyeliner-before-after-container desktop-only" style="display: none;">
+    <div class="luma-eyeliner-before-after-P4">
+      <img src="{{ section.settings.before_after_image_1 | default: 'https://cdn.shopify.com/s/files/1/0924/0848/0091/files/RV_1.webp?v=1742037854' }}" alt="Avant / Après application eyeliner" width="100%">
+    </div>
+    
+    <div class="luma-eyeliner-before-after-P4">
+      <img src="{{ section.settings.before_after_image_2 | default: 'https://cdn.shopify.com/s/files/1/0924/0848/0091/files/RV_2.webp?v=1742037854' }}" alt="Avant / Après application eyeliner" width="100%">
+    </div>
+  </div>
+  
+  <div class="luma-eyeliner-product-P4 mobile-only">
+    <img src="{{ section.settings.product_review_image | default: 'https://cdn.shopify.com/s/files/1/0924/0848/0091/files/REVIEWS_CREA.webp?v=1742037854' }}" alt="Avis produit Luma Linea" width="100%">
+  </div>
+  
+  <div class="luma-eyeliner-button-container-P4">
+    <a href="{{ section.settings.button_link }}" class="eyeliner-button-luma-P4">{{ section.settings.button_text }}</a>
+  </div>
+  
+  {% if section.settings.show_guarantee %}
+    <div class="eyeliner-guarantee-container">
+      <div class="eyeliner-guarantee">
+        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/7823496.webp?v=1740324757" alt="Guarantee icon" width="15" height="15">
+        <span>GARANTIE DE REMBOURSEMENT DE 60 JOURS</span>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function handleScreenSize() {
+      const isMobile = window.innerWidth < 768;
+      const mobileElements = document.querySelectorAll('.mobile-only');
+      const desktopElements = document.querySelectorAll('.desktop-only');
+      
+      mobileElements.forEach(el => {
+        el.style.display = isMobile ? 'block' : 'none';
+      });
+      
+      desktopElements.forEach(el => {
+        el.style.display = isMobile ? 'none' : 'flex';
+      });
+    }
+    
+    
+    handleScreenSize();
+    
+    
+    window.addEventListener('resize', handleScreenSize);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Listicle P4",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Ne vous contentez plus de moins bien – Découvrez Luma Linea, le premier eyeliner conçu pour les paupières matures."
+    },
+    {
+      "type": "richtext",
+      "id": "main_text",
+      "label": "Texte principal",
+      "default": "<p>Vous avez tout essayé, mais rien ne fonctionne ? Voici pourquoi tant de femmes redécouvrent le plaisir de porter de l'eyeliner après 50 ans.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "before_after_text",
+      "label": "Texte avant/après",
+      "default": "<p>Avant / Après : La preuve qu'un eyeliner adapté <strong>fait toute la différence.</strong></p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "before_after_image_1",
+      "label": "Image avant/après 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "before_after_image_2",
+      "label": "Image avant/après 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_review_image",
+      "label": "Image avis produit"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texte du bouton",
+      "default": "ESSAYEZ MAINTENANT"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Couleur du bouton",
+      "default": "#B19CD9"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_guarantee",
+      "label": "Afficher la garantie",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Listicle P4",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,526 @@
+{% schema %}
+{
+  "name": "Carrousel Review LUMA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre principal",
+      "default": "Un regard sublimé en un seul trait."
+    },
+    {
+      "type": "text",
+      "id": "highlighted_text",
+      "label": "Texte à mettre en évidence",
+      "default": "un seul"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Couleur du texte en évidence",
+      "default": "#a98ad8"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_image",
+      "label": "Badge (à droite du titre)"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Texte d'accroche en bas",
+      "default": "Le dernier eyeliner que vous porterez - et que vous adorerez."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Témoignage",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Image du témoignage (avec avant/après)"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Nom du client",
+          "default": "Aurélie"
+        },
+        {
+          "type": "text",
+          "id": "customer_age",
+          "label": "Âge du client",
+          "default": "48 ans"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 0,
+          "max": 5,
+          "step": 0.5,
+          "label": "Note (étoiles)",
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial_text",
+          "label": "Texte du témoignage",
+          "default": "\"L'eyeliner parfait pour les paupières matures ! Il glisse en douceur, zéro tiraillement et tient toute la journée sans bavure. Enfin un maquillage qui me comprend après 50 ans !\""
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carrousel de témoignages",
+      "category": "Témoignages"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="testimonial-carousel-section-luma">
+  <div class="testimonial-header-luma">
+    <h2 class="testimonial-title-luma">
+      {% assign highlighted_text = section.settings.highlighted_text %}
+      {% assign heading_parts = section.settings.heading | split: highlighted_text %}
+      
+      {{ heading_parts[0] }}
+      <span class="highlighted-text-luma">{{ highlighted_text }}</span>
+      {{ heading_parts[1] }}
+    </h2>
+    
+    {% if section.settings.badge_image != blank %}
+      <div class="testimonial-badge-luma">
+        {{ section.settings.badge_image | img_url: '150x' | img_tag: 'Badge' }}
+      </div>
+    {% endif %}
+  </div>
+  
+  <div class="testimonial-carousel-container-luma">
+    <div class="testimonial-carousel-luma">
+      <div class="testimonial-track-luma">
+        {% for block in section.blocks %}
+          {% if block.type == 'testimonial' %}
+            <div class="testimonial-slide-luma" {{ block.shopify_attributes }}>
+              {% if block.settings.slide_image != blank %}
+                <div class="testimonial-image-luma">
+                  {{ block.settings.slide_image | img_url: 'master' | img_tag: 'Témoignage avant/après' }}
+                </div>
+              {% endif %}
+              
+              <div class="testimonial-info-luma">
+                <div class="customer-details-luma">
+                  <span class="customer-name-luma">{{ block.settings.customer_name }}, {{ block.settings.customer_age }}</span>
+                  <span class="verified-badge-luma">AVIS VÉRIFIÉ</span>
+                </div>
+                
+                <div class="testimonial-content-luma">
+                  <p>{{ block.settings.testimonial_text }}</p>
+                </div>
+                
+                <div class="testimonial-rating-luma">
+                  {% assign rating = block.settings.rating %}
+                  {% for i in (1..5) %}
+                    {% if i <= rating %}
+                      <span class="star-luma filled-luma">★</span>
+                    {% else %}
+                      <span class="star-luma">★</span>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="carousel-navigation-luma">
+      <button class="carousel-prev-luma" aria-label="Précédent">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="carousel-next-luma" aria-label="Suivant">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+   <div class="testimonial-cta-luma">
+      <p>{{ section.settings.cta_text }}</p>
+    </div>
+     
+  </div>
+</div>
+
+<style>
+  .testimonial-carousel-section-luma {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .testimonial-header-luma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .testimonial-title-luma {
+    font-size: 40px;
+    font-weight: bold;
+    color: #342c40;
+    line-height: 1.3;
+    max-width: 100%;
+  }
+  
+  .highlighted-text-luma {
+    color: #a58fcb;
+    text-decoration: underline;
+    position: relative;
+  }
+  
+  .testimonial-badge-luma {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 150px;
+  }
+  
+  .testimonial-carousel-container-luma {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-carousel-luma {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -20px;
+  }
+  
+  .testimonial-track-luma {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .testimonial-slide-luma {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  
+  .testimonial-image-luma img {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .testimonial-info-luma {
+    background-color: #f5eeff;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    margin-top: -5px;
+    border: 2px solid #342c40;
+  }
+  
+  .customer-details-luma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .customer-name-luma {
+    font-weight: 600;
+    font-size: 18px;
+    color: #342c40;
+  }
+  
+  .verified-badge-luma {
+    background-color: #342c40;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 8px;
+  }
+  
+  .testimonial-content-luma {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #342c40;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  
+  .testimonial-rating-luma {
+    text-align: right;
+    letter-spacing: -2px;
+  }
+  
+  .star-luma {
+    color: #9f87c7;
+    font-size: 24px;
+  }
+  
+  .star-luma.filled-luma {
+    color: #9f87c7;
+  }
+  
+  .carousel-navigation-luma {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  
+  .carousel-prev-luma,
+  .carousel-next-luma {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background-color: #F0E7FF;
+    color: #0A090A;
+    border: none;
+    font-size: 25px;
+    z-index: 1;
+    border: 1px solid #342C40;
+  }
+  
+  .carousel-prev-luma:hover,
+  .carousel-next-luma:hover {
+    background-color: {{ section.settings.highlight_color }};
+    color: white;
+  }
+  
+  .testimonial-cta-luma {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #342c40;
+    line-height: 1.1;
+   margin-top: 15px;
+  }
+
+
+@media screen and (min-width: 1024px) {
+
+.testimonial-carousel-section-luma {
+    margin-top: 50px;
+}
+
+
+  
+.testimonial-cta-luma {
+    text-align: center;
+    font-size: 20px !important;
+    font-weight: 500;
+    color: #342c40;
+    line-height: 1.1;
+    margin-top: 55px;
+  }
+
+.verified-badge-luma {
+    background-color: #342c40;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 8px;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.customer-name-luma {
+    font-weight: 600;
+    font-size: 15px;
+    color: #342c40;
+}
+  
+  .testimonial-badge-luma {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    max-width: 150px;
+}
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    .testimonial-title-luma {
+      font-size: 35px;
+      max-width: 70%;
+    }
+    
+    .testimonial-badge-luma {
+      max-width: 100px;
+    }
+  }
+
+
+  .testimonial-cta-luma {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #342c40;
+    line-height: 1.1;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .testimonial-track-luma {
+      display: flex;
+      flex-wrap: nowrap;
+      transform: none !important; 
+      overflow-x: visible;
+      width: 100%;
+    }
+    
+    .testimonial-slide-luma {
+      flex: 0 0 25%; 
+      width: 25%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    
+    .testimonial-carousel-luma {
+      overflow: visible;
+    }
+    
+    .carousel-navigation-luma {
+      display: none; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .testimonial-title-luma {
+        max-width: 100%;
+        font-size: 35px;
+        font-weight: bold;
+        color: #342c40;
+        line-height: 1.3;
+    }
+
+
+    .testimonial-carousel-section-luma {
+        margin-top: -25px;
+      margin-bottom: -15px;
+    }
+
+    
+    
+    .testimonial-header-luma {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .testimonial-badge-luma {
+     margin-top: 15px;
+     top: 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 415px) {
+
+      .testimonial-title-luma {
+          max-width: 100%;
+          font-size: 32px;
+          font-weight: bold;
+          color: #342c40;
+          line-height: 1.3;
+      }
+
+      .testimonial-badge-luma {
+          margin-top: 15px;
+          top: 15px;
+          width: 85px;
+      }
+
+  }
+
+  @media screen and (max-width: 382px) {
+
+      .testimonial-badge-luma {
+          margin-top: 15px;
+          top: 15px;
+          width: 85px;
+          right: -15px;
+      }
+  }
+  
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.testimonial-track-luma');
+    const slides = track.querySelectorAll('.testimonial-slide-luma');
+    const prevButton = document.querySelector('.carousel-prev-luma');
+    const nextButton = document.querySelector('.carousel-next-luma');
+    
+    let currentSlide = 0;
+    const slideWidth = 100; // 100%
+    
+    function updateTrackPosition() {
+      if (window.innerWidth < 1024) {
+        track.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+      } else {
+        track.style.transform = 'none';
+      }
+    }
+    
+    function nextSlide() {
+      if (window.innerWidth < 1024) {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateTrackPosition();
+      }
+    }
+    
+    function prevSlide() {
+      if (window.innerWidth < 1024) {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateTrackPosition();
+      }
+    }
+    
+    if (prevButton && nextButton) {
+      prevButton.addEventListener('click', prevSlide);
+      nextButton.addEventListener('click', nextSlide);
+    }
+    
+    updateTrackPosition();
+    
+    window.addEventListener('resize', updateTrackPosition);
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, false);
+    
+    track.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, false);
+    
+    function handleSwipe() {
+      if (window.innerWidth < 1024) {
+        if (touchStartX - touchEndX > 50) {
+          nextSlide();
+        } else if (touchEndX - touchStartX > 50) {
+          prevSlide();
+        }
+      }
+    }
+  });
+</script>

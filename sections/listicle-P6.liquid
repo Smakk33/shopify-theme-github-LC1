@@ -1,0 +1,195 @@
+<div class="guarantee-section-p6">
+  <h1 class="guarantee-title-p6">
+    Essayez Luma Linea sans aucun risque - Garantie 100% Satisfait ou Remboursé.
+  </h1>
+  
+  <div class="guarantee-text-p6">
+    <p>
+      Un eyeliner ne devrait pas être une source <span class="text-medium-p6">de stress</span>. Vous méritez un produit qui fonctionne <span class="text-medium-p6">vraiment pour vous</span>.
+    </p>
+    
+    <p>
+      <span class="text-medium-p6">99% des femmes</span> qui ont essayé Luma Linea l'ont adopté...
+    </p>
+    
+    <p>
+      Mais si, pour une raison ou une autre, vous faites partie des 1% qui ne l'adorent pas, <span class="text-medium-p6">aucun problème.</span>
+    </p>
+    
+    <p>
+      Renvoyez-nous l'eyeliner, même si vous ne l'avez <span class="text-medium-p6">jamais</span> utilisé.
+    </p>
+    
+    <p>
+      Essayez-le. Aimez-le. Ou soyez remboursée, <span class="text-medium-p6">sans la moindre difficulté</span>.
+    </p>
+  </div>
+
+  <a href="{{ section.settings.button_link }}" class="cta-button-p6">
+    {{ section.settings.cta_text | default: "ESSAYEZ MAINTENANT" }}
+  </a>
+
+  <div class="eyeliner-guarantee-container">
+    <div class="eyeliner-guarantee">
+      <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/7823496.webp?v=1740324757" alt="Guarantee icon" width="15" height="15">
+      <span>GARANTIE DE REMBOURSEMENT DE 60 JOURS</span>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Garantie P6",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Texte du bouton CTA",
+      "default": "ESSAYEZ MAINTENANT"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton CTA"
+    },
+    {
+      "type": "header",
+      "content": "OU sélectionner un produit"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Produit"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Garantie P6",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.guarantee-section-p6 {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.guarantee-title-p6 {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #342C40;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 15px;
+}
+
+.guarantee-text-p6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #342C40;
+  width: 100%;
+  font-weight: 400;
+}
+
+.guarantee-text-p6 p {
+  margin-bottom: 1rem;
+}
+
+.text-medium-p6 {
+  font-weight: 500;
+}
+
+.cta-button-p6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background-color: #A393D3;
+  width: 290px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 14px;
+  margin-top: 15px;
+  transition: opacity 0.2s;
+}
+
+.cta-button-p6:hover {
+  opacity: 0.9;
+}
+
+.guarantee-days-p6 {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #342C40;
+}
+
+.eyeliner-guarantee-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.eyeliner-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #342C40;
+}
+
+/* Styles pour la version desktop */
+@media screen and (min-width: 768px) {
+  .guarantee-section-p6 {
+    max-width: 800px;
+    padding: 40px 20px;
+  }
+  
+  .guarantee-title-p6 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  .guarantee-text-p6 {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 700px;
+  }
+  
+  .guarantee-text-p6 p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button-p6 {
+    width: 350px;
+    height: 65px;
+    font-size: 22px;
+    margin-top: 30px;
+    border-radius: 16px;
+  }
+  
+  .eyeliner-guarantee {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .eyeliner-guarantee img {
+    width: 18px;
+    height: 18px;
+  }
+}
+</style>
+

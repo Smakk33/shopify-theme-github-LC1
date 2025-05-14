@@ -1,0 +1,302 @@
+{% schema %}
+{
+  "name": "Listicle P2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre principal",
+      "default": "Découvrez 5 conseils d'experts pour un tracé impeccable et un regard sublimé, même après 50 ans."
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#342C40"
+    },
+    {
+      "type": "color",
+      "id": "number_title_color",
+      "label": "Couleur des numéros et sous-titres",
+      "default": "#A58FCB"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#342C40"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "conseil",
+      "name": "Conseil",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Numéro",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre du conseil",
+          "default": "Adaptez Votre Liner à la Forme et à la Couleur de Vos Yeux"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Texte du conseil",
+          "default": "<p>Ne suivez pas les règles génériques ! Chaque regard est unique. Si vous avez les paupières tombantes, un trait fin et légèrement relevé ouvrira votre regard. Si vos yeux sont noisette ou verts, les tons prune ou marron rehausseront votre couleur naturelle</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Conseils Eyeliner",
+      "blocks": [
+        {
+          "type": "conseil",
+          "settings": {
+            "number": "1",
+            "title": "Adaptez Votre Liner à la Forme et à la Couleur de Vos Yeux",
+            "text": "<p>Ne suivez pas les règles génériques ! Chaque regard est unique. Si vous avez les paupières tombantes, un trait fin et légèrement relevé ouvrira votre regard. Si vos yeux sont noisette ou verts, les tons prune ou marron rehausseront votre couleur naturelle</p>"
+          }
+        },
+        {
+          "type": "conseil",
+          "settings": {
+            "number": "2",
+            "title": "Le Noir Fonctionne, Mais Avec la Bonne Nuance",
+            "text": "<p>Le noir est intemporel, mais il peut aussi durcir les traits. Un noir trop intense crée un contraste trop fort avec la peau et accentue les ridules. Préférez des noirs aux sous-tons gris ou marron pour un effet plus <strong>doux et naturel</strong>.</p>"
+          }
+        },
+        {
+          "type": "conseil",
+          "settings": {
+            "number": "3",
+            "title": "Osez La Ligne d'Eau – C'est Possible !",
+            "text": "<p>Expérimentez avec votre liner pour agrandir et sublimer votre regard. Un crayon marron ou prune sur la muqueuse inférieure adoucit le regard et l'agrandit. Ne tracez pas un trait trop épais qui alourdit le regard, préférez une touche subtile.</p>"
+          }
+        },
+        {
+          "type": "conseil",
+          "settings": {
+            "number": "4",
+            "title": "Un Petit Wing Peut Tout Changer",
+            "text": "<p>L'eyeliner liftant est votre allié pour un effet rajeunissant. Ne suivez pas la forme naturelle de votre paupière si elle tombe. Relevez <strong>légèrement</strong> votre trait pour un regard frais et dynamique.</p>"
+          }
+        },
+        {
+          "type": "conseil",
+          "settings": {
+            "number": "5",
+            "title": "Arrêtez d'utiliser des eyeliners conçus pour les 20 ans !",
+            "text": "<p>Les eyeliners classiques sèchent trop vite, marquent les ridules et ne tiennent pas toute la journée. Vous pensez peut-être que c'est votre peau qui a changé... Mais si c'était simplement votre eyeliner qui n'était pas conçu pour vous ?</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<div class="conseils-eyeliner-P2">
+  <h2 class="main-title-P2" style="color: {{ section.settings.title_color }};">{{ section.settings.title }}</h2>
+  
+  {% for block in section.blocks %}
+    {% if block.type == 'conseil' %}
+      <div class="conseil-item-P2" {{ block.shopify_attributes }}>
+        <div class="conseil-header-P2">
+          <span class="conseil-number-P2" style="color: {{ section.settings.number_title_color }};">{{ block.settings.number }}.</span>
+          <h3 class="conseil-title-P2" style="color: {{ section.settings.number_title_color }};">{{ block.settings.title }}</h3>
+        </div>
+        <div class="conseil-text-P2" style="color: {{ section.settings.text_color }};">{{ block.settings.text }}</div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% if section.blocks.size == 5 %}
+    <p class="conclusion-text-P2" style="color: {{ section.settings.text_color }};">
+      Et c'est exactement pour cela que tant de femmes abandonnent l'eyeliner après 50 ans... Parce qu'elles pensent que <strong>le problème vient d'elles, alors qu'en réalité, c'est leur produit qui n'est plus adapté.</strong>
+    </p>
+    
+    <div class="image-container-P2 mobile-only-P2">
+      <img src="https://cdn.shopify.com/s/files/1/0850/5956/7882/files/image_13.webp?v=1741977873" alt="Démonstration eyeliner" class="demo-image-P2">
+      <div class="stats-overlay-P2">
+        <p>8 femmes sur 10 affirment que leur eyeliner marque leurs ridules et ne tient plus toute la journée.</p>
+      </div>
+    </div>
+  {% endif %}
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Poltawski+Nowy:wght@600&display=swap');
+    
+    .conseils-eyeliner-P2 {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .main-title-P2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .conseil-item-P2 {
+      margin-bottom: 25px;
+    }
+    
+    .conseil-header-P2 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    
+    .conseil-number-P2 {
+      font-family: 'Poltawski Nowy', serif;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 24px;
+      margin-right: 10px;
+    }
+    
+    .conseil-title-P2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0;
+    }
+    
+    .conseil-text-P2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 8px !important;
+    }
+    
+    .conseil-text-P2 strong {
+      font-weight: 500;
+    }
+    
+    .conclusion-text-P2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 30px;
+    }
+    
+    .image-container-P2 {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 30px auto 0;
+    }
+    
+    .demo-image-P2 {
+      width: 100%;
+      height: auto;
+      border: 2px solid #342C40;
+      display: block;
+    }
+    
+    .stats-overlay-P2 {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 282px;
+      background-color: #FEDDFF;
+      border: 2px solid #342C40;
+      border-radius: 13px;
+      padding: 10px 15px;
+    }
+    
+    .stats-overlay-P2 p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      margin: 0;
+      color: #342C40;
+    }
+
+    
+    @media screen and (min-width: 1000px) {
+      .conseils-eyeliner-P2 {
+        max-width: 900px;
+        padding: 40px 20px;
+      }
+      
+      .main-title-P2 {
+        font-size: 36px;
+        line-height: 39px;
+        margin-bottom: 50px;
+      }
+      
+      .conseil-item-P2 {
+        margin-bottom: 30px;
+      }
+      
+      .conseil-header-P2 {
+        margin-bottom: 10px;
+      }
+      
+      .conseil-number-P2 {
+        font-size: 48px;
+        line-height: 24px;
+        margin-right: 15px;
+      }
+      
+      .conseil-title-P2 {
+        font-size: 24px;
+        line-height: 24px;
+      }
+      
+      .conseil-text-P2 {
+        font-size: 17px;
+        line-height: 23px;
+        margin-left: 63px;
+      }
+      
+      .conclusion-text-P2 {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 40px;
+        margin-left: 0;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      /* Hide mobile image on desktop */
+      .mobile-only-P2 {
+        display: none;
+      }
+      
+      .stats-overlay-P2 {
+        padding: 15px 20px;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .stats-overlay-P2 {
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</div>

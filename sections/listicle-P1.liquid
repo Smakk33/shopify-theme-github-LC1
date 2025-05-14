@@ -1,0 +1,384 @@
+<style>
+  .section.article-eyeliner-section-P1 {
+    --context-section-spacing-inline: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  @font-face {
+    font-family: 'Bodoni MT';
+    src: url('{{ "BodoniMT.woff2" | asset_url }}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .luma-article-P1 {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #342C40;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .luma-header-P1 {
+    background-color: white;
+    padding: 15px 20px;
+    text-align: center; 
+  }
+
+  .luma-logo-P1 {
+    font-family: 'Bodoni MT', serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 0;
+    color: #342C40;
+  }
+
+  .luma-content-P1 {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .luma-background-P1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 85% !important;
+    background-color: #FEDDFF !important;
+    z-index: 0 !important;
+  }
+
+  .luma-title-P1, .luma-subtitle-P1, .luma-text-P1, .luma-image-P1 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .luma-title-P1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #342C40;
+    text-transform: uppercase;
+  }
+
+  .luma-subtitle-P1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #342C40;
+  }
+
+  .luma-text-P1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    color: #342C40;
+  }
+
+  .luma-text-P1 p {
+    margin-bottom: 15px;
+    line-height: 16px;
+  }
+
+  .luma-text-P1 strong {
+    font-weight: 600;
+  }
+
+  .luma-image-P1 {
+    width: 100%;
+    height: auto;
+    border: 2px solid #342C40;
+    display: block;
+    margin-top: 10px;
+  }
+
+.eyeliner-guarantee-container {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .eyeliner-guarantee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .eyeliner-guarantee img {
+    flex-shrink: 0;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .eyeliner-guarantee span {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .eyeliner-guarantee-container {
+      display: flex; 
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .eyeliner-guarantee span {
+      font-size: 12px;
+    }
+  }
+
+  /* By default, show mobile version and hide desktop version */
+  .luma-desktop-version {
+    display: none;
+  }
+  
+  .luma-mobile-version {
+    display: block;
+  }
+
+  /* Desktop version - only applies to screens 1000px and larger */
+  @media screen and (min-width: 1000px) {
+    /* Hide mobile version */
+    .luma-mobile-version {
+      display: none;
+    }
+    
+    /* Show desktop version */
+    .luma-desktop-version {
+      display: block;
+    }
+    
+    /* Desktop styles */
+    .luma-desktop-article {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #342C40;
+      overflow: hidden;
+    }
+    
+    .luma-desktop-header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .luma-desktop-logo {
+      font-family: 'Bodoni MT', serif;
+      font-size: 64px;
+      font-weight: normal;
+      margin: 0;
+      letter-spacing: 0;
+      color: #342C40;
+    }
+    
+ .luma-desktop-content {
+  position: relative;
+  display: flex;
+  padding: 40px;
+  overflow: hidden;
+  align-items: center;
+}
+    
+    .luma-desktop-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #FEDDFF;
+      z-index: 0;
+    }
+    
+ .luma-desktop-text {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  padding-right: 40px;
+  padding-left: 50px;
+
+}
+    
+    .luma-desktop-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 46px;
+      letter-spacing: 0;
+      text-align: left;
+      margin: 0 0 20px;
+      color: #342C40;
+      text-transform: uppercase;
+    }
+    
+    .luma-desktop-subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0;
+      text-align: left;
+      margin-bottom: 20px;
+      color: #342C40;
+    }
+    
+    .luma-desktop-paragraph {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 21px;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+      color: #342C40;
+    }
+    
+    .luma-desktop-paragraph p {
+      margin-bottom: 15px;
+      line-height: 21px;
+    }
+    
+    .luma-desktop-paragraph strong {
+      font-weight: 600;
+    }
+    
+    .luma-desktop-image-container {
+      position: relative;
+      z-index: 1;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .luma-desktop-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border: 3px solid #342C40;
+      display: block;
+    }
+  }
+
+ @media screen and (min-width: 1231px) {
+.luma-desktop-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border: 3px solid #342C40;
+      display: block;
+    }
+   
+}
+
+  
+</style>
+
+<!-- Mobile Version (Original) -->
+<div class="luma-mobile-version">
+  <div class="luma-article-P1">
+    <header class="luma-header-P1">
+      <h1 class="luma-logo-P1">LUMA Cosmetics</h1>
+    </header>
+    
+    <div class="luma-content-P1">
+      <div class="luma-background-P1"></div>
+      
+      <h2 class="luma-title-P1">LES EYELINERS CLASSIQUES SONT-ILS ENCORE ADAPTÉS APRÈS 50 ANS?</h2>
+      
+      <p class="luma-subtitle-P1">Vous vieillissent-ils plus qu'ils ne vous subliment? Faut-il arrêter d'en porter?</p>
+      
+      <div class="luma-text-P1">
+        <p>Des milliers de femmes continuent d'utiliser <strong>des eyeliners conçus pour les 20-30 ans,</strong> mais après 50 ans, leur regard semble fatigué, moins défini et pourquoi leur maquillage ne tient plus aussi bien.</p>
+        
+        <p>Certains experts disent qu'après 50 ans,  <strong>il vaut mieux arrêter d'en porter... Mais est-ce vraiment la solution ?</strong></p>
+      </div>
+      
+      <img 
+        class="luma-image-P1" 
+        src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/Photo_Plusieurs_femmes_Luma_V2_LISTICLE.webp?v=1741968835" 
+        alt="Comparaison de femmes avec et sans eyeliner adapté"
+        loading="lazy"
+      >
+    </div>
+  </div>
+</div>
+
+<!-- Desktop Version (New) -->
+<div class="luma-desktop-version">
+  <div class="luma-desktop-article">
+    <header class="luma-desktop-header">
+      <h1 class="luma-desktop-logo">LUMA Cosmetics</h1>
+    </header>
+    
+    <div class="luma-desktop-content">
+      <div class="luma-desktop-background"></div>
+      
+      <div class="luma-desktop-text">
+        <h2 class="luma-desktop-title">LES EYELINERS CLASSIQUES SONT-ILS ENCORE ADAPTÉS APRÈS 50 ANS?</h2>
+        
+        <p class="luma-desktop-subtitle">Vous vieillissent-ils plus qu'ils ne vous subliment? Faut-il arrêter d'en porter?</p>
+        
+        <div class="luma-desktop-paragraph">
+          <p>Des milliers de femmes continuent d'utiliser <strong>des eyeliners conçus pour les 20-30 ans,</strong> sans comprendre pourquoi leur regard semble <strong>fatigué, moins défini</strong> et pourquoi leur maquillage ne tient plus aussi bien.</p>
+          
+          <p>Certains experts disent même qu'après 50 ans, <strong>il vaut mieux arrêter d'en porter... Mais est-ce vraiment la solution?</strong></p>
+        </div>
+      </div>
+      
+      <div class="luma-desktop-image-container">
+        <img 
+          class="luma-desktop-image" 
+          src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/Photo_Plusieurs_femmes_Luma_c75a9b61-08ac-4102-b034-b4b3ec42fa51.webp?v=1741211379" 
+          alt="Comparaison de femmes avec et sans eyeliner adapté"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Listicle P1",
+  "tag": "section",
+  "class": "article-eyeliner-section-P1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Paramètres de l'article"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Article Eyeliner"
+    }
+  ]
+}
+{% endschema %}

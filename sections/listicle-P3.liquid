@@ -1,0 +1,631 @@
+<div class="eyeliner-section-P3" style="background-color: {{ section.settings.background_color }};">
+  <!-- Version Mobile (Originale) -->
+  <div class="eyeliner-mobile-container-P3">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="eyeliner-heading-P3">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    
+    {%- if section.settings.subheading != blank -%}
+      <h3 class="eyeliner-subheading-P3">{{ section.settings.subheading }}</h3>
+    {%- endif -%}
+    
+    {%- if section.settings.intro_text != blank -%}
+      <div class="eyeliner-intro-P3">{{ section.settings.intro_text }}</div>
+    {%- endif -%}
+    
+    <div class="eyeliner-problems-P3">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'problem' -%}
+            <div class="eyeliner-problem-item-P3" {{ block.shopify_attributes }}>
+              <div class="eyeliner-problem-icon-P3">
+                <img src="{{ block.settings.icon | img_url: 'master' }}" alt="{{ block.settings.title }}" loading="lazy" width="24" height="24">
+              </div>
+              <div class="eyeliner-problem-content-P3">
+                <h4 class="eyeliner-problem-title-P3">{{ block.settings.title }}</h4>
+                <p class="eyeliner-problem-text-P3">{{ block.settings.description }}</p>
+              </div>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+    
+    {%- if section.settings.conclusion_text_1 != blank -%}
+      <div class="eyeliner-conclusion-P3">{{ section.settings.conclusion_text_1 }}</div>
+    {%- endif -%}
+    
+    {%- if section.settings.conclusion_text_2 != blank -%}
+      <div class="eyeliner-conclusion-P3">{{ section.settings.conclusion_text_2 }}</div>
+    {%- endif -%}
+    
+    {%- if section.settings.final_text != blank -%}
+      <p class="eyeliner-final-text-P3">{{ section.settings.final_text }}</p>
+    {%- endif -%}
+    
+    {%- if section.settings.button_text != blank -%}
+      <div class="eyeliner-button-container-P3">
+        <a href="{{ section.settings.button_url }}" class="eyeliner-button-P3" style="background-color: {{ section.settings.button_color }};">
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+  
+  <!-- Version Desktop (Nouvelle) -->
+  <div class="eyeliner-desktop-container-P3">
+    <div class="eyeliner-desktop-header-P3">
+      <div class="eyeliner-desktop-text-column-P3">
+        <h2 class="eyeliner-desktop-heading-P3">{{ section.settings.heading }}</h2>
+        <h3 class="eyeliner-desktop-subheading-P3">{{ section.settings.subheading }}</h3>
+        <div class="eyeliner-desktop-intro-P3">{{ section.settings.intro_text }}</div>
+      </div>
+      
+      <div class="eyeliner-desktop-image-column-P3">
+        <div class="eyeliner-desktop-image-container-P3">
+          <img 
+            src="https://cdn.shopify.com/s/files/1/0850/5956/7882/files/image_13.webp?v=1741977873" 
+            alt="Démonstration eyeliner" 
+            class="eyeliner-desktop-image-P3"
+            loading="lazy"
+          >
+          <div class="eyeliner-desktop-stats-overlay-P3">
+            <p>8 femmes sur 10 affirment que leur eyeliner marque leurs ridules et ne tient plus toute la journée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="eyeliner-desktop-problems-grid-P3">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'problem' -%}
+            <div class="eyeliner-desktop-problem-item-P3" {{ block.shopify_attributes }}>
+              <div class="eyeliner-desktop-problem-icon-P3">
+                <img src="{{ block.settings.icon | img_url: 'master' }}" alt="{{ block.settings.title }}" loading="lazy" width="60" height="60">
+              </div>
+              <div class="eyeliner-desktop-problem-content-P3">
+                <h4 class="eyeliner-desktop-problem-title-P3">{{ block.settings.title }}</h4>
+                <p class="eyeliner-desktop-problem-text-P3">{{ block.settings.description }}</p>
+              </div>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+    
+    <div class="eyeliner-desktop-conclusion-container-P3">
+      {%- if section.settings.conclusion_text_1 != blank -%}
+        <div class="eyeliner-desktop-conclusion-P3">{{ section.settings.conclusion_text_1 }}</div>
+      {%- endif -%}
+      
+      {%- if section.settings.conclusion_text_2 != blank -%}
+        <div class="eyeliner-desktop-conclusion-P3">{{ section.settings.conclusion_text_2 }}</div>
+      {%- endif -%}
+      
+      {%- if section.settings.final_text != blank -%}
+        <p class="eyeliner-desktop-final-text-P3">{{ section.settings.final_text }}</p>
+      {%- endif -%}
+      
+      {%- if section.settings.button_text != blank -%}
+        <div class="eyeliner-desktop-button-container-P3">
+          <a href="{{ section.settings.button_url }}" class="eyeliner-desktop-button-P3" style="background-color: {{ section.settings.button_color }};">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+  
+  /* Styles Mobile (Originaux) */
+  .eyeliner-section-P3 {
+    padding: 30px 20px;
+    max-width: 100%;
+    background-color: {{ section.settings.background_color }};
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .eyeliner-mobile-container-P3 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .eyeliner-heading-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 24px;
+  }
+  
+  .eyeliner-subheading-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: left;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 12px;
+  }
+
+ 
+  .eyeliner-intro-P3 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: {{ section.settings.text_color }} !important;
+    margin-bottom: 16px !important;
+    margin-top: 0 !important;
+  }
+
+  .eyeliner-intro-P3 p strong {
+    font-weight: 500 !important;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+  .eyeliner-problems-P3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+  
+  .eyeliner-problem-item-P3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .eyeliner-problem-icon-P3 {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eyeliner-problem-icon-P3 img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .eyeliner-problem-title-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: {{ section.settings.text_color }};
+    margin: 0 0 4px 0;
+  }
+  
+  .eyeliner-problem-text-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: {{ section.settings.text_color }};
+    margin: 0;
+  }
+  
+
+  .eyeliner-conclusion-P3 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: {{ section.settings.text_color }} !important;
+    margin-bottom: 16px !important;
+    margin-top: 0 !important;
+  }
+  
+  .eyeliner-conclusion-P3 p strong {
+    font-weight: 500 !important;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+  .eyeliner-final-text-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 24px;
+  }
+  
+  .eyeliner-button-container-P3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .eyeliner-button-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: {{ section.settings.button_color }};
+    width: 290px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 14px;
+  }
+  
+ 
+  .rte .eyeliner-intro-P3 p,
+  .rte .eyeliner-conclusion-P3 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: {{ section.settings.text_color }} !important;
+    margin-bottom: 16px !important;
+    margin-top: 0 !important;
+  }
+  
+  /* Styles Desktop (Nouveaux) */
+  .eyeliner-desktop-container-P3 {
+    display: none;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: {{ section.settings.background_color }};
+  }
+  
+  .eyeliner-desktop-header-P3 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .eyeliner-desktop-text-column-P3 {
+    width: 50%;
+    padding: 40px;
+    background-color: {{ section.settings.background_color }};
+    padding-right: 40px;
+    padding-left: 89px;
+  }
+  
+  .eyeliner-desktop-image-column-P3 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .eyeliner-desktop-heading-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 42px;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  
+  .eyeliner-desktop-subheading-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 26px;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 29px;
+    text-align: left;
+  }
+  
+  .eyeliner-desktop-intro-P3 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: {{ section.settings.text_color }} !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+  }
+  
+  .eyeliner-desktop-intro-P3 p strong {
+    font-weight: 500 !important;
+  }
+  
+  .eyeliner-desktop-image-container-P3 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .eyeliner-desktop-image-P3 {
+    width: 100%;
+    height: auto;
+    border: 3px solid #342C40;
+  }
+  
+  .eyeliner-desktop-stats-overlay-P3 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 2px solid #342C40;
+    border-radius: 13px;
+    padding: 15px;
+  }
+  
+  .eyeliner-desktop-stats-overlay-P3 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+    color: #342C40;
+  }
+  
+  .eyeliner-desktop-problems-grid-P3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+    background-color: {{ section.settings.background_color }};
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .eyeliner-desktop-problem-item-P3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .eyeliner-desktop-problem-icon-P3 {
+    flex-shrink: 0;
+  }
+  
+  .eyeliner-desktop-problem-icon-P3 img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .eyeliner-desktop-problem-title-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: {{ section.settings.text_color }};
+    margin: 0 0 8px 0;
+  }
+  
+  .eyeliner-desktop-problem-text-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: {{ section.settings.text_color }};
+    margin: 0;
+  }
+  
+  .eyeliner-desktop-conclusion-container-P3 {
+    padding: 40px;
+    text-align: center;
+    background-color: {{ section.settings.background_color }};
+  }
+  
+  .eyeliner-desktop-conclusion-P3 p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 19px !important;
+    line-height: 23px !important;
+    color: {{ section.settings.text_color }} !important;
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .eyeliner-desktop-conclusion-P3 p strong {
+    font-weight: 500 !important;
+  }
+  
+  .eyeliner-desktop-final-text-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 30px;
+  }
+  
+  .eyeliner-desktop-button-container-P3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .eyeliner-desktop-button-P3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: {{ section.settings.button_color }};
+    width: 290px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 14px;
+  }
+  
+  /* Affichage conditionnel selon la taille d'écran */
+  @media screen and (min-width: 1000px) {
+    .eyeliner-mobile-container-P3 {
+      display: none;
+    }
+    
+    .eyeliner-desktop-container-P3 {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 999px) {
+    .eyeliner-mobile-container-P3 {
+      display: block;
+    }
+    
+    .eyeliner-desktop-container-P3 {
+      display: none;
+    }
+  }
+
+
+  @media screen and (min-width: 1600px) {
+      .eyeliner-desktop-text-column-P3 {
+
+  padding-left: 227px !important;
+   
+  }
+}
+  
+</style>
+
+{% schema %}
+{
+  "name": "Listicle P3",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#FEDDFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#342C40"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre principal",
+      "default": "Les eyeliners classiques n'ont jamais été conçus pour les paupières matures – Il est temps de changer cela."
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sous-titre",
+      "default": "Et si tout ce que vous saviez sur l'eyeliner était faux ?"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Texte d'introduction",
+      "default": "<p>On vous a toujours dit qu'après 50 ans, il devient difficile de porter de l'eyeliner. Qu'il faut s'y habituer ou arrêter complètement. Mais en réalité, le <strong>problème n'est pas vous</strong>... c'est votre eyeliner.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "conclusion_text_1",
+      "label": "Texte de conclusion 1",
+      "default": "<p>Depuis des années, les <strong>grandes marques</strong> continuent de vous vendre les mêmes formules, sans jamais les adapter aux besoins des paupières matures.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "conclusion_text_2",
+      "label": "Texte de conclusion 2",
+      "default": "<p>Mais ce n'est pas votre peau qui a changé... <strong>C'est l'industrie cosmétique qui ne vous a jamais écoutée.</strong></p>"
+    },
+    {
+      "type": "text",
+      "id": "final_text",
+      "label": "Phrase finale",
+      "default": "Il était temps qu'un eyeliner soit enfin conçu pour vous."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texte du bouton",
+      "default": "MONTREZ MOI"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "URL du bouton"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Couleur du bouton",
+      "default": "#A58FCB"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "problem",
+      "name": "Problème",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icône"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre du problème",
+          "default": "Titre du problème"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description du problème",
+          "default": "Description du problème"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Listicle Problem",
+      "blocks": [
+        {
+          "type": "problem",
+          "settings": {
+            "title": "Finition inégale & regard fatigué.",
+            "description": "Au lieu d'un tracé fluide, votre eyeliner s'accroche aux ridules et accentue les plis"
+          }
+        },
+        {
+          "type": "problem",
+          "settings": {
+            "title": "Application douloureuse & inconfort.",
+            "description": "Chaque passage tire sur la peau, rendant l'application difficile et désagréable"
+          }
+        },
+        {
+          "type": "problem",
+          "settings": {
+            "title": "Un eyeliner qui ne tient pas sa promesse.",
+            "description": "En quelques heures, il s'efface, coule ou transfère sur votre paupière"
+          }
+        },
+        {
+          "type": "problem",
+          "settings": {
+            "title": "Brûlures, irritations et chute de cils.",
+            "description": "Les formules classiques fragilisent les paupières matures et provoquent rougeurs et inconforts."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
