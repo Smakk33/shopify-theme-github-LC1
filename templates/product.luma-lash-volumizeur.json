@@ -308,6 +308,32 @@
         "spacing": "small"
       }
     },
+    "rich_text_7FgMgF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_G4LDPA": {
+          "type": "heading",
+          "settings": {
+            "text": "Des résultats visibles, appuyés par la science.",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_G4LDPA"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_rjDyEF": {
       "type": "custom-liquid",
       "settings": {
@@ -559,6 +585,7 @@
   "order": [
     "main",
     "media_with_text_gfPwBB",
+    "rich_text_7FgMgF",
     "custom_liquid_rjDyEF",
     "media_with_text_Gy4mEx",
     "media_with_text_6pkwRx",
