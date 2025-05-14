@@ -437,6 +437,68 @@
         "spacing": "small"
       }
     },
+    "multi_column_67QXyN": {
+      "type": "multi-column",
+      "blocks": {
+        "item_jyqpXi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Cartherine_luma.webp",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Fantastique est la meilleure façon de décrire cet eyeliner étonnant, il glisse, il est naturel et subtil avec un aspect doux et non dur comme tant d'autres que j'ai essayés. Et il reste en place sans bavure ni yeux de panda. J'ai dormi avec l'eyeliner et le mascara et ni l'un ni l'autre n'a bougé ou coulé. Je l'achèterai à nouveau. J'ai acheté le noir, maintenant j'ai commandé le saphir, merci prime je suis très contente.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zcxyLB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Carolle_A_luma.webp",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>J'aime beaucoup l'eyeliner ! J'ai un eyeliner que j'utilise depuis des années et que j'aime beaucoup, mais je pense que j'aime encore plus celui-ci. Il s'applique très facilement et ne s'enlève pas lorsque je pleure. J'en ai commandé deux autres afin d'en avoir une réserve pour plus tard.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wjUwGp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Mureille_Luma.webp",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>J'ai adoré mon expérience avec cet eyeliner. Je trouve qu'il glisse tellement bien que vous ne voudrez plus en utiliser d'autres. Le smudger et le sharpener sont des accessoires supplémentaires très utiles.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_jyqpXi",
+        "item_zcxyLB",
+        "item_wjUwGp"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Avis des clients vérifiés",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_NthLwH": {
       "type": "custom-liquid",
       "settings": {
@@ -598,6 +660,7 @@
     "media_with_text_gfPwBB",
     "custom_liquid_rjDyEF",
     "media_with_text_Gy4mEx",
+    "multi_column_67QXyN",
     "custom_liquid_NthLwH",
     "faq_XAEkkP",
     "related-products",
