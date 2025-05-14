@@ -561,13 +561,90 @@
         "button_text_color": ""
       }
     },
+    "media_with_text_EniqLQ": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_rHWk79": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "La luxuriance d'un liquide dans un crayon.",
+            "content": "<p>Vous avez envie de l'intensité profonde, douce et veloutée des traceurs liquides, mais vous frissonnez à l'idée de l'étalement et de l'application ? <br/><br/>Luma Linea est le meilleur des deux mondes. Texture gel-crème unique.<br/><br/>Elle glisse en douceur sur les paupières ridées et marquées. Il dépose une couleur vibrante, nette et ininterrompue, sans bavure.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_6GJz7U": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Résistant à l'eau et longue tenue.",
+            "content": "<p>Résistant à l'eau, mais pas imperméable, pour mieux honorer les yeux et les cils sensibles. Non desséchant, riche en conditionneurs.<br/><br/>Ne bouge pas, même dans la ligne de flottaison. Fait le plus grand bien à vos yeux.</p>",
+            "link_text": "AJOUTER AU PANIER",
+            "link_url": "shopify://products/luma-linea-eyeliner",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_mEhpJC": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Amoureux des paupières et des cils",
+            "content": "<p>Des revitalisants doux nourrissent les cils sensibles pour une meilleure croissance. Testé sur des femmes de plus de 50 ans. Et par des ophtalmologues. <br/><br/><strong>Pigments de qualité supérieure sans danger pour les yeux. </strong><br/><br/>Hypoallergéniques. pH équilibré. Sans cruauté.</p>",
+            "link_text": "",
+            "link_url": "shopify://products/luma-linea-eyeliner",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rHWk79",
+        "image_6GJz7U",
+        "image_mEhpJC"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "custom_liquid_NthLwH": {
       "type": "custom-liquid",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "liquid": "<div class=\"features-section\">\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/eye.webp?v=1728666001\" alt=\"Easy & precise application\" class=\"feature-icon\">\n      <p class=\"feature-text\">Sans grumeaux. Sans bavures. Sans taches.</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/tree.webp?v=1728666001\" alt=\"Water-resistant and smudge-proof\" class=\"feature-icon\">\n      <p class=\"feature-text\">Sans danger. Faites ce qu'il faut !</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/vegan.webp?v=1728666001\" alt=\"Buildable, velvety, deep colors\" class=\"feature-icon\">\n      <p class=\"feature-text\">Allongement instantané. Croissance naturelle durable.</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .features-section {\n    display: flex;\n    justify-content: space-around;\n    padding: 10px 0;\n  }\n\n  .feature-item {\n    flex: 1;\n    display: flex;\n    justify-content: center;\n  }\n\n  .feature-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  .feature-icon {\n    margin-bottom: 10px;\n    max-width: 50px;\n  }\n\n  .feature-text {\n    font-size: 12px; /* Taille de texte par défaut, que tu peux modifier */\n  }\n\n  .text-center {\n    text-align: center;\n  }\n</style>",
+        "liquid": "<div class=\"features-section\">\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/hypoallergenic_icon_eae08cf9-7601-49e9-bc46-6e5c68285898.webp?v=1738319211\" alt=\"Easy & precise application\" class=\"feature-icon\">\n      <p class=\"feature-text\">Hypoallergénique</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/pH_png.webp?v=1738319210\" alt=\"Water-resistant and smudge-proof\" class=\"feature-icon\">\n      <p class=\"feature-text\">pH équilibré</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/teste_par_les_ophtalmologist_2.webp?v=1738319455\" alt=\"Buildable, velvety, deep colors\" class=\"feature-icon\">\n      <p class=\"feature-text\">Testé par des ophtalmologistes</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .features-section {\n    display: flex;\n    justify-content: space-around;\n    padding: 5px 0;\n  }\n\n  .feature-item {\n    flex: 1;\n    display: flex;\n    justify-content: center;\n  }\n\n  .feature-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  .feature-icon {\n    margin-bottom: 10px;\n    max-width: 50px;\n  }\n\n  .feature-text {\n    font-size: 12px; /* Taille de texte par défaut, que tu peux modifier */\n  }\n\n  .text-center {\n    text-align: center;\n  }\n</style>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -579,22 +656,22 @@
         "item_3XCmbb": {
           "type": "item",
           "settings": {
-            "title": "Le mascara PrimeLash, fonctionne t-il vraiment ?",
-            "content": "<p><strong>Le mascara PrimeLash est le seul mascara au monde conçu pour soigner les cils matures. Laissez-nous vous expliquer ce que cela signifie.</strong></p><p>Lorsque vous utilisez un mascara classique, les cils sont recouverts de pigments et rigidifiés. La plupart du résultat vient du volume de pigment appliqué. Plus vous ajoutez de couches, plus vos cils s'allongent.</p><p>Cela entraîne plusieurs problèmes :</p><ul><li>Les produits chimiques des formules de mascara assèchent vos cils déjà fins et fragiles.</li><li>Les doubles ou triples couches sont difficiles à retirer, surtout si le mascara est waterproof.</li><li>Trop de pigment provoque des paquets de cils collés et ces vilaines taches noires sous les yeux – appelées \"yeux de panda\".</li></ul><p><strong>Mais le mascara PrimeLash adopte une approche différente.</strong></p><ol><li>Il peigne et sépare les cils fins et clairsemés.</li><li>L'applicateur dépose un volume optimal de pigment, suffisant pour recouvrir chaque cil de façon homogène, sans excès qui pourrait former des grumeaux.</li><li>La formule est développée pour nourrir vos cils avec des vitamines essentielles et de l'hydratation (en deux couches légères), offrant jusqu'à 20 fois plus de longueur instantanément.</li><li>Les huiles végétales contiennent des nutriments bioactifs qui réparent les dommages tout au long de la journée, tout en vous offrant des cils magnifiques.</li><li>Ce produit est équilibré en pH, hypoallergénique, végan et non testé sur les animaux.</li></ol><p><strong>En bref, le mascara PrimeLash convient aux femmes de toutes origines, qu'elles aient 50, 60, 70 ans ou plus.</strong></p>"
+            "title": "Luma Linea est-il un liquide ou un crayon ?",
+            "content": "<p>Luma Linea a une texture unique de gel-crème. Il se comporte comme un crayon. Il est facile à tenir, à appliquer et à manipuler. Il ne bouge pas. Mais il dépose les pigments comme un liquide - en lignes nettes, claires et précises. Généreux, vibrant, soyeux.</p>"
           }
         },
         "item_dziVW4": {
           "type": "item",
           "settings": {
-            "title": "Est-ce que cela va traiter mes cils fins et clairsemés ?",
-            "content": "<p>Oui, absolument.</p><p>C’est précisément pour cela que ce mascara a été conçu. Nous avons sélectionné les meilleurs ingrédients, après de longues années de développement, pour aider les femmes aux cils fins et clairsemés, et les rendre longs et épais !</p>"
+            "title": "Puis-je l'appliquer sur ma ligne d'eau ?",
+            "content": "<p>Luma Linea est hypoallergénique. Sans danger pour votre paupière et vos cils. </p><p>Avec un pH équilibré pour les yeux sensibles, il est conçu pour se loger dans votre ligne d'eau. Mais soyez un consommateur conscient et avisé. Faites passer votre santé avant tout et effectuez des tests épicutanés sur tous les produits. </p><p>Cessez d'utiliser le produit s'il provoque une irritation.</p>"
           }
         },
         "item_BhcQLg": {
           "type": "item",
           "settings": {
-            "title": "Qu'est-ce qui rend PrimeLash Mascara différent des autres sur le marché ?",
-            "content": "<p><strong>PrimeLash se distingue des autres mascaras parce qu'il est spécialement conçu pour les femmes dans la cinquantaine, la soixantaine et au-delà.</strong></p><ul><li>Il est formulé pour allonger, donner du volume, séparer et définir les cils plus courts et plus fins que les femmes peuvent avoir après 50 ans.</li><li>C’est un mascara hydratant qui met en valeur vos cils sans les assécher.</li><li>Sa couleur noir doux s'adapte à toutes les carnations et couleurs de cheveux sans paraître trop dure ou sévère. (Cette teinte est particulièrement flatteuse pour les cheveux argentés !)</li><li>Il est formulé avec des ingrédients sûrs et sains qui aident les cils à conserver leur hydratation, favorisent la pousse, et préviennent la casse.</li><li>Hypoallergénique, il convient aux yeux les plus sensibles.</li><li>Il est conçu pour être porté toute la journée.</li><li>Sa brosse allongeante et définissante empêche les paquets et les flocons.</li><li>Il résiste aux bavures, aux coulures et aux traces.</li><li>Sa formule à base d'eau sèche rapidement et évite que les cils ne collent entre eux, contrairement aux formules à base d'huile.</li><li>Il est facile à appliquer grâce à sa brosse en silicone de taille moyenne, légèrement effilée pour atteindre tous les cils.</li><li>Il n'est PAS waterproof, car les mascaras waterproof contiennent des ingrédients agressifs qui peuvent rendre les cils secs et cassants après 50 ans.</li><li>Grâce à son pH neutre, ce mascara à base d'eau est un choix plus sain pour les peaux délicates autour des yeux.</li><li>Sa formule modulable permet d'ajouter facilement plusieurs couches pour un look plus discret ou plus intense, selon vos envies.</li><li>C'est une formule beauté propre avec des ingrédients dont nous sommes fiers.</li><li>Il s’applique et s’enlève facilement, s’intégrant parfaitement à une routine maquillage \"moins c’est plus\" en 10 minutes ou moins.</li></ul><p>De haut en bas, PrimeLash est conçu pour sublimer vos yeux, votre peau et votre teint à partir de 50 ans. Nous vous invitons à l’essayer et à constater la différence par vous-même.</p>"
+            "title": "Quels sont les ingrédients contenus dans Luma Linea ?",
+            "content": "<p>Voici la liste complète des ingrédients qui entrent dans la composition de Luma Linea :<br/><br/><strong>Luma Linea Eyeliner. Noir</strong><br/><br/>Cyclopentasiloxane, Silice, Ozokérite, Polyéthylène, Cire d'abeille, Diméthicone, Trimethylsiloxysilicate, CI 77499, CI 77491, CI 77492, CI 77266, Cire synthétique, Isododécane, Mica, Triethoxycaprylylsilane, Ethylhexylglycérine, Methylparaben.<br/><br/><strong>Luma Linea Eyeliner. Bois</strong><br/><br/>Cyclopentasiloxane, silice, ozokérite, polyéthylène, cire d'abeille, diméthicone, triméthylsiloxysilicate, CI 77491, CI 77492, CI 77499, CI 77266, cire synthétique, isododécane, mica, triéthoxycaprylylsilane, éthylhexylglycérine, méthylparabène.<br/><br/><strong>Luma Linea Eyeliner. Saphir</strong><br/><br/>Cyclopentasiloxane, silice, ozokérite, polyéthylène, cire d'abeille, diméthicone, triméthylsiloxysilicate, CI 77491, CI 77492, CI 77266, CI 42090, CI 77499, mica, triéthoxycaprylylsilane, cire synthétique, isododécane, éthylhexylglycérine, méthylparabène.<br/><br/><strong>Luma Linea Eyeliner. Émeraude<br/></strong><br/>Cyclopentasiloxane, silice, ozokérite, polyéthylène, cire d'abeille, diméthicone, triméthylsiloxysilicate, CI77492, CI77499, CI77491, CI77288, Ci77266, cire synthétique, isododécane, mica, triéthoxycaprylylsilane, éthylhexylglycérine, méthylparabène.<br/><br/><strong>Luma Linea Eyeliner. Fumée</strong><br/><br/>Cyclopentasiloxane, silice, ozokérite, polyéthylène, cire d'abeille, diméthicone, triméthylsiloxysilicate, CI77492, CI77499, CI77491, CI77266, cire synthétique, isododécane, mica, triéthoxycaprylylsilane, éthylhexylglycérine, méthylparabène.<br/><br/><strong>Luma Linea Eyeliner. Dorée</strong><br/><br/>Cyclopentasiloxane, borosilicate de calcium et d'aluminium, fluorphlogopite synthétique, silice, ozokérite, polyéthylène, cire d'abeille, diméthicone, triméthylsiloxysilicate, cire synthétique, isododécane, CI 77891, oxyde d'étain, éthylhexylglycérine, méthylparabène.<br/><br/><strong>Luma Linea Eyeliner. Cuivre</strong><br/><br/>Cyclopentasiloxane, silice, ozokérite, polyéthylène, cire d'abeille, mica, CI 77491, diméthicone, triméthylsiloxysilicate, fluorphlogopite synthétique, CI 77891, cire synthétique, isododécane, éthylhexylglycérine, méthylparabène.<br/><br/><strong>Luma Linea Eyeliner. Mocha</strong><br/><br/>Cyclopentasiloxane, Silice, Ozokerite, Fluorphlogopite synthétique, Polyéthylène, Cire d'abeille, CI 77491, Mica, Diméthicone, Trimethylsiloxysilicate, Cire synthétique, Isododecane, CI 77891, Ethylhexylglycérine, Methylparaben.</p>"
           }
         },
         "item_gTyWJk": {
@@ -608,36 +685,36 @@
         "item_AbjgWY": {
           "type": "item",
           "settings": {
-            "title": "Quelles teintes sont disponibles pour le mascara PrimeLash ? Et quand les utiliser ?",
-            "content": "<p>Le mascara PrimeLash est proposé en trois teintes populaires adaptées aux femmes mûres :</p><ul><li><strong>Noir</strong> : Un noir doux et intense qui convient aux teints pâles et aux cheveux argentés. Nous avons utilisé des oxydes de fer de qualité supérieure pour une saturation parfaite, évitant un look trop prononcé ou sévère. Utilisez cette teinte pour un effet instantané et captivant. Idéale pour les soirées et les rendez-vous.</li><li><strong>Brun foncé</strong> : Un véritable brun, pas un noir déguisé. Riche… presque boisé. C'est l’allié des blondes. Les sous-tons bordeaux flattent aussi les rousses. Parfait avec des taches de rousseur ! Envoûtant et presque discret, tout en offrant longueur et volume impressionnants.</li><li><strong>Bleu marine</strong> : Pas le bleu électrique des années 80. Cette nuance est un bleu saphir profond, évoquant les yeux de Lady Diana. Elle illumine et ravive les yeux fatigués. Se marie avec les tons cuivrés, bruns, dorés et toutes les teintes de pierres précieuses. Finition ultra-naturelle. Personne ne saura deviner.</li></ul>"
+            "title": "J'ai les yeux sensibles. Puis-je porter Luma Linea ?",
+            "content": "<p>Oui, étant donné que son pH est équilibré et qu'il est hypoallergénique, il peut être utilisé en toute sécurité autour des yeux. Même si vous avez les yeux sensibles à cause d'allergies ou de médicaments.</p>"
           }
         },
         "item_EgPLdR": {
           "type": "item",
           "settings": {
-            "title": "Est-il hypoallergénique ?",
-            "content": "<p>Oui ! PrimeLash est conçu pour être hypoallergénique. Il est spécialement formulé pour les yeux les plus sensibles et la peau délicate autour du contour des yeux. Sa formule unique ne contient aucun des produits chimiques agressifs ou additifs qui provoquent souvent des réactions oculaires.</p><p>PrimeLash utilise une formule à base d'eau, contrairement aux formules à base d'huile que l'on trouve souvent dans les mascaras. Nous avons choisi cette formule à base d'eau en raison de son pH neutre, ce qui la rend plus saine pour la peau délicate autour de vos yeux.</p><p>PrimeLash est fabriqué avec des ingrédients purs et sûrs, sans tests sur les animaux. Chaque ingrédient a été soigneusement sélectionné, afin qu'il puisse être utilisé par les femmes aux yeux les plus sensibles.</p><p>L'effritement du mascara est une des principales raisons d'irritation des yeux. La formule hydratante de PrimeLash, associée à sa brosse, empêche ce problème.</p>"
+            "title": "L'embout se cassera-t-il si l'élément tombe ?",
+            "content": "<p>Manipulez votre Luma Linea avec précaution. L'embout est renforcé et protégé par le boîtier dans lequel il se trouve. Il est crémeux mais ne se casse pas aussi facilement que certains autres liners légers.</p>"
           }
         },
         "item_ibeNBr": {
           "type": "item",
           "settings": {
-            "title": "PrimeLash Mascara est-il waterproof ?",
-            "content": "<p><strong>NON, il n'est PAS waterproof, mais il est résistant à l'eau.</strong></p><p>Quelle est la différence ?</p><p>Les mascaras waterproof contiennent des ingrédients agressifs qui peuvent rendre les cils secs et cassants après 50 ans. Ils sont également très difficiles à enlever.</p><p><strong>En revanche, un mascara résistant à l'eau, comme notre PrimeLash Mascara, tient toute la journée et résiste aux journées chaudes, à la transpiration, aux larmes, à la pluie et à toute autre situation où les yeux peuvent s'humidifier.</strong></p>"
+            "title": "Combien de fois dois-je renouveler l'application de Luma linea dans la journée ?",
+            "content": "<p>93% des testeuses ont trouvé que l'application initiale de Luma Linea durait toute la journée. Mais cela varie d'une reine à l'autre, en fonction de l'intensité de la couche initiale, du degré de sébum de la paupière et de l'humidité de l'air. <br/><br/>Ce que nous pouvons dire, c'est que plus vous utiliserez cet eyeliner, plus vos cils et vos paupières se développeront.</p>"
           }
         },
         "item_YnbicP": {
           "type": "item",
           "settings": {
-            "title": "Est-il facile de retirer le mascara en fin de journée ?",
-            "content": "<p>Bien que notre mascara soit résistant à l'eau et qu'il dure toute la journée, même pendant les journées les plus chaudes et les activités sportives intensives, il est <strong>facile à retirer après une longue journée.</strong></p>"
+            "title": "Luma Linea est-il résistant à l'eau ?",
+            "content": "<p>Luma Linea est résistant à l'eau. Il n'utilise pas de cires ou de fibres lourdes pour s'accrocher à votre paupière et à vos cils. Au contraire, il repousse l'humidité. <br/><br/>L'huile et l'eau ne se mélangent pas.<br/><br/>Ce principe permet d'obtenir des pigments intenses et durables. </p>"
           }
         },
         "item_jf9YY3": {
           "type": "item",
           "settings": {
-            "title": "Quels sont les ingrédients de PrimeLash ?",
-            "content": "<p><strong>PrimeLash Mascara. </strong><em><strong>Noir</strong></em></p><ul><li>Aqua (Eau), Copolymère de styrène/acrylates, Cire de Candelilla synthétique, Cire d'abeille, Alcool polyvinylique, CI 77499, Glycérine, Acide stéarique, Monostéarate de glycéryle, Alcool cétostéarylique, Polysorbate 80, Triéthanolamine, Hydroxyéthylcellulose, Méthylparabène, Propylparabène, Parfum.</li></ul><p><strong>PrimeLash Mascara. </strong><em><strong>Bleu marine</strong></em></p><ul><li>Aqua (Eau), Copolymère de styrène/acrylates, Cire de Candelilla synthétique, Cire d'abeille, Alcool polyvinylique, Bleu ultramarine, CI 77499, Glycérine, Acide stéarique, Monostéarate de glycéryle, Alcool cétostéarylique, Polysorbate 80, Triéthanolamine, Hydroxyéthylcellulose, Méthylparabène, Propylparabène, Parfum.</li></ul><p><strong>PrimeLash Mascara. </strong><em><strong>Marron</strong></em></p><ul><li>Aqua (Eau), Cire de Carnauba, Copolymère d'acrylates, Cire synthétique, Propylène glycol, Stéarate de glycéryle, Myristate d'éthylhexyle, CI 77499, CI 77491, Carbomère, Phénoxyéthanol, Méthylparabène, Éthylparabène, Propylparabène.</li></ul>"
+            "title": "Je porte des lentilles de contact. Puis-je utiliser Luma Linea ?",
+            "content": "<p>Bien sûr. Luma Linea est un produit doux au toucher qui n'irrite pas les yeux... même si vous portez des lentilles de contact.</p>"
           }
         }
       },
@@ -726,6 +803,7 @@
     "custom_html_4KDjRn",
     "custom_liquid_Jt99Xi",
     "impact_text_6Bk8BR",
+    "media_with_text_EniqLQ",
     "custom_liquid_NthLwH",
     "faq_XAEkkP",
     "related-products",
