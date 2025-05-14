@@ -18,6 +18,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-money",
+            "custom_icon": "shopify://shop_images/Design_sans_titre-removebg-preview_copie.webp",
             "mobile_icon_width": 72,
             "icon_width": 72,
             "icon_background_type": "none",
@@ -31,6 +32,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Design_sans_titre-removebg-preview_d125402c-fa51-4941-8026-872780c59c9e.webp",
             "mobile_icon_width": 72,
             "icon_width": 72,
             "icon_background_type": "none",
@@ -44,6 +46,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Design_sans_titre-removebg-preview_c8c9ff13-7df8-44ce-bebf-05e6757ef687.webp",
             "mobile_icon_width": 72,
             "icon_width": 72,
             "icon_background_type": "none",
@@ -57,6 +60,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
+            "custom_icon": "shopify://shop_images/Design_sans_titre-removebg-preview_1cacefad-b541-4237-aba1-1430e882b29d.webp",
             "mobile_icon_width": 72,
             "icon_width": 72,
             "icon_background_type": "none",
