@@ -56,6 +56,41 @@
         "text_color": ""
       }
     },
+    "media_with_text_zf7xcb": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_wjLHk4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FONDA_LUMA_e44c156d-2812-4153-8dd0-c9ca6d36c684_2.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "NOTRE MISSION",
+            "content": "<p>LUMA est née d’un constat évident : Après 50 ans, les femmes sont de moins en moins représentées dans l’univers de la beauté.</p><p>Nous avons créé une marque différente.<br/>Pas anti-âge. Pro-âge.<br/><br/>Une marque qui célèbre les années vécues, les gestes plus doux, les besoins réels. Chaque produit LUMA est pensé pour accompagner les femmes, sans les corriger. Parce que la beauté ne s’arrête pas — elle évolue.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#342c40",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wjLHk4"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "media_with_text_UUTyEC": {
       "type": "media-with-text",
       "blocks": {
@@ -185,6 +220,7 @@
   "order": [
     "main",
     "rich_text_LijJAc",
+    "media_with_text_zf7xcb",
     "media_with_text_UUTyEC",
     "media_with_text_RAdRPe",
     "media_with_text_cpncd4"
