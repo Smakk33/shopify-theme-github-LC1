@@ -247,6 +247,67 @@
         "full_width": false,
         "spacing": "small"
       }
+    },
+    "faq_jnYNLU": {
+      "type": "faq",
+      "blocks": {
+        "item_gcaJQT": {
+          "type": "item",
+          "settings": {
+            "title": "Vos produits conviennent-ils aux paupières sensibles ?",
+            "content": "<p>Oui. Toutes nos formules sont testées dermatologiquement et ophtalmologiquement, avec des textures douces et non irritantes, idéales pour les peaux matures et les yeux sensibles.</p>"
+          }
+        },
+        "item_3Qq4Rc": {
+          "type": "item",
+          "settings": {
+            "title": "Je ne suis plus à l’aise avec le maquillage. Est-ce adapté ?",
+            "content": "<p>Absolument. Nos produits sont pensés pour être simples à appliquer, sans technique particulière, avec un résultat naturel, sans surcharge.</p>"
+          }
+        },
+        "item_mc8kfh": {
+          "type": "item",
+          "settings": {
+            "title": "Pourquoi vos produits sont-ils différents des autres marques ?",
+            "content": "<p>Chez LUMA, tout est conçu spécifiquement pour les femmes de 50 ans et plus : des textures adaptées, une application intuitive, et un fini élégant, sans compromis.</p>"
+          }
+        },
+        "item_DLqJea": {
+          "type": "item",
+          "settings": {
+            "title": "Où livrez-vous et sous combien de temps ?",
+            "content": "<p>Nous livrons partout au Canada. La livraison est gratuite, et votre commande arrive sous 7 à 9 jours ouvrés.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_gcaJQT",
+        "item_3Qq4Rc",
+        "item_mc8kfh",
+        "item_DLqJea"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Des Questions ?",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -256,6 +317,7 @@
     "featured_collection_eWheVL",
     "media_with_text_UUTyEC",
     "media_with_text_RAdRPe",
-    "media_with_text_cpncd4"
+    "media_with_text_cpncd4",
+    "faq_jnYNLU"
   ]
 }
