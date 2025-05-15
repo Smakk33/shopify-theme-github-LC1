@@ -290,10 +290,10 @@
             "enable_follow_on_shop": false
           }
         },
-        "links_LeKcbr": {
+        "links_jXLXNw": {
           "type": "links",
           "settings": {
-            "menu": "",
+            "menu": "besoin-daide",
             "show_menu_title": true
           }
         },
@@ -309,7 +309,7 @@
         "newsletter",
         "links",
         "text",
-        "links_LeKcbr",
+        "links_jXLXNw",
         "links_kTHRye"
       ],
       "settings": {
