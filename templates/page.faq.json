@@ -1,1 +1,137 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"content_width":"80ch"}},"faq_tEFbyf":{"type":"faq","blocks":{"item_ttd3By":{"type":"item","settings":{"title":"Avez-vous une politique de remboursement?","content":"<p>Nous faisons de notre mieux pour résoudre tous les problèmes que nos clients pourraient rencontrer avec leurs articles en ligne. Si vous désirez tout de même recevoir un remboursement sur votre commande, nous pouvons bien entendu accomplir le paiement, dans le cas où le recours est fait dans les 14 jours suivant la date de la commande et que le ou les produits concernés ne sont pas soldés. Pour plus d’informations, veuillez en lire d’avantage sur notre <a href=\"\/pages\/politique-de-remboursement\" target=\"_blank\" title=\"Politique de remboursement\">politique de remboursement.<\/a><\/p>"}},"item_7XWhYX":{"type":"item","settings":{"title":"J’ai reçu un article endommagé. Que puis-je faire?","content":"<p>Nous sommes navrés d’entendre cela. Si votre article est endommagé envoyez-nous simplement une vidéo de l'article en question à l'adresse email: <strong>contact@luma-cosmetics.com.<\/strong><\/p>"}},"item_9j7eTh":{"type":"item","settings":{"title":"Je veux annuler ma commande, est-ce possible ?","content":"<p>Oui, vous avez 12h à partir au moment où votre commande a été payée. Il suffit de nous envoyer un e-mail. Nous annulerons votre commande et effectuerons le remboursement intégral.<\/p>"}}},"block_order":["item_ttd3By","item_7XWhYX","item_9j7eTh"],"settings":{"full_width":true,"subheading":"","title":"FAQ","content":"","team_avatar_width":160,"support_hours":"","answer_time":"","button_text":"","button_url":"","text_position":"center","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","button_background":"","button_text_color":"","accordion_background":"","accordion_text_color":""}},"faq_wPER7R":{"type":"faq","blocks":{"item_m3MRhV":{"type":"item","settings":{"title":"Quels sont vos délais de livraison ?","content":"<p>Nos délais moyens de livraison sont de 7 à 9 jours ouvrés. <br\/><br\/>Pour éviter les frais de stockage et de main d'oeuvres élevés, nous travaillons directement auprès de nos producteurs et n'avons donc aucun intermédiaire, cela nous permet de vous proposer des <strong>tarifs vraiment avantageux<\/strong> par rapport à ce que vous pourriez avoir dans une boutique physique. <\/p>"}},"item_AR6zdV":{"type":"item","settings":{"title":"Où livrez-vous et quels sont les frais de livraison ?","content":"<p>Nous livrons <strong>partout en France et notre livraison est GRATUITE.<\/strong><\/p>"}},"item_kbMKRa":{"type":"item","settings":{"title":"Comment savoir si ma commande est livrée ou non ?","content":"<p>Vous pouvez utiliser la page \"<a href=\"\/apps\/parcelpanel\" target=\"_blank\" title=\"\/apps\/parcelpanel\">Suivre ma commande<\/a>\" sur notre site, l’état sera mis en évidence en entrant votre numéro de suivi.<\/p>"}},"item_xwbFpE":{"type":"item","settings":{"title":"Je me suis trompé d'adresse de livraison, que faire ?","content":"<p>Pas de panique, si votre commande n'a pas encore été envoyée, contactez nous immédiatement et nous serons ravis de mettre vos informations à jour. Dans le cas contraire et conformément à notre <a href=\"\/pages\/conditions-generales-de-vente\" target=\"_blank\" title=\"Conditions Générales de Vente\">Conditions Générales de ventes<\/a>, une fois qu'une commande a été envoyée depuis notre entrepôt, plus aucune modification ne peut être effectuée. <\/p>"}}},"block_order":["item_m3MRhV","item_AR6zdV","item_kbMKRa","item_xwbFpE"],"settings":{"full_width":true,"subheading":"","title":"LIVRAISON ET SUIVI","content":"","team_avatar_width":160,"support_hours":"","answer_time":"","button_text":"","button_url":"","text_position":"center","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","button_background":"","button_text_color":"","accordion_background":"","accordion_text_color":""}}},"order":["main","faq_tEFbyf","faq_wPER7R"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "faq_tEFbyf": {
+      "type": "faq",
+      "blocks": {
+        "item_ttd3By": {
+          "type": "item",
+          "settings": {
+            "title": "Avez-vous une politique de remboursement?",
+            "content": "<p>Nous faisons de notre mieux pour résoudre tous les problèmes que nos clients pourraient rencontrer avec leurs articles en ligne. Si vous désirez tout de même recevoir un remboursement sur votre commande, nous pouvons bien entendu accomplir le paiement, dans le cas où le recours est fait dans les 14 jours suivant la date de la commande et que le ou les produits concernés ne sont pas soldés. Pour plus d’informations, veuillez en lire d’avantage sur notre <a href=\"/pages/politique-de-remboursement\" target=\"_blank\" title=\"Politique de remboursement\">politique de remboursement.</a></p>"
+          }
+        },
+        "item_7XWhYX": {
+          "type": "item",
+          "settings": {
+            "title": "J’ai reçu un article endommagé. Que puis-je faire?",
+            "content": "<p>Nous sommes navrés d’entendre cela. Si votre article est endommagé envoyez-nous simplement une vidéo de l'article en question à l'adresse email: <strong>contact@luma-cosmetics.com.</strong></p>"
+          }
+        },
+        "item_9j7eTh": {
+          "type": "item",
+          "settings": {
+            "title": "Je veux annuler ma commande, est-ce possible ?",
+            "content": "<p>Oui, vous avez 12h à partir au moment où votre commande a été payée. Il suffit de nous envoyer un e-mail. Nous annulerons votre commande et effectuerons le remboursement intégral.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_ttd3By",
+        "item_7XWhYX",
+        "item_9j7eTh"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_wPER7R": {
+      "type": "faq",
+      "blocks": {
+        "item_m3MRhV": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont vos délais de livraison ?",
+            "content": "<p>Nos délais moyens de livraison sont de 7 à 9 jours ouvrés. <br/><br/>Pour éviter les frais de stockage et de main d'oeuvres élevés, nous travaillons directement auprès de nos producteurs et n'avons donc aucun intermédiaire, cela nous permet de vous proposer des <strong>tarifs vraiment avantageux</strong> par rapport à ce que vous pourriez avoir dans une boutique physique. </p>"
+          }
+        },
+        "item_AR6zdV": {
+          "type": "item",
+          "settings": {
+            "title": "Où livrez-vous et quels sont les frais de livraison ?",
+            "content": "<p>Nous livrons <strong>partout au Canada et notre livraison est GRATUITE.</strong></p>"
+          }
+        },
+        "item_kbMKRa": {
+          "type": "item",
+          "settings": {
+            "title": "Comment savoir si ma commande est livrée ou non ?",
+            "content": "<p>Vous pouvez utiliser la page \"<a href=\"/apps/parcelpanel\" target=\"_blank\" title=\"/apps/parcelpanel\">Suivre ma commande</a>\" sur notre site, l’état sera mis en évidence en entrant votre numéro de suivi.</p>"
+          }
+        },
+        "item_xwbFpE": {
+          "type": "item",
+          "settings": {
+            "title": "Je me suis trompé d'adresse de livraison, que faire ?",
+            "content": "<p>Pas de panique, si votre commande n'a pas encore été envoyée, contactez nous immédiatement et nous serons ravis de mettre vos informations à jour. Dans le cas contraire et conformément à notre <a href=\"/pages/conditions-generales-de-vente\" target=\"_blank\" title=\"Conditions Générales de Vente\">Conditions Générales de ventes</a>, une fois qu'une commande a été envoyée depuis notre entrepôt, plus aucune modification ne peut être effectuée. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_m3MRhV",
+        "item_AR6zdV",
+        "item_kbMKRa",
+        "item_xwbFpE"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "LIVRAISON ET SUIVI",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_tEFbyf",
+    "faq_wPER7R"
+  ]
+}
