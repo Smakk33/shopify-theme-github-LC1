@@ -250,6 +250,31 @@
         "input_text_color": ""
       }
     },
+    "1747281959f885473a": {
+      "type": "apps",
+      "blocks": {
+        "trustoo_io_reviews_review_widget_gx8LUb": {
+          "type": "shopify://apps/trustoo-io-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "trustoo_io_reviews_review_widget_gx8LUb"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "rich_text_68WE3r": {
       "type": "rich-text",
       "blocks": {
@@ -698,6 +723,7 @@
   },
   "order": [
     "main",
+    "1747281959f885473a",
     "rich_text_68WE3r",
     "media_with_text_gfPwBB",
     "rich_text_CnJUx3",
