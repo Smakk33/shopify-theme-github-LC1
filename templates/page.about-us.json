@@ -91,6 +91,38 @@
         "spacing": "small"
       }
     },
+    "featured_collection_eWheVL": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "luma-linea-eyeliner",
+          "luma-lash-mascara",
+          "luma-bright-eyeliner",
+          "luma-lash-serum",
+          "luma-lash-volumizeur"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Nos produits",
+        "content": "",
+        "link_url": "",
+        "link_text": "Voir plus",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "media_with_text_UUTyEC": {
       "type": "media-with-text",
       "blocks": {
@@ -221,6 +253,7 @@
     "main",
     "rich_text_LijJAc",
     "media_with_text_zf7xcb",
+    "featured_collection_eWheVL",
     "media_with_text_UUTyEC",
     "media_with_text_RAdRPe",
     "media_with_text_cpncd4"
