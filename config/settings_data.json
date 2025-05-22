@@ -50,7 +50,7 @@
     "heading_apparition": "split_fade",
     "color_swatch_style": "round",
     "color_swatch_config": "NOIR:#111111\nBOIS:#4E3639\nSAPHIR:#455166\nFUMÉE:#545859\nÉMERAUDE:#2B4735\nDORÉE:#8C7B5B\nCUIVRE:#B37A5E\nMOCHA:#664240\nBRUN FONCÉ:#583c3e\nBLEU MARINE:#4d5b73\nESTRELLA:#efccb9\nNEBULA:#74514c\nSTARDUST:#e3b9b1",
-    "show_quick_buy": false,
+    "show_quick_buy": true,
     "show_product_rating": true,
     "show_sold_out_badge": true,
     "show_discount": false,
