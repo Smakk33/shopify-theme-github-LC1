@@ -594,7 +594,7 @@
           "settings": {
             "image": "shopify://shop_images/Water_Crayon.webp",
             "media_width": 50,
-            "media_position": "end",
+            "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
@@ -784,6 +784,17 @@
     },
     "1723627144a4dac4dd": {
       "type": "apps",
+      "blocks": {
+        "trustoo_io_reviews_review_widget_Fgaebd": {
+          "type": "shopify://apps/trustoo-io-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "trustoo_io_reviews_review_widget_Fgaebd"
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -826,7 +837,7 @@
     "custom_liquid_NthLwH",
     "faq_XAEkkP",
     "related-products",
-    "1723627144a4dac4dd",
-    "custom_liquid_XzDjkh"
+    "custom_liquid_XzDjkh",
+    "1723627144a4dac4dd"
   ]
 }
