@@ -284,6 +284,7 @@
         "item_mbwPWp",
         "item_ncbmN9"
       ],
+      "disabled": true,
       "name": "Image link blocks",
       "settings": {
         "full_width": false,
