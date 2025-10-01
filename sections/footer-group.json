@@ -285,8 +285,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "À propos",
-            "content": "<p>Disponible du lundi au vendredi : 9h à 17h</p><p><strong>Mail : </strong>contact@luma-cosmetics-ca.com</p>",
+            "title": "O nas",
+            "content": "<p>Dostępni od poniedziałku do piątku: 9:00–17:00</p><p><strong>E-mail : </strong>contact@luma-cosmetics-ca.com</p>",
             "enable_follow_on_shop": false
           }
         },
