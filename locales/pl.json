@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "404": {
     "general": {
@@ -128,7 +137,8 @@
       "low_stock_with_quantity_count": {
         "one": "Została tylko {{ count }} sztuka",
         "few": "Zostały tylko {{ count }} sztuki",
-        "many": "Zostało tylko {{ count }} sztuk"
+        "many": "Zostało tylko {{ count }} sztuk",
+        "other": "Pozostało {{count}} produktów w magazynie"
       }
     },
     "store_availability": {
@@ -151,7 +161,8 @@
       "one": "{{ count }} produkt",
       "few": "{{ count }} produkty",
       "many": "{{ count }} produktów",
-      "other": "{{ count }} produktów"
+      "other": "{{ count }} produktów",
+      "zero": "0 produktów"
     },
     "faceting": {
       "filters": "Filtry",
@@ -195,7 +206,8 @@
         "zero": "{{ count }} komentarzy",
         "one": "{{ count }} komentarz",
         "few": "{{ count }} komentarze",
-        "many": "{{ count }} komentarzy"
+        "many": "{{ count }} komentarzy",
+        "other": "{{ count }} komentarzy"
       }
     }
   },
@@ -469,6 +481,140 @@
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
+    }
+  },
+  "customer_accounts": {
+    "account_information": {
+      "profile_card": {
+        "editable_email_help_text": "Ten adres e-mail jest wykorzystywany do logowania i aktualizacji zamówień."
+      },
+      "verify_new_email_modal": {
+        "email_resend_button_error_banner_message": "Nie można wysłać kodu weryfikacyjnego."
+      }
+    },
+    "payment_methods": {
+      "bank_account": {
+        "display_name": "Konto bankowe"
+      },
+      "generic_error": "Wystąpił błąd. Spróbuj ponownie.",
+      "payment_details": {
+        "replace_payment_method_button": "Zamienić"
+      }
+    },
+    "subscriptions": {
+      "contracts_update_failed": "Nie udało się zaktualizować niektórych umów abonamentowych.",
+      "contracts_updated": {
+        "many": "{{count}} umów abonamentowych zaktualizowano pomyślnie.",
+        "one": "Zaktualizowano {{count}} umów abonamentowych.",
+        "other": "{{count}} umów abonamentowych zaktualizowano pomyślnie."
+      },
+      "subscription_contracts": {
+        "contracts_update_failed": "Aktualizacja niektórych umów abonamentowych zakończyła się niepowodzeniem.",
+        "load_more": "Wczytaj więcej",
+        "more_items": {
+          "many": "oraz {{count}} dodatkowych produktów",
+          "one": "oraz {{count}} dodatkowych produktów",
+          "other": "oraz {{count}} dodatkowych produktów"
+        },
+        "product_count": {
+          "many": "{{count}} produktów",
+          "one": "{{count}} produktów",
+          "other": "{{count}} produktów"
+        },
+        "product_details": "Szczegóły produktu",
+        "subscription_contracts_updated": "Zaktualizowano {{succeeded}} z {{total}} subskrypcji.",
+        "title": "Wykorzystaj metodę płatności dla powtarzalnych zamówień."
+      },
+      "updating_contracts": {
+        "many": "Aktualizacja {{count}} umów abonamentowych...",
+        "one": "Aktualizacja {{count}} umów abonamentowych...",
+        "other": "Aktualizacja {{count}} umów abonamentowych..."
+      }
+    }
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "Bez suwaka"
+    },
+    "IconList": {
+      "icons_not_found": "Ikony nie znaleziono."
+    },
+    "IconListHoz": {
+      "icons_not_found": "Ikony nie znaleziono."
+    },
+    "IconListV2": {
+      "icons_not_found": "Ikony nie znaleziono."
+    },
+    "Newsletter": {
+      "err_msg_default": "Nie można wysłać wiadomości e-mail. Spróbuj ponownie później.",
+      "success_msg_default": "Dziękujemy za kontakt. Skontaktujemy się z Państwem jak najszybciej."
+    },
+    "Product": {
+      "product_not_found": "Produkt nie znaleziono."
+    },
+    "ProductList": {
+      "no_products_found": "Nie znaleziono produktów!",
+      "no_related_products": "Brak powiązanych produktów!",
+      "product_not_found": "Produkt nie znaleziony!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Produkt nie znaleziony."
+    },
+    "ProductVariants": {
+      "please_select": "Proszę wybrać opcję."
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>SZYBKO!</mark> KUP TERAZ"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "add_discount_or_gift_card": "Dodaj kod rabatowy lub kartę podarunkową"
+      },
+      "remote_merchandise_only": {
+        "checkout_on_shop_label": "Zakończ płatność na %{shop_name}",
+        "detail_item_label": {
+          "many": "{{count}} artykułów",
+          "one": "{{count}} artykuł",
+          "other": "{{count}} artykułów"
+        },
+        "return_to_store_label": "Powrót do sklepu",
+        "single_shop_transition": "Zostaniesz przekierowany(a) do %{shop_name}, aby dokonać zakupu.",
+        "title": "Zakończ zakup."
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "Waluta transakcji zdalnej ( {{remote_currency}} ) nie odpowiada walucie nadrzędnej ( {{parent_currency}} )."
+        }
+      },
+      "stock": {
+        "price_update": {
+          "updated_price": "Aktualna cena"
+        }
+      },
+      "thank_you": {
+        "items_fulfilled_by_store": {
+          "many": "Zamówione przez Ciebie produkty zostaną wysłane przez inne sklepy.",
+          "one": "Zamówione przez Ciebie produkty zostaną wysłane przez %{remote_shop_name}.",
+          "other": "Zamówione przez Ciebie produkty zostaną wysłane przez inne sklepy."
+        },
+        "thank_you_confirmed_orders_with_email_and_phone_description": {
+          "many": "Wkrótce otrzymasz od każdego sklepu osobne e-maile z potwierdzeniem.",
+          "one": "Wkrótce otrzyma Pan/Pani e-mail z potwierdzeniem.",
+          "other": "Wkrótce otrzymasz od każdego sklepu osobne e-maile z potwierdzeniem."
+        },
+        "thank_you_confirmed_orders_with_email_description": {
+          "many": "Wkrótce otrzymasz od każdego sklepu osobne e-maile z potwierdzeniem.",
+          "one": "Wkrótce otrzyma Pan/Pani e-mail z potwierdzeniem.",
+          "other": "Wkrótce otrzymasz od każdego sklepu osobne e-maile z potwierdzeniem."
+        },
+        "thank_you_confirmed_orders_with_phone_description": {
+          "many": "Wkrótce otrzymasz od każdego sklepu osobne wiadomości potwierdzające.",
+          "one": "Wkrótce otrzymasz wiadomość potwierdzającą.",
+          "other": "Wkrótce otrzymasz od każdego sklepu osobne wiadomości potwierdzające."
+        }
+      }
     }
   }
 }
