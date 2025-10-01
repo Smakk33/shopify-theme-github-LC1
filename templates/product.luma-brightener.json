@@ -41,6 +41,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_taxes_notice": false
           }
@@ -57,6 +58,12 @@
           "disabled": true,
           "settings": {
             "liquid": "<div style=\"border: 1px solid #ddd; padding: 10px; display: flex; align-items: center; border-radius: 10px; background-color: #fffbe6;\">\n  <div style=\"flex: 0 0 auto; display: flex; align-items: center; padding-right: 10px;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/Capture_d_ecran_2024-08-25_a_12.01.08.png?v=1724580210\" alt=\"User Image\" style=\"width: 50px; height: 50px; border-radius: 50%;\"/>\n  </div>\n  <div style=\"flex: 1; text-align: left;\">\n    <p style=\"margin: 0; font-weight: bold; font-size: 14px;\">Dr. Claire Martin - Clinique Vétérinaire de Lyon</p>\n    <p style=\"margin: 5px 0 0 0; font-size: 12px; line-height: 1.4;\">\"Ces colliers à phéromones sont une solution naturelle que je recommande souvent. Ils aident de nombreux chiens à se sentir plus calmes et détendus au quotidien.\"</p>\n  </div>\n</div>"
+          }
+        },
+        "liquid_ycV4rp": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .features-list {\n    margin-top: -5px;\n    padding: 0;\n    list-style: none;\n    max-width: 100%;\n  }\n\n  .features-list li {\n    display: flex;\n    align-items: center;\n    gap: 15px;\n    margin-bottom: 10px;\n    font-family: 'Poppins', sans-serif;\n    font-weight: 400;\n    color: #342c40;\n    font-size: 16px;\n    line-height: 1.4;\n  }\n\n  .features-list .text-wrapper {\n    flex: 1;\n    min-width: 0;\n    max-width: calc(100% - 50px); \n    padding-right: 20px;\n  }\n\n  .features-list p {\n    margin: 0;\n    text-wrap: pretty;\n    word-spacing: normal;\n    hyphens: auto;\n  }\n\n  .features-list img {\n    width: 35px;\n    height: auto;\n    flex-shrink: 0;\n    margin-top: 5px;\n  }\n\n  .features-list strong {\n    font-weight: 600;\n    color: #9f87c7;\n    white-space: nowrap;\n  }\n\n  @media (max-width: 383px) {\n    .features-list li {\n      font-size: 14px;\n      gap: 10px;\n      margin-bottom: 10px;\n    }\n\n    .features-list img {\n      width: 30px;\n    }\n\n    .features-list .text-wrapper {\n      max-width: calc(100% - 40px); \n      padding-right: 10px; \n    }\n  }\n</style>\n\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap\" rel=\"stylesheet\">\n\n<ul class=\"features-list\">\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0924/0848/0091/files/ICON_1.webp?v=1740143284\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p><strong>Bardzo łatwa</strong> i precyzyjna aplikacja – <strong>nawet</strong> na pomarszczonej skórze</p>\n    </div>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0924/0848/0091/files/ICON_4.webp?v=1740143284\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p>Kremowo-żelowa konsystencja <strong>delikatna</strong> i kremowa – <strong>zero</strong> ciągnięcia.</p>\n    </div>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0924/0848/0091/files/ICON_2.webp?v=1740143284\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p>Odporna na wodę i wilgoć, a mimo to usuwa się <strong>bez wysiłku</strong>.</p>\n    </div>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0924/0848/0091/files/ICON_3.webp?v=1740143283\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p>Formuła hipoalergiczna – <strong>dostosowana</strong> do wrażliwych oczu.<p>\n    </div>\n  </li>\n</ul>"
           }
         },
         "liquid_UmpXd9": {
@@ -210,6 +217,7 @@
         "price",
         "liquid_YiPbJG",
         "liquid_CekThB",
+        "liquid_ycV4rp",
         "liquid_UmpXd9",
         "text_qUEmtV",
         "badges",
@@ -255,7 +263,9 @@
       "blocks": {
         "trustoo_io_reviews_review_widget_gx8LUb": {
           "type": "shopify://apps/trustoo-io-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
-          "settings": {}
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
