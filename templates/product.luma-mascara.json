@@ -362,10 +362,32 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "image_PbBJPe": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Twoje piękno jest naszym priorytetem.</h3><p><strong>W LUMA COSMETICS stworzyliśmy LumaLash, aby odpowiedzieć na szczególne potrzeby dojrzałych rzęs – z formułą przetestowaną, delikatną i skuteczną.</strong></p><p>Możesz wypróbować go z pełnym spokojem – jesteśmy całkowicie pewni jego jakości i efektów.</p><p><strong>Nasza misja? Towarzyszyć Ci z troską i życzliwością, aby odsłaniać Twoje naturalne piękno na każdym etapie życia. </strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "image_9j3W3k"
+        "image_9j3W3k",
+        "image_PbBJPe"
       ],
       "settings": {
         "full_width": false,
