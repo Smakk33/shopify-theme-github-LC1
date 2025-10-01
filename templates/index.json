@@ -15,14 +15,14 @@
         "heading_GAwDB8": {
           "type": "heading",
           "settings": {
-            "text": "L'EYELINER CONÇU POUR SUBLIMER  VOS YEUX MATURES, SANS EFFORTS.",
+            "text": "EYELINER STWORZONY, ABY PODKREŚLIĆ DOJRZAŁE OCZY – BEZ WYSIŁKU.",
             "heading_tag": "h2"
           }
         },
         "richtext_WHEFpk": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Nos produits spécialement formulé pour les femmes de plus de 50 ans : facile à appliquer, longue tenue et doux pour les yeux sensibles. Profitez d’un regard défini et élégant en un seul geste</p>"
+            "content": "<p>Nasze produkty zostały specjalnie opracowane dla kobiet po 50. roku życia: łatwe w aplikacji, trwałe i delikatne dla wrażliwych oczu. Ciesz się zdefiniowanym i eleganckim spojrzeniem jednym ruchem.</p>"
           }
         },
         "button_K4kCgq": {
@@ -30,7 +30,7 @@
           "settings": {
             "style": "fill",
             "size": "sm",
-            "text": "DÉCOUVRIR MAINTENANT",
+            "text": "Odkryj teraz",
             "url": "shopify://products/luma-linea-eyeliner",
             "background": "",
             "text_color": "#ffffff"
