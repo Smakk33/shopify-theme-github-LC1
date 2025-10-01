@@ -636,15 +636,15 @@
         "item_ibeNBr": {
           "type": "item",
           "settings": {
-            "title": "Ce produit est-il sans danger ?",
-            "content": "<p>Oui. Le LumaBright Eyeliner est 100% sans danger. Testé et perfectionné avec des femmes de plus de 50 ans. Il est également exempt de phtalates, de sulfates et d'alcool.</p>"
+            "title": "Czy ten produkt jest bezpieczny?",
+            "content": "<p>Tak. <strong>LumaBright Eyeliner</strong> jest w 100% bezpieczny. Testowany i udoskonalany z udziałem kobiet po 50. roku życia. Jest również wolny od ftalanów, siarczanów i alkoholu.</p>"
           }
         },
         "item_YnbicP": {
           "type": "item",
           "settings": {
-            "title": "Combien de temps le produit tient-il sur mes paupières ?",
-            "content": "<p>D'après les retours de nos testeuses, une application de LumaBright Eyeliner peut durer jusqu'à 8 heures.</p>"
+            "title": "Jak długo produkt utrzymuje się na powiekach?",
+            "content": "<p>Według opinii naszych testerek, jedna aplikacja <strong>LumaBright Eyeliner</strong> może utrzymywać się nawet do <strong>8 godzin</strong>.</p>"
           }
         }
       },
