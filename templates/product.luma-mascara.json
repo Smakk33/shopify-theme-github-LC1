@@ -298,7 +298,7 @@
         "image_PRfgG4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PHOTO_BEST_MASCARA.webp",
+            "image": "shopify://shop_images/40.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -366,6 +366,7 @@
         "image_PbBJPe": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/RENDU_LUMA_FONDA.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
