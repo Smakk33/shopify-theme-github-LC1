@@ -92,30 +92,35 @@
         },
         "text_4ixFdK": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Finies les difficultés avec l'eyeliner. Luma Linea est conçu pour les femmes d'âge mûr.</p>"
           }
         },
         "liquid_WFbbrF": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"features-section\">\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/EYELINER_easy_application_webp.webp?v=1738147611\" alt=\"Easy & precise application\" class=\"feature-icon\">\n      <p class=\"feature-text\">Application facile et précise</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/waterproof_icon_webp.webp?v=1738147617\" alt=\"Water-resistant and smudge-proof\" class=\"feature-icon\">\n      <p class=\"feature-text\">Résistant à l'eau et aux bavures</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/Natural_ing_webpt.webp?v=1738147613\" alt=\"Buildable, velvety, deep colors\" class=\"feature-icon\">\n      <p class=\"feature-text\">Naturel, Vegan et Cruelty Free</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .features-section {\n    display: flex;\n    justify-content: space-around;\n    padding: 5px 0;\n  }\n\n  .feature-item {\n    flex: 1;\n    display: flex;\n    justify-content: center;\n  }\n\n  .feature-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  .feature-icon {\n    margin-bottom: 10px;\n    max-width: 50px;\n  }\n\n  .feature-text {\n    font-size: 10px !important; \n  }\n\n  .text-center {\n    text-align: center;\n  }\n</style>"
           }
         },
         "text_jCaPn8": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Facile à appliquer, même sur les paupières ridées. Ne tire pas sur la peau relâchée. Pas de lignes parasites.</p>"
           }
         },
         "text_gqeMCh": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Constructible et naturelle. <em>Relevez, définissez et encadrez vos yeux sages. Même si les eyeliners n'ont jamais été votre truc</em></p>"
           }
         },
         "text_LbYJ63": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>8 teintes éclatantes pour les reines matures.</p>"
           }
