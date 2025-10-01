@@ -67,6 +67,12 @@
             "liquid": "<div style=\"border: 1px solid #ddd; padding: 10px; display: flex; align-items: center; border-radius: 10px; background-color: #fffbe6;\">\n  <div style=\"flex: 0 0 auto; display: flex; align-items: center; padding-right: 10px;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/Capture_d_ecran_2024-08-25_a_12.01.08.png?v=1724580210\" alt=\"User Image\" style=\"width: 50px; height: 50px; border-radius: 50%;\"/>\n  </div>\n  <div style=\"flex: 1; text-align: left;\">\n    <p style=\"margin: 0; font-weight: bold; font-size: 14px;\">Dr. Claire Martin - Clinique Vétérinaire de Lyon</p>\n    <p style=\"margin: 5px 0 0 0; font-size: 12px; line-height: 1.4;\">\"Ces colliers à phéromones sont une solution naturelle que je recommande souvent. Ils aident de nombreux chiens à se sentir plus calmes et détendus au quotidien.\"</p>\n  </div>\n</div>"
           }
         },
+        "liquid_ennnc3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .features-list {\n    margin-top: -5px;\n    padding: 0;\n    list-style: none;\n    max-width: 100%;\n  }\n\n  .features-list li {\n    display: flex;\n    align-items: center;\n    gap: 15px;\n    margin-bottom: 10px;\n    font-family: 'Poppins', sans-serif;\n    font-weight: 400;\n    color: #342c40;\n    font-size: 16px;\n    line-height: 1.4;\n  }\n\n  .features-list .text-wrapper {\n    flex: 1;\n    min-width: 0;\n    max-width: calc(100% - 50px); \n    padding-right: 20px;\n  }\n\n  .features-list p {\n    margin: 0;\n    text-wrap: pretty;\n    word-spacing: normal;\n    hyphens: auto;\n  }\n\n  .features-list img {\n    width: 35px;\n    height: auto;\n    flex-shrink: 0;\n    margin-top: 5px;\n  }\n\n  .features-list strong {\n    font-weight: 600;\n    color: #9f87c7;\n    white-space: nowrap;\n  }\n\n  @media (max-width: 383px) {\n    .features-list li {\n      font-size: 14px;\n      gap: 10px;\n      margin-bottom: 10px;\n    }\n\n    .features-list img {\n      width: 35px;\n    }\n\n    .features-list .text-wrapper {\n      max-width: calc(100% - 40px); \n      padding-right: 10px; \n    }\n  }\n</style>\n\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap\" rel=\"stylesheet\">\n\n<ul class=\"features-list\">\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0933/3201/3386/files/58.webp?v=1751720019\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p><strong>Natychmiastowy efekt uniesienia</strong> i gęstsze rzęsy – <strong>nawet</strong> po 50. roku życia.</p>\n    </div>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0924/0848/0091/files/ICON_2.webp?v=1740143284\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p><strong>Bez rozmazywania</strong> i bez grudek – <strong>zero</strong> efektu pandy, nawet w upale.</p>\n    </div>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0933/3201/3386/files/60.webp?v=1751720018\" alt=\"\" aria-hidden=\"true\">\n    <div class=\"text-wrapper\">\n      <p><strong>Łatwe usuwanie</strong> ciepłą wodą – <strong>bez pocierania</strong>, bez utraty rzęs.</p>\n    </div>\n  </li>\n</ul>"
+          }
+        },
         "liquid_UmpXd9": {
           "type": "liquid",
           "settings": {
@@ -225,6 +231,7 @@
         "price",
         "liquid_YiPbJG",
         "liquid_CekThB",
+        "liquid_ennnc3",
         "liquid_UmpXd9",
         "badges",
         "text_4ixFdK",
