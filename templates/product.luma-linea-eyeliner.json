@@ -374,6 +374,7 @@
         "item_QYBqdE",
         "item_eAzVdp"
       ],
+      "disabled": true,
       "name": "Image link blocks",
       "settings": {
         "full_width": false,
