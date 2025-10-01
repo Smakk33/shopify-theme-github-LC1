@@ -593,15 +593,15 @@
         "item_3XCmbb": {
           "type": "item",
           "settings": {
-            "title": "Quelle quantité de produit y a-t-il dans chaque stick ?",
-            "content": "<p>Chaque stick contient 0,1 oz / 3 ml de produit.</p>"
+            "title": "Ile produktu znajduje się w każdym sztyfcie?",
+            "content": "<p>Każdy sztyft zawiera <strong>0,1 oz / 3 ml produktu</strong>.</p>"
           }
         },
         "item_dziVW4": {
           "type": "item",
           "settings": {
-            "title": "Quels sont les ingrédients présents dans le LumaBright Eyeliner ?",
-            "content": "<p>Voici la liste complète des ingrédients :</p><p><strong>Stardust :</strong><br/>Cyclopentasiloxane, Silica, Ozokerite, Polyethylene, Beeswax, Dimethicone, Trimethylsiloxysilicate, CI 77492, CI 15850, Synthetic Wax, CI 77891, CI 77491, CI 15985, CI 77499, Synthetic Fluorphlogopite, CI 77891, Isododecane, Methylparaben, Parfum.</p><p><strong>Estrella :</strong><br/>Octyldodecanol, Cyclopentasiloxane, Trimethylsiloxysilicate, Mica, Titanium Dioxide, Dimethicone, Isohexadecane, Synthetic Wax, Synthetic Fluorphlogopite, Triethoxycaprylylsilane, Polyethylene, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, CI 77891, CI 77861, Simmondsia Chinensis (Jojoba) Seed Oil, CI 77491, CI 77019, Paraffin, Microcrystalline Wax, Beeswax, Phenoxyethanol.</p><p><strong>Nebula :</strong><br/>Octyldodecanol, Cyclopentasiloxane, Trimethylsiloxysiloxane, Dimethicone, Synthetic Wax, Mica, CI 77491, Isohexadecane, Synthetic Fluorphlogopite, Triethoxycaprylylsilane, Polyethylene, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Titanium Dioxide, CI 77492, Simmondsia Chinensis (Jojoba) Seed Oil, CI 15850, Paraffin, Microcrystalline Wax, Beeswax, Phenoxyethanol.</p>"
+            "title": "Jakie składniki zawiera LumaBright Eyeliner ?",
+            "content": "<p>Oto pełna lista składników :</p><p><strong>Stardust :</strong><br/><br/>Cyclopentasiloxane, Silica, Ozokerite, Polyethylene, Beeswax, Dimethicone, Trimethylsiloxysilicate, CI 77492, CI 15850, Synthetic Wax, CI 77891, CI 77491, CI 15985, CI 77499, Synthetic Fluorphlogopite, CI 77891, Isododecane, Methylparaben, Parfum.</p><p><strong>Estrella :</strong><br/><br/>Octyldodecanol, Cyclopentasiloxane, Trimethylsiloxysilicate, Mica, Titanium Dioxide, Dimethicone, Isohexadecane, Synthetic Wax, Synthetic Fluorphlogopite, Triethoxycaprylylsilane, Polyethylene, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, CI 77891, CI 77861, Simmondsia Chinensis (Jojoba) Seed Oil, CI 77491, CI 77019, Paraffin, Microcrystalline Wax, Beeswax, Phenoxyethanol.</p><p><strong>Nebula :</strong><br/><br/>Octyldodecanol, Cyclopentasiloxane, Trimethylsiloxysiloxane, Dimethicone, Synthetic Wax, Mica, CI 77491, Isohexadecane, Synthetic Fluorphlogopite, Triethoxycaprylylsilane, Polyethylene, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Titanium Dioxide, CI 77492, Simmondsia Chinensis (Jojoba) Seed Oil, CI 15850, Paraffin, Microcrystalline Wax, Beeswax, Phenoxyethanol.</p>"
           }
         },
         "item_BhcQLg": {
@@ -661,7 +661,7 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "FOIRE AUX QUESTIONS",
+        "title": "NAJCZĘŚCIEJ ZADAWANE PYTANIA",
         "content": "",
         "team_avatar_width": 200,
         "support_hours": "",
