@@ -729,29 +729,29 @@
         "item_EgPLdR": {
           "type": "item",
           "settings": {
-            "title": "L'embout se cassera-t-il si l'élément tombe ?",
-            "content": "<p>Manipulez votre Luma Linea avec précaution. L'embout est renforcé et protégé par le boîtier dans lequel il se trouve. Il est crémeux mais ne se casse pas aussi facilement que certains autres liners légers.</p>"
+            "title": "Czy końcówka złamie się, jeśli eyeliner upadnie?",
+            "content": "<p>Obchodź się z Luma Linea ostrożnie. Końcówka jest wzmocniona i chroniona przez obudowę, w której się znajduje. Ma kremową konsystencję, ale nie łamie się tak łatwo jak niektóre inne lekkie linery. </p>"
           }
         },
         "item_ibeNBr": {
           "type": "item",
           "settings": {
-            "title": "Combien de fois dois-je renouveler l'application de Luma linea dans la journée ?",
-            "content": "<p>93% des testeuses ont trouvé que l'application initiale de Luma Linea durait toute la journée. Mais cela varie d'une reine à l'autre, en fonction de l'intensité de la couche initiale, du degré de sébum de la paupière et de l'humidité de l'air. <br/><br/>Ce que nous pouvons dire, c'est que plus vous utiliserez cet eyeliner, plus vos cils et vos paupières se développeront.</p>"
+            "title": "Ile razy w ciągu dnia powinnam poprawiać Luma Linea?",
+            "content": "<p>93% testerek stwierdziło, że początkowa aplikacja Luma Linea utrzymuje się przez cały dzień. Oczywiście zależy to od każdej kobiety – od intensywności pierwszej warstwy, poziomu sebum na powiece i wilgotności powietrza.<br/><br/>To, co możemy powiedzieć, to fakt, że im częściej używasz tego eyelinera, tym bardziej Twoje rzęsy i powieki zyskują na kondycji.</p>"
           }
         },
         "item_YnbicP": {
           "type": "item",
           "settings": {
-            "title": "Luma Linea est-il résistant à l'eau ?",
-            "content": "<p>Luma Linea est résistant à l'eau. Il n'utilise pas de cires ou de fibres lourdes pour s'accrocher à votre paupière et à vos cils. Au contraire, il repousse l'humidité. <br/><br/>L'huile et l'eau ne se mélangent pas.<br/><br/>Ce principe permet d'obtenir des pigments intenses et durables. </p>"
+            "title": "Czy Luma Linea jest wodoodporny?",
+            "content": "<p>Luma Linea jest odporny na wodę. Nie wykorzystuje ciężkich wosków ani włókien, aby przylegać do powieki czy rzęs. Wręcz przeciwnie – odpycha wilgoć.<br/><br/>Oleje i woda się nie mieszają.<br/><br/>Ta zasada pozwala uzyskać intensywne i trwałe pigmenty.</p>"
           }
         },
         "item_jf9YY3": {
           "type": "item",
           "settings": {
-            "title": "Je porte des lentilles de contact. Puis-je utiliser Luma Linea ?",
-            "content": "<p>Bien sûr. Luma Linea est un produit doux au toucher qui n'irrite pas les yeux... même si vous portez des lentilles de contact.</p>"
+            "title": "Noszę soczewki kontaktowe. Czy mogę używać Luma Linea?",
+            "content": "<p>Oczywiście. Luma Linea to delikatny produkt, który nie podrażnia oczu… nawet jeśli nosisz soczewki kontaktowe.</p>"
           }
         }
       },
