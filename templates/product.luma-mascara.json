@@ -440,15 +440,15 @@
         "item_YnbicP": {
           "type": "item",
           "settings": {
-            "title": "Est-il facile de retirer le mascara en fin de journée ?",
-            "content": "<p>Bien que notre mascara soit résistant à l'eau et qu'il dure toute la journée, même pendant les journées les plus chaudes et les activités sportives intensives, il est <strong>facile à retirer après une longue journée.</strong></p>"
+            "title": "Czy łatwo usunąć tusz pod koniec dnia?",
+            "content": "<p>Tak. Choć nasz tusz jest odporny na wodę i utrzymuje się przez cały dzień – nawet w najgorętsze dni i podczas intensywnej aktywności fizycznej – łatwo go usunąć po długim dniu.</p>"
           }
         },
         "item_jf9YY3": {
           "type": "item",
           "settings": {
-            "title": "Quels sont les ingrédients de LumaLash ?",
-            "content": "<p><strong>LumaLash Mascara. </strong><em><strong>Noir</strong></em></p><ul><li>Aqua (Eau), Copolymère de styrène/acrylates, Cire de Candelilla synthétique, Cire d'abeille, Alcool polyvinylique, CI 77499, Glycérine, Acide stéarique, Monostéarate de glycéryle, Alcool cétostéarylique, Polysorbate 80, Triéthanolamine, Hydroxyéthylcellulose, Méthylparabène, Propylparabène, Parfum.</li></ul><p><strong>LumaLash Mascara. </strong><em><strong>Bleu marine</strong></em></p><ul><li>Aqua (Eau), Copolymère de styrène/acrylates, Cire de Candelilla synthétique, Cire d'abeille, Alcool polyvinylique, Bleu ultramarine, CI 77499, Glycérine, Acide stéarique, Monostéarate de glycéryle, Alcool cétostéarylique, Polysorbate 80, Triéthanolamine, Hydroxyéthylcellulose, Méthylparabène, Propylparabène, Parfum.</li></ul><p><strong>LumaLash Mascara. </strong><em><strong>Brun foncé</strong></em></p><ul><li>Aqua (Eau), Cire de Carnauba, Copolymère d'acrylates, Cire synthétique, Propylène glycol, Stéarate de glycéryle, Myristate d'éthylhexyle, CI 77499, CI 77491, Carbomère, Phénoxyéthanol, Méthylparabène, Éthylparabène, Propylparabène.</li></ul>"
+            "title": "Jakie składniki zawiera LumaLash ?",
+            "content": "<p><strong>LumaLash Mascara – </strong><em><strong>Czarny</strong></em></p><ul><li>Aqua (Woda), Styrene/Acrylates Copolymer, Synthetic Candelilla Wax, Cera Alba (Cire d’abeille), Polyvinyl Alcohol, CI 77499, Glycerin, Stearic Acid, Glyceryl Monostearate, Cetearyl Alcohol, Polysorbate 80, Triethanolamine, Hydroxyethylcellulose, Methylparaben, Propylparaben, Parfum.</li></ul><p><strong>LumaLash Mascara – </strong><em><strong>Granatowy</strong></em></p><ul><li>Aqua (Woda), Styrene/Acrylates Copolymer, Synthetic Candelilla Wax, Cera Alba, Polyvinyl Alcohol, Ultramarines (Bleu ultramaryna), CI 77499, Glycerin, Stearic Acid, Glyceryl Monostearate, Cetearyl Alcohol, Polysorbate 80, Triethanolamine, Hydroxyethylcellulose, Methylparaben, Propylparaben, Parfum.</li></ul><p><strong>LumaLash Mascara – </strong><em><strong>Ciemny brąz</strong></em></p><ul><li>Aqua (Woda), Copernicia Cerifera (Carnauba) Wax, Acrylates Copolymer, Synthetic Wax, Propylene Glycol, Glyceryl Stearate, Ethylhexyl Myristate, CI 77499, CI 77491, Carbomer, Phenoxyethanol, Methylparaben, Ethylparaben, Propylparaben.</li></ul>"
           }
         }
       },
