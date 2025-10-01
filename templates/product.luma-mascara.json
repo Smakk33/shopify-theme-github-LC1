@@ -487,6 +487,7 @@
     },
     "custom_liquid_tdX3FB": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
