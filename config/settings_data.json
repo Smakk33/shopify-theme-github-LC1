@@ -49,7 +49,7 @@
     "show_page_transition": false,
     "heading_apparition": "split_fade",
     "color_swatch_style": "round",
-    "color_swatch_config": "NOIR:#111111\nBOIS:#4E3639\nSAPHIR:#455166\nFUMÉE:#545859\nÉMERAUDE:#2B4735\nDORÉE:#8C7B5B\nCUIVRE:#B37A5E\nMOCHA:#664240\nBRUN FONCÉ:#583c3e\nBLEU MARINE:#4d5b73\nESTRELLA:#efccb9\nNEBULA:#74514c\nSTARDUST:#e3b9b1\nCzarny:#111111\nBraz drewna:#4E3639\nSzafir:#455166\nDymny:#545859\nSzmaragd:#2B4735\nZtoty:#8C7B5B\nMiedziany:#B37A5E\nMocha:#664240\nCIEMNY BRĄZ:#583c3e\nGRANATOWY:#4d5b73",
+    "color_swatch_config": "NOIR:#111111\nBOIS:#4E3639\nSAPHIR:#455166\nFUMÉE:#545859\nÉMERAUDE:#2B4735\nDORÉE:#8C7B5B\nCUIVRE:#B37A5E\nMOCHA:#664240\nBRUN FONCÉ:#583c3e\nBLEU MARINE:#4d5b73\nESTRELLA:#efccb9\nNEBULA:#74514c\nSTARDUST:#e3b9b1\nCzarny:#111111\nBraz drewna:#4E3639\nSzafir:#455166\nDymny:#545859\nSzmaragd:#2B4735\nZtoty:#8C7B5B\nMiedziany:#B37A5E\nMocha:#664240\nCIEMNY BRĄZ:#583c3e\nGRANATOWY:#4d5b73\nDRZEWO:#4E3639\nSzafir:#455166\nSZMARGADT:#2B4735\nZŁOCONY:#8C7B5B",
     "show_quick_buy": true,
     "show_product_rating": true,
     "show_sold_out_badge": true,
