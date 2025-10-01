@@ -69,7 +69,7 @@
         "liquid_UmpXd9": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #f1e9ff;\">\n    <p style=\"font-weight: bold; font-size: 15px;\">“J'adore ce produit. S'applique comme du beurre. Doux. Impeccable. Reste en place toute la journée !”</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Julie, 62 ans</span>\n  </div>\n</div>"
+            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #f1e9ff;\">\n    <p style=\"font-weight: bold; font-size: 15px;\">“Uwielbiam ten produkt. Nakłada się jak masło. Delikatny. Idealny. Utrzymuje się przez cały dzień!”</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Grażyna, 62 lata</span>\n  </div>\n</div>"
           }
         },
         "badges": {
