@@ -23,6 +23,14 @@
         },
         "message_A6RKxF": {
           "type": "message",
+          "disabled": true,
+          "settings": {
+            "text": "🖤 BLACK MONTH : Do -60% zniżki",
+            "url": ""
+          }
+        },
+        "message_jgLeA3": {
+          "type": "message",
           "settings": {
             "text": "🖤 BLACK MONTH : Do -60% zniżki",
             "url": ""
@@ -40,6 +48,7 @@
       "block_order": [
         "message_8mbftt",
         "message_A6RKxF",
+        "message_jgLeA3",
         "message_jKtUY4"
       ],
       "settings": {
