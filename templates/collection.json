@@ -82,7 +82,7 @@
         "collection_header_y6XkxA": {
           "type": "collection_header",
           "settings": {
-            "collection_title": "Makeup",
+            "collection_title": "MAKEUP",
             "collection_id": "makeup"
           }
         },
@@ -131,55 +131,11 @@
             "button_text": "Zobacz więcej"
           }
         },
-        "collection_header_W7ia89": {
-          "type": "collection_header",
-          "settings": {
-            "collection_title": "Skincare",
-            "collection_id": "skincare"
-          }
-        },
-        "collection_header_VQPnEE": {
-          "type": "collection_header",
-          "settings": {
-            "collection_title": "Haircare",
-            "collection_id": "haircare"
-          }
-        },
         "collection_header_qr9QyD": {
           "type": "collection_header",
           "settings": {
-            "collection_title": "Bundle & Save",
+            "collection_title": "EDYCJA LIMITOWANA",
             "collection_id": "bundle-save"
-          }
-        },
-        "product_9rxfyB": {
-          "type": "product",
-          "settings": {
-            "collection_id": "makeup",
-            "product": "",
-            "custom_title": "PrimeLash Mascara",
-            "custom_description": "9 000+, 5* ratings. Pro-age best-seller separates & elongates short lashes. Healing formula for 3x lash thickening. All-natural. Lush lashes like never before.",
-            "custom_price": "€29,00",
-            "rating": 4.8,
-            "reviews_count": "11,600",
-            "show_badge": false,
-            "badge_text": "NEW",
-            "button_text": "View details"
-          }
-        },
-        "product_MHfcpL": {
-          "type": "product",
-          "settings": {
-            "collection_id": "makeup",
-            "product": "",
-            "custom_title": "PrimeEyes Glide Eyeliner",
-            "custom_description": "Water-resistant and smudge-proof eyeliner. Lift, define, frame your wise eyes with velvety, deep color.",
-            "custom_price": "€29,00",
-            "rating": 4.9,
-            "reviews_count": "2,900",
-            "show_badge": false,
-            "badge_text": "NEW",
-            "button_text": "View details"
           }
         }
       },
@@ -188,11 +144,7 @@
         "product_hiKm9b",
         "product_hXz3fr",
         "product_znn4Yz",
-        "collection_header_W7ia89",
-        "collection_header_VQPnEE",
-        "collection_header_qr9QyD",
-        "product_9rxfyB",
-        "product_MHfcpL"
+        "collection_header_qr9QyD"
       ],
       "name": "LUMA Collection Products",
       "settings": {}
