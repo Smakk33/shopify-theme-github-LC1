@@ -1,0 +1,427 @@
+<div class="pro-age-section">
+  <div class="pro-age-container {% if section.settings.reverse_layout %}reverse{% endif %}">
+    
+    <div class="pro-age-image-container">
+      {% if section.settings.desktop_image != blank %}
+        <img 
+          src="{{ section.settings.desktop_image | img_url: 'master' }}" 
+          alt="{{ section.settings.heading }}"
+          class="pro-age-desktop-image"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="pro-age-image-placeholder">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {% endif %}
+    </div>
+    
+  
+    <div class="pro-age-content">
+      <h2 class="pro-age-heading">{{ section.settings.heading }}</h2>
+      <p class="pro-age-subtitle">{{ section.settings.subtitle }}</p>
+      
+      <div class="pro-age-features">
+        <div class="pro-age-feature">
+          {% if section.settings.icon_1 != blank %}
+            <img 
+              src="{{ section.settings.icon_1 | img_url: '100x' }}" 
+              alt="{{ section.settings.icon_1_text }}"
+              class="pro-age-icon"
+              loading="lazy"
+              width="60"
+              height="60"
+            >
+          {% endif %}
+          <p class="pro-age-feature-text">{{ section.settings.icon_1_text }}</p>
+        </div>
+        
+        <div class="pro-age-feature">
+          {% if section.settings.icon_2 != blank %}
+            <img 
+              src="{{ section.settings.icon_2 | img_url: '100x' }}" 
+              alt="{{ section.settings.icon_2_text }}"
+              class="pro-age-icon"
+              loading="lazy"
+              width="60"
+              height="60"
+            >
+          {% endif %}
+          <p class="pro-age-feature-text">{{ section.settings.icon_2_text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .pro-age-section {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .pro-age-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+ 
+  .pro-age-heading {
+    font-size: {{ section.settings.heading_font_size_mobile }}px;
+    line-height: {{ section.settings.heading_line_height_mobile }};
+    color: {{ section.settings.heading_color }};
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .pro-age-subtitle {
+    font-size: {{ section.settings.subtitle_font_size_mobile }}px;
+    line-height: {{ section.settings.subtitle_line_height_mobile }};
+    color: {{ section.settings.subtitle_color }};
+    margin-bottom: 30px;
+  }
+  
+  .pro-age-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .pro-age-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  .pro-age-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .pro-age-feature-text {
+    font-size: {{ section.settings.feature_text_font_size_mobile }}px;
+    line-height: {{ section.settings.feature_text_line_height_mobile }};
+    color: {{ section.settings.feature_text_color }};
+  }
+  
+
+  .pro-age-image-container {
+    display: none; 
+    padding: 0; 
+  }
+  
+  .pro-age-image-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pro-age-desktop-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    .pro-age-section {
+      padding: 30px 20px; 
+    }
+    
+    .pro-age-content {
+      text-align: center;
+      padding: 0;
+      width: 100%;
+    }
+    
+    .pro-age-features {
+      justify-content: center;
+    }
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .pro-age-container {
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+      height: 500px;
+    }
+    
+    .pro-age-container.reverse {
+      flex-direction: row-reverse;
+    }
+    
+    .pro-age-image-container {
+      display: block;
+      width: 50%;
+      flex: 0 0 50%;
+      padding: 0;
+    }
+    
+    .pro-age-content {
+      width: 50%;
+      flex: 0 0 50%;
+      padding: 0 40px; 
+    }
+    
+ 
+    .pro-age-heading {
+      font-size: {{ section.settings.heading_font_size_desktop }}px;
+      line-height: {{ section.settings.heading_line_height_desktop }};
+      text-align: center;
+    }
+    
+    .pro-age-subtitle {
+      font-size: {{ section.settings.subtitle_font_size_desktop }}px;
+      line-height: {{ section.settings.subtitle_line_height_desktop }};
+      text-align: center;
+    }
+    
+    .pro-age-feature-text {
+      font-size: {{ section.settings.feature_text_font_size_desktop }}px;
+      line-height: {{ section.settings.feature_text_line_height_desktop }};
+    }
+  }
+
+    
+    
+@media screen and (min-width: 1600px) {
+  
+         .pro-age-content {
+      padding: 0 200px; 
+    }
+     
+  
+    }
+
+
+  
+</style>
+
+{% schema %}
+{
+  "name": "Luma Header Collection",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Pro-Age Cosmetics That Heal Instead of Hiding."
+    },
+    {
+      "type": "header",
+      "content": "Styles Mobile"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_mobile",
+      "min": 18,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du titre (Mobile)",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height_mobile",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Hauteur de ligne du titre (Mobile)",
+      "default": 1.2
+    },
+    {
+      "type": "range",
+      "id": "subtitle_font_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du sous-titre (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subtitle_line_height_mobile",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Hauteur de ligne du sous-titre (Mobile)",
+      "default": 1.4
+    },
+    {
+      "type": "range",
+      "id": "feature_text_font_size_mobile",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du texte des caractéristiques (Mobile)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "feature_text_line_height_mobile",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Hauteur de ligne du texte des caractéristiques (Mobile)",
+      "default": 1.3
+    },
+    {
+      "type": "header",
+      "content": "Styles Desktop"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_desktop",
+      "min": 24,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du titre (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height_desktop",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Hauteur de ligne du titre (Desktop)",
+      "default": 1.2
+    },
+    {
+      "type": "range",
+      "id": "subtitle_font_size_desktop",
+      "min": 14,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du sous-titre (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "subtitle_line_height_desktop",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Hauteur de ligne du sous-titre (Desktop)",
+      "default": 1.5
+    },
+    {
+      "type": "range",
+      "id": "feature_text_font_size_desktop",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du texte des caractéristiques (Desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "feature_text_line_height_desktop",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Hauteur de ligne du texte des caractéristiques (Desktop)",
+      "default": 1.4
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Couleur du titre",
+      "default": "#333333"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Look Stunning At Any Age. Live In The Prime Of Your Life."
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur du sous-titre",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "feature_text_color",
+      "label": "Couleur du texte des caractéristiques",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Caractéristiques"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_1",
+      "label": "Icône 1"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_1_text",
+      "label": "Texte icône 1",
+      "default": "30-Nights Money Back Guarantee."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2",
+      "label": "Icône 2"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_2_text",
+      "label": "Texte icône 2",
+      "default": "Hypoallergenic. Cruelty Free."
+    },
+    {
+      "type": "header",
+      "content": "Image (Version Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Image desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_layout",
+      "label": "Inverser la mise en page",
+      "default": false,
+      "info": "Placez l'image à droite et le contenu à gauche"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Luma Header Collection",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
