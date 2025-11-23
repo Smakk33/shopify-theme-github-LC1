@@ -1,0 +1,704 @@
+{%- style -%}
+  .lumaa-collection-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  
+  .lumaa-collection-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #342C40;
+  }
+  
+  .lumaa-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .lumaa-product-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .lumaa-product-image-container {
+    position: relative;
+    background-color: ;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    aspect-ratio: 1/1;
+  }
+  
+  .lumaa-product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .lumaa-product-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .lumaa-product-badge {
+   position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #A78AD5;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+  
+  .lumaa-color-swatches {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .lumaa-color-swatch-more {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #342c40;
+    cursor: pointer;
+  }
+  
+  .lumaa-product-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #342c40;
+   text-align: center;
+  }
+  
+  .lumaa-rating-container {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  
+  .lumaa-stars {
+    display: flex;
+    color: #4A90E2;
+    margin-right: 5px;
+  }
+  
+  .lumaa-star-image {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  
+  .lumaa-star-empty {
+    opacity: 0.3;
+  }
+  
+  .lumaa-reviews-count {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .lumaa-product-description {
+font-size: 13px;
+    line-height: 1.4;
+    color: #342c40;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .lumaa-product-price {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #342c40;
+    text-align: center;
+  }
+  
+  .lumaa-product-button {
+    background-color: #F87FBE;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lumaa-product-button:hover {
+    background-color: #D43D66;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .lumaa-products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .lumaa-collection-title {
+      font-size: 34px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .lumaa-product-title {
+      font-size: 14px;
+    }
+    
+    .lumaa-product-description {
+      font-size: 13px;
+    }
+    
+    .lumaa-product-price {
+      font-size: 16px;
+    }
+
+.lumaa-star-image {
+    width: 12px;
+    height: 12px;
+    
+}
+
+.lumaa-reviews-count {
+    font-size: 11px;
+    color: #666;
+}
+
+    
+  }
+{%- endstyle -%}
+
+<div class="lumaa-collection-section">
+  {% for header_block in section.blocks %}
+    {% if header_block.type == 'collection_header' %}
+      {% assign collection_id = header_block.settings.collection_id %}
+      
+      <div id="{{ collection_id }}" class="lumaa-collection-group">
+        <h2 class="lumaa-collection-title">{{ header_block.settings.collection_title }}</h2>
+        
+        <div class="lumaa-products-grid">
+          {% for product_block in section.blocks %}
+            {% if product_block.type == 'product' and product_block.settings.collection_id == collection_id %}
+              <div class="lumaa-product-card">
+                {% if product_block.settings.product != blank %}
+                  {% assign product = all_products[product_block.settings.product] %}
+                  <a href="{{ product.url | default: '#' }}" class="lumaa-product-link">
+                    <div class="lumaa-product-image-container">
+                      {% if product.featured_image %}
+                        <img 
+                          src="{{ product.featured_image | img_url: '500x500', crop: 'center' }}" 
+                          alt="{{ product.title }}" 
+                          class="lumaa-product-image"
+                          loading="lazy"
+                        >
+                      {% else %}
+                        <div class="lumaa-product-image" style="background-color: ; display: flex; align-items: center; justify-content: center;">
+                          <span style="color: #999;">Pas d'image</span>
+                        </div>
+                      {% endif %}
+                      
+                      {% if product_block.settings.show_badge %}
+                        <div class="lumaa-product-badge">{{ product_block.settings.badge_text }}</div>
+                      {% endif %}
+                    </div>
+                  </a>
+                {% else %}
+                  <div class="lumaa-product-image-container">
+                    <div class="lumaa-product-image" style="background-color: ; display: flex; align-items: center; justify-content: center;">
+                      <span style="color: #999;">Selectionne un prod zebi</span>
+                    </div>
+                  </div>
+                {% endif %}
+                
+                <div class="lumaa-color-swatches">
+                  {% if product != blank %}
+                    {% assign color_option_index = -1 %}
+                    {% assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' %}
+                    
+                    {% for option in product.options_with_values %}
+                      {% assign option_downcase = option.name | downcase %}
+                      {% if color_label_list contains option_downcase or option_downcase contains 'color' or option_downcase contains 'colour' %}
+                        {% assign color_option_index = forloop.index0 %}
+                        {% assign color_values = option.values %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                    
+                    {% if color_option_index >= 0 %}
+                      {% assign unique_colors = "" | split: "," %}
+                      {% assign variant_ids = "" | split: "," %}
+                      
+                      {% for variant in product.variants %}
+                        {% assign color_value = variant.options[color_option_index] %}
+                        {% unless unique_colors contains color_value %}
+                          {% assign unique_colors = unique_colors | push: color_value %}
+                          {% assign variant_ids = variant_ids | push: variant.id %}
+                        {% endunless %}
+                      {% endfor %}
+                      
+                      {% assign display_count = 0 %}
+                      {% assign total_colors = unique_colors.size %}
+                      
+                      {% for color in unique_colors limit: 4 %}
+                        {% assign display_count = display_count | plus: 1 %}
+                        {% assign color_index = forloop.index0 %}
+                        {% assign variant_id = variant_ids[color_index] %}
+                        
+                        {% assign swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' %}
+                        {% assign value_downcase = color | downcase %}
+                        {% assign swatch_style = '--swatch-background: ' | append: value_downcase %}
+                        
+                        {% for swatch_item in swatch_config %}
+                          {% assign swatch_parts = swatch_item | split: ':' %}
+                          {% assign swatch_name = swatch_parts.first | downcase | strip %}
+                          
+                          {% if value_downcase == swatch_name %}
+                            {% assign swatch_value = swatch_parts.last | strip %}
+                            
+                            {% if swatch_value contains '#' %}
+                              {% assign swatch_style = '--swatch-background: ' | append: swatch_value %}
+                            {% elsif images[swatch_value] != blank %}
+                              {% assign swatch_image = images[swatch_value] | image_url: width: 72 %}
+                              {% assign swatch_style = '--swatch-background: url(' | append: swatch_image | append: ')' %}
+                            {% endif %}
+                            
+                            {% break %}
+                          {% endif %}
+                        {% endfor %}
+                        
+                        {% assign white_label = 'general.label.white' | t | downcase %}
+                        
+                        <a href="{{ product.url }}?variant={{ variant_id }}" class="color-swatch {% if settings.color_swatch_style == 'rectangle' %}color-swatch--rectangle{% endif %} {% if size == 'sm' %}color-swatch--sm{% endif %} {% if white_label == value_downcase %}ring-inset{% endif %} {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %}" data-tooltip="{{ color | escape }}" style="{{ swatch_style }}">
+                          <span class="sr-only">{{ color }}</span>
+                        </a>
+                      {% endfor %}
+                      
+                      {% assign remaining = total_colors | minus: display_count %}
+                      {% if remaining > 0 %}
+                        <div class="lumaa-color-swatch-more" title="Plus {{ remaining }} couleurs">+{{ remaining }}</div>
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                </div>
+                
+                <h3 class="lumaa-product-title">
+                                    {% if product_block.settings.custom_title != blank %}
+                    {{ product_block.settings.custom_title }}
+                  {% elsif product != blank %}
+                    {{ product.title }}
+                  {% else %}
+                    Product Title
+                  {% endif %}
+                </h3>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
+                
+                <div class="lumaa-rating-container">
+                  <div class="lumaa-stars">
+                    {% assign rating = product_block.settings.rating | default: 5 %}
+                    {% assign full_stars = rating | floor %}
+                    {% assign half_star = rating | minus: full_stars %}
+                    {% assign full_stars_plus_one = full_stars | plus: 1 %}
+                    
+                    {% for i in (1..5) %}
+                      {% if i <= full_stars %}
+                        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/noun-star-5480646-copie_copie.webp?v=1744628497" alt="★" class="lumaa-star-image">
+                      {% elsif half_star >= 0.5 and i == full_stars_plus_one %}
+                        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/noun-star-5480646-copie_copie.webp?v=1744628497" alt="★" class="lumaa-star-image">
+                      {% else %}
+                        <img src="https://cdn.shopify.com/s/files/1/0924/0848/0091/files/noun-star-5480646-copie_copie.webp?v=1744628497" alt="★" class="lumaa-star-image lumaa-star-empty">
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <div class="lumaa-reviews-count">
+                    {{ product_block.settings.reviews_count | default: 0 | append: ' Avis' }}
+                  </div>
+                </div>
+                
+                <div class="lumaa-product-description">
+                  {{ product_block.settings.custom_description }}
+                </div>
+                
+                <div class="lumaa-product-price">
+                  {% if product_block.settings.custom_price != blank %}
+                    {{ product_block.settings.custom_price }}
+                  {% elsif product != blank %}
+                    {{ product.price | money }}
+                  {% else %}
+                    €29,00
+                  {% endif %}
+                </div>
+                
+                <a href="{{ product.url | default: '#' }}" class="lumaa-product-button">
+                  {{ product_block.settings.button_text | default: 'View details' }}
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "LUMA Collection Products",
+  "tag": "section",
+  "class": "lumaa-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "collection_header",
+      "name": "Collection Header",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection Title",
+          "default": "Makeup"
+        },
+        {
+          "type": "text",
+          "id": "collection_id",
+          "label": "Collection ID (for anchor links)",
+          "default": "makeup"
+        }
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "select",
+          "id": "collection_id",
+          "label": "Collection",
+          "options": [
+            {
+              "value": "makeup",
+              "label": "Makeup"
+            },
+            {
+              "value": "skincare",
+              "label": "Skincare"
+            },
+            {
+              "value": "haircare",
+              "label": "Haircare"
+            },
+            {
+              "value": "bundle-save",
+              "label": "Bundle & Save"
+            }
+          ],
+          "default": "makeup"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom Title (optional)",
+          "info": "Leave blank to use product title"
+        },
+        {
+          "type": "text",
+          "id": "custom_description",
+          "label": "Custom Description",
+          "default": "Water-resistant and smudge-proof eyeliner. Lift, define, frame your wise eyes with velvety, deep color."
+        },
+        {
+          "type": "text",
+          "id": "custom_price",
+          "label": "Custom Price (optional)",
+          "default": "€29,00",
+          "info": "Leave blank to use product price"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 0,
+          "max": 5,
+          "step": 0.1,
+          "label": "Rating",
+          "default": 4.9
+        },
+        {
+          "type": "text",
+          "id": "reviews_count",
+          "label": "Reviews Count",
+          "default": "2,900"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badge",
+          "label": "Show Badge",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge Text",
+          "default": "NEW"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "View details"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "LUMA Collection Products",
+      "blocks": [
+        {
+          "type": "collection_header",
+          "settings": {
+            "collection_title": "Makeup",
+            "collection_id": "makeup"
+          }
+        },
+        {
+          "type": "collection_header",
+          "settings": {
+            "collection_title": "Skincare",
+            "collection_id": "skincare"
+          }
+        },
+        {
+          "type": "collection_header",
+          "settings": {
+            "collection_title": "Haircare",
+            "collection_id": "haircare"
+          }
+        },
+        {
+          "type": "collection_header",
+          "settings": {
+            "collection_title": "Bundle & Save",
+            "collection_id": "bundle-save"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "collection_id": "makeup",
+            "custom_title": "PrimeLash Mascara",
+            "custom_description": "9 000+, 5* ratings. Pro-age best-seller separates & elongates short lashes. Healing formula for 3x lash thickening. All-natural. Lush lashes like never before.",
+            "custom_price": "€29,00",
+            "rating": 4.8,
+            "reviews_count": "11,600",
+            "button_text": "View details"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "collection_id": "makeup",
+            "custom_title": "PrimeEyes Glide Eyeliner",
+            "custom_description": "Water-resistant and smudge-proof eyeliner. Lift, define, frame your wise eyes with velvety, deep color.",
+            "custom_price": "€29,00",
+            "rating": 4.9,
+            "reviews_count": "2,900",
+            "button_text": "View details"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+(function() {
+  const MAX_COLORS_TO_SHOW = 4;
+  
+  async function getProductData(handle) {
+    try {
+      const response = await fetch(`/products/${handle}.js`);
+      return await response.json();
+    } catch (error) {
+      console.error(`Erreur lors de la récupération des données du produit ${handle}:`, error);
+      return null;
+    }
+  }
+  
+  function getUniqueColorVariants(product) {
+    if (!product || !product.variants || product.variants.length === 0) {
+      return [];
+    }
+    
+    let colorOptionIndex = -1;
+    const colorLabels = ['color', 'colour', 'couleur'];
+    
+    for (let i = 0; i < product.options.length; i++) {
+      const optionName = product.options[i].name.toLowerCase();
+      if (colorLabels.some(label => optionName.includes(label))) {
+        colorOptionIndex = i;
+        break;
+      }
+    }
+    
+    if (colorOptionIndex === -1) {
+      return [];
+    }
+    
+    const uniqueColors = new Map();
+    
+    product.variants.forEach(variant => {
+      const colorValue = variant.options[colorOptionIndex];
+      if (colorValue && !uniqueColors.has(colorValue)) {
+        uniqueColors.set(colorValue, variant.id);
+      }
+    });
+    
+    return Array.from(uniqueColors).map(([color, variantId]) => ({
+      color,
+      variantId
+    }));
+  }
+  
+  function createColorSwatch(color, variantId, productUrl) {
+    const swatch = document.createElement('a');
+    swatch.href = `${productUrl}?variant=${variantId}`;
+    swatch.className = 'lumaa-color-swatch';
+    swatch.style.width = '25px';
+    swatch.style.height = '25px';
+    swatch.style.borderRadius = '50%';
+    swatch.style.display = 'block';
+    swatch.style.border = '1px solid #ddd';
+    swatch.style.cursor = 'pointer';
+    swatch.title = color;
+    
+    const colorMap = {
+      'NOIR': '#111111',
+      'BOIS': '#4E3639',
+      'SAPHIR': '#455166',
+      'ÉMERAUDE': '#2B4735',
+      'MOCHA': '#664240',
+      'FUMÉE': '#545859',
+      'DORÉE': '#8C7B5E',
+      'CUIVRE': '#B37A5E',
+      'BRUN FONCÉ': '#583C3E',
+      'BLEU MARINE': '#4F5B72',
+      'ESTRELLA': '#EFCCB9',
+      'NEBULA': '#74514D',
+      'STARDUST': '#E3B9B1',
+      'noir': '#111111',
+      'bois': '#4E3639',
+      'saphir': '#455166',
+      'émeraude': '#2B4735',
+      'mocha': '#664240',
+      'fumée': '#545859',
+      'dorée': '#8C7B5E',
+      'cuivre': '#B37A5E',
+      'brun foncé': '#583C3E',
+      'bleu marine': '#4F5B72',
+      'estrella': '#EFCCB9',
+      'nebula': '#74514D',
+      'stardust': '#E3B9B1',
+      'black': '#000000',
+      'white': '#FFFFFF',
+      'red': '#FF0000',
+      'blue': '#0000FF',
+      'green': '#008000'
+    };
+    
+    if (colorMap[color]) {
+      swatch.style.backgroundColor = colorMap[color];
+    } 
+    else if (colorMap[color.toLowerCase()]) {
+      swatch.style.backgroundColor = colorMap[color.toLowerCase()];
+    } 
+    else {
+      swatch.style.backgroundColor = color.toLowerCase();
+    }
+    
+    return swatch;
+  }
+  
+  function createMoreIndicator(count) {
+    const more = document.createElement('div');
+    more.className = 'lumaa-color-swatch-more';
+    more.style.width = '25px';
+    more.style.height = '25px';
+    more.style.borderRadius = '50%';
+    more.style.backgroundColor = '#f5f5f5';
+    more.style.display = 'flex';
+    more.style.alignItems = 'center';
+    more.style.justifyContent = 'center';
+    more.style.fontSize = '10px';
+    more.style.color = '#666';
+    more.style.cursor = 'pointer';
+    more.textContent = `+${count}`;
+    more.title = `Plus ${count} couleurs`;
+    return more;
+  }
+  
+  async function updateColorSwatches() {
+    const productCards = document.querySelectorAll('.lumaa-product-card');
+    
+    for (const card of productCards) {
+      const productLink = card.querySelector('.lumaa-product-link');
+      if (!productLink) continue;
+      
+      const productUrl = productLink.href;
+      const productHandle = productUrl.split('/').pop().split('?')[0];
+      
+      const productData = await getProductData(productHandle);
+      if (!productData) continue;
+      
+      const colorVariants = getUniqueColorVariants(productData);
+      if (colorVariants.length === 0) continue;
+      
+      const swatchesContainer = card.querySelector('.lumaa-color-swatches');
+      if (!swatchesContainer) continue;
+      
+      swatchesContainer.innerHTML = '';
+      
+      const displayCount = Math.min(colorVariants.length, MAX_COLORS_TO_SHOW);
+      
+      for (let i = 0; i < displayCount; i++) {
+        const { color, variantId } = colorVariants[i];
+        const swatch = createColorSwatch(color, variantId, productUrl);
+        swatchesContainer.appendChild(swatch);
+      }
+      
+      const remaining = colorVariants.length - displayCount;
+      if (remaining > 0) {
+        const moreIndicator = createMoreIndicator(remaining);
+        swatchesContainer.appendChild(moreIndicator);
+      }
+    }
+  }
+  
+  updateColorSwatches().then(() => {
+    console.log('Mise à jour des swatches de couleur terminée');
+  }).catch(error => {
+    console.error('Erreur lors de la mise à jour des swatches de couleur:', error);
+  });
+})();
+</script>
