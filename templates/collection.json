@@ -86,6 +86,51 @@
             "collection_id": "makeup"
           }
         },
+        "product_hiKm9b": {
+          "type": "product",
+          "settings": {
+            "collection_id": "makeup",
+            "product": "luma-linea-eyeliner",
+            "custom_title": "",
+            "custom_description": "Eyeliner o długotrwałej trwałości, który nie rozmazuje się.Precyzyjna kreska i podkreślone spojrzenie — bez żadnego wysiłku.",
+            "custom_price": "129,90 zł",
+            "rating": 4.8,
+            "reviews_count": "1230",
+            "show_badge": true,
+            "badge_text": "BESTSELLER",
+            "button_text": "Zobacz więcej"
+          }
+        },
+        "product_hXz3fr": {
+          "type": "product",
+          "settings": {
+            "collection_id": "makeup",
+            "product": "luma-lash-mascara",
+            "custom_title": "",
+            "custom_description": "Tusz do rzęs bez grudek, który wydłuża rzęsy. Więcej objętości, więcej elegancji, bez wysiłku.",
+            "custom_price": "129,90 zł",
+            "rating": 4.9,
+            "reviews_count": "530",
+            "show_badge": false,
+            "badge_text": "NEW",
+            "button_text": "Zobacz więcej"
+          }
+        },
+        "product_znn4Yz": {
+          "type": "product",
+          "settings": {
+            "collection_id": "makeup",
+            "product": "luma-bright-eyeliner",
+            "custom_title": "",
+            "custom_description": "Cień do powiek stworzony dla kobiet 50+. Rozświetla, wygładza i ożywia spojrzenie jednym gestem.",
+            "custom_price": "129,90 zł",
+            "rating": 4.7,
+            "reviews_count": "350",
+            "show_badge": false,
+            "badge_text": "NEW",
+            "button_text": "Zobacz więcej"
+          }
+        },
         "collection_header_W7ia89": {
           "type": "collection_header",
           "settings": {
@@ -140,6 +185,9 @@
       },
       "block_order": [
         "collection_header_y6XkxA",
+        "product_hiKm9b",
+        "product_hXz3fr",
+        "product_znn4Yz",
         "collection_header_W7ia89",
         "collection_header_VQPnEE",
         "collection_header_qr9QyD",
