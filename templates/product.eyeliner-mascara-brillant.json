@@ -1,0 +1,515 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_nk3BAA": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"border: 1px solid #ddd; padding: 10px; display: flex; align-items: center; border-radius: 10px; background-color: #fffbe6;\">\n  <div style=\"flex: 0 0 auto; display: flex; align-items: center; padding-right: 10px;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/Capture_d_ecran_2024-08-25_a_12.01.08.png?v=1724580210\" alt=\"User Image\" style=\"width: 50px; height: 50px; border-radius: 50%;\"/>\n  </div>\n  <div style=\"flex: 1; text-align: left;\">\n    <p style=\"margin: 0; font-weight: bold; font-size: 14px;\">Dr. Claire Martin - Clinique Vétérinaire de Lyon</p>\n    <p style=\"margin: 5px 0 0 0; font-size: 12px; line-height: 1.4;\">\"Ces colliers à phéromones sont une solution naturelle que je recommande souvent. Ils aident de nombreux chiens à se sentir plus calmes et détendus au quotidien.\"</p>\n  </div>\n</div>"
+          }
+        },
+        "image_PTkRzF": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Bandeau_Mascara.webp",
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "liquid_9LWxY3": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<!-- Container for the stars and rating text -->\n<div class=\"rating-display\">\n  <!-- Stars container -->\n  <div class=\"stars\">\n    {% assign rating = 4.7 %} <!-- Example rating, replace with dynamic value -->\n    {% assign full_stars = rating | floor %}\n    {% assign partial_star = rating | minus: full_stars %}\n    {% assign empty_stars = 5 | minus: full_stars | minus: 1 %}\n\n    <!-- Full stars -->\n    {% for i in (1..full_stars) %}\n      <span class=\"star full\">\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"#729fc5\n\">\n          <!-- Refined rounded star path -->\n          <path d=\"M12 2.5l2.755 5.583 6.162.894-4.459 4.347 1.05 6.123L12 16.75l-5.508 2.897 1.05-6.123L3.083 8.977l6.162-.894L12 2.5z\" />\n        </svg>\n      </span>\n    {% endfor %}\n    \n    <!-- Less filled star -->\n    {% if partial_star > 0 %}\n      <span class=\"star less-filled\">\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n          <defs>\n            <linearGradient id=\"grad1\">\n              <stop offset=\"65%\" style=\"stop-color:#729fc5\n;stop-opacity:1\" /> <!-- Changed offset to 60% -->\n              <stop offset=\"60%\" style=\"stop-color:#ddd;stop-opacity:1\" />\n            </linearGradient>\n          </defs>\n          <path d=\"M12 2.5l2.755 5.583 6.162.894-4.459 4.347 1.05 6.123L12 16.75l-5.508 2.897 1.05-6.123L3.083 8.977l6.162-.894L12 2.5z\" fill=\"url(#grad1)\" />\n        </svg>\n      </span>\n    {% endif %}\n    \n    <!-- Empty stars -->\n    {% for i in (1..empty_stars) %}\n      <span class=\"star empty\">\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#ddd\">\n          <path d=\"M12 2.5l2.755 5.583 6.162.894-4.459 4.347 1.05 6.123L12 16.75l-5.508 2.897 1.05-6.123L3.083 8.977l6.162-.894L12 2.5z\" />\n        </svg>\n      </span>\n    {% endfor %}\n  </div>\n  \n  <!-- Rating text -->\n  <div class=\"rating-text\">\n    <strong>Excellent {{ rating }}</strong> | 1696 Avis vérifiés\n  </div>\n</div>\n\n<!-- Add custom CSS for styling -->\n<style>\n.rating-display {\n  display: flex;\n  align-items: center;\n  font-size: 12px;\n  color: #333;\n  flex-wrap: nowrap; /* Keeps everything on one line */\n}\n\n.stars {\n  display: flex;\n  align-items: center;\n  margin-right: 8px;\n}\n\n.star {\n  margin-right: 2px;\n  display: inline-block;\n}\n\n.rating-text {\n  display: flex;\n  align-items: center;\n  font-size: 12px;\n}\n\n.rating-text strong {\n  font-weight: bold;\n  margin-right: 5px;\n}\n\n@media (max-width: 480px) {\n  .rating-display {\n    flex-wrap: nowrap; /* Keeps stars and text on one line */\n    font-size: 8px; /* Adjust font size for smaller screens */\n  }\n\n  .stars svg {\n    width: 20px; /* Smaller stars for mobile screens */\n    height: 20px;\n  }\n\n  .rating-text {\n    font-size: 13px; /* Adjust text size for mobile */\n  }\n}\n</style>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "liquid_YiPbJG": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; padding: 10px;\">\n  <div style=\"flex: 0 0 auto; padding-right: 15px;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/2_bca69533-e3f5-4280-95a3-6ba2c03ddbbf.jpg?v=1725633866\" alt=\"User Image\" style=\"width: 100px; height: 100px; border-radius: 50%;\"/>\n  </div>\n  <div style=\"flex: 1; text-align: left;\">\n    <p style=\"font-size: 10px; line-height: 1.6; margin: 0;\">\n      \"Since using Batana Oil, my hair has never looked so healthy and voluminous. The coffee smell is intense but authentic and I like it. It's been three weeks and I already see a big difference\"\n    </p>\n    <p style=\"font-weight: bold; margin: 5px 0 0 0;\">– Monica K.</p>\n  </div>\n</div>"
+          }
+        },
+        "liquid_CekThB": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"border: 1px solid #ddd; padding: 10px; display: flex; align-items: center; border-radius: 10px; background-color: #fffbe6;\">\n  <div style=\"flex: 0 0 auto; display: flex; align-items: center; padding-right: 10px;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/Capture_d_ecran_2024-08-25_a_12.01.08.png?v=1724580210\" alt=\"User Image\" style=\"width: 50px; height: 50px; border-radius: 50%;\"/>\n  </div>\n  <div style=\"flex: 1; text-align: left;\">\n    <p style=\"margin: 0; font-weight: bold; font-size: 14px;\">Dr. Claire Martin - Clinique Vétérinaire de Lyon</p>\n    <p style=\"margin: 5px 0 0 0; font-size: 12px; line-height: 1.4;\">\"Ces colliers à phéromones sont une solution naturelle que je recommande souvent. Ils aident de nombreux chiens à se sentir plus calmes et détendus au quotidien.\"</p>\n  </div>\n</div>"
+          }
+        },
+        "liquid_UmpXd9": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"rte mb-2\">\n  <div class=\"product__featured-review quotes-area text-lg py-2 px-4\" style=\"background-color: #f0f8ff; border-radius: 8px;\">\n    <p style=\"font-weight: bold; font-size: 16px;\">« J'ai été étonnée par l'efficacité du mascara sur mes cils clairsemés. J'ai 59 ans, mais mes cils semblaient comme autrefois ! J'ai jeté tous mes anciens mascaras, même le Lancôme ! »</p>\n    <span class=\"mt-2 text-sm\" style=\"font-weight: normal; font-size: 14px;\">- Sandy, \ncliente du mascara PrimeLash.</span>\n  </div>\n</div>"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "text_4ixFdK": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>🌱 Croissance rapide<br/>💦 Renforce vos cheveux<br/>🌸 Parfum naturel<br/>⭐️ Pour tous types de cheveux</p>"
+          }
+        },
+        "liquid_DaYMAb": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"display: flex; flex-wrap: wrap; gap: 5px; font-size: 11px;\">\n  <div style=\"flex: 1; min-width: 20px;\">\n    <p>🌱 Croissance rapide</p>\n    <p>💦 Renforce vos cheveux</p>\n  </div>\n  <div style=\"flex: 1; min-width: 20px;\">\n    <p>🌸 Parfum naturel</p>\n    <p>⭐️ Tous types de cheveux</p>\n  </div>\n</div>"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "inventory_zV6jxc": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "low_inventory_threshold": 5
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "liquid_wFzpm3": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"border: 1px solid black; padding: 10px; display: flex; align-items: center; justify-content: space-between; border-radius: 10px; height: 80px; line-height: 1;\">\n  <div style=\"flex: 0 0 auto; display: flex; align-items: center;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/LITTY_PETS_3.png?v=1724601379\" alt=\"Dirtea - Lions Mane Mushroom\" style=\"width: 60px; height: 60px;\"/>\n  </div>\n  <div style=\"flex: 1; padding-left: 10px; text-align: left; display: flex; align-items: center;\">\n    <p style=\"margin: 0; font-weight: bold; font-size: 14px;\">E-Book - Calme et Bonheur du chien</p>\n  </div>\n  <div style=\"flex: 0 0 auto; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;\">\n    <p style=\"margin: 0; text-decoration: line-through; color: grey; margin-bottom: 5px;\">19,90€</p>\n    <p style=\"margin: 0; background-color: #4dc617\n; color: #ffffff; border-radius: 10px; padding: 2px 8px; font-size: 12px;\">Gratuit</p>\n  </div>\n</div>"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "liquid_Wae4Vg": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-type=\"animation-with-text\"><div class=\"aus_stock\">\n        <span class=\"green_icon icon--inventory\"></span><p>Less than 3 pieces in stock!</p>\n      </div>\n\n      <style>\n        @keyframes inventory-pulse { \n            0% { \n              opacity: 0.5; \n            }\n            100% { \n              transform: scale(2.5); \n              opacity: 0; \n            }\n        }\n            \n        span.green_icon {\n        display: inline-block;\n        position: relative;\n        height: 25px;\n        width: 25px;\n            margin-right: 7px;\n        }\n        .icon--inventory:before {\n        animation: inventory-pulse 2s linear infinite;\n        }\n        .icon--inventory:after, .icon--inventory:before {\n        width: 9px;\n        height: 9px;\n        background: #fb9d00;\n        border-radius: 9px;\n        position: absolute;\n        left: 0;\n        top: 0;\n        content: \"\";\n        margin: 8px;\n        }\n\n        .aus_stock{\n          display: flex;\n        align-items: center;\n          margin-bottom: -12px;\n        }\n         \n      .aus_stock svg{\n         width: 25px;\n           height: 25px;\n        margin-right: 8px;\n      }\n            .aus_stock p{\n            margin: 0;\n          font-size: 15px;\n              color: #000;\n            }\n            \n        </style></div>"
+          }
+        },
+        "image_a63bqq": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "alignment": "center",
+            "max_width": 500
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_xkrNTV": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<ul class=\"payment-badges\" role=\"list\">\n    <li class=\"list-payment__item\">\n        <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"pi-american_express\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\">\n            <title id=\"pi-american_express\">American Express</title>\n            <path fill=\"#000\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z\" opacity=\".07\"></path>\n            <path fill=\"#006FCF\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z\"></path>\n            <path fill=\"#FFF\" d=\"M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z\"></path>\n            <path fill=\"#006FCF\" d=\"M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z\"></path>\n            <path fill=\"#006FCF\" d=\"m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z\"></path>\n            <path fill=\"#FFF\" d=\"M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z\"></path>\n            <path fill=\"#006FCF\" d=\"m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z\"></path>\n            <path fill=\"#006FCF\" d=\"M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z\"></path>\n        </svg>\n    </li>\n    <li class=\"list-payment__item\">\n        <svg class=\"icon icon--full-color\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" x=\"0\" y=\"0\" width=\"38\" height=\"24\" viewBox=\"0 0 165.521 105.965\" xml:space=\"preserve\" aria-labelledby=\"pi-apple_pay\">\n            <title id=\"pi-apple_pay\">Apple Pay</title>\n            <path fill=\"#000\" d=\"M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z\"></path>\n            <path fill=\"#FFF\" d=\"M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875\"></path>\n            <g>\n                <g>\n                    <path fill=\"#000\" d=\"M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858\"></path>\n                    <path fill=\"#000\" d=\"M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048\"></path>\n                </g>\n                <g>\n                    <path fill=\"#000\" d=\"M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z\"></path>\n                    <path fill=\"#000\" d=\"M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z\"></path>\n                    <path fill=\"#000\" d=\"M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z\"></path>\n                </g>\n            </g>\n        </svg>\n    </li>\n    <li class=\"list-payment__item\">\n        <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" aria-labelledby=\"pi-google_pay\">\n            <title id=\"pi-google_pay\">Google Pay</title>\n            <path d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\" opacity=\".07\"></path>\n            <path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\" fill=\"#FFF\"></path>\n            <path d=\"M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z\" fill=\"#5F6368\"></path>\n            <path d=\"M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z\" fill=\"#4285F4\"></path>\n            <path d=\"M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z\" fill=\"#34A853\"></path>\n            <path d=\"M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z\" fill=\"#FBBC04\"></path>\n            <path d=\"M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z\" fill=\"#EA4335\"></path>\n        </svg>\n    </li>\n    <li class=\"list-payment__item\">\n        <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-maestro\">\n            <title id=\"pi-maestro\">Maestro</title>\n            <path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path>\n            <path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path>\n            <circle fill=\"#EB001B\" cx=\"15\" cy=\"12\" r=\"7\"></circle>\n            <circle fill=\"#00A2E5\" cx=\"23\" cy=\"12\" r=\"7\"></circle>\n            <path fill=\"#7375CF\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"></path>\n        </svg>\n    </li>\n    <li class=\"list-payment__item\">\n        <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-master\">\n            <title id=\"pi-master\">Mastercard</title>\n            <path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path>\n            <path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path>\n            <circle fill=\"#EB001B\" cx=\"15\" cy=\"12\" r=\"7\"></circle>\n            <circle fill=\"#F79E1B\" cx=\"23\" cy=\"12\" r=\"7\"></circle>\n            <path fill=\"#FF5F00\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"></path>\n        </svg>\n    </li>\n    <li class=\"list-payment__item\">\n        <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-visa\">\n            <title id=\"pi-visa\">Visa</title>\n            <path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path>\n            <path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path>\n            <path d=\"M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z\" fill=\"#142688\"></path>\n        </svg>\n    </li>\n</ul>"
+          }
+        },
+        "liquid_3KpW4E": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul class=\"payment-badges\" role=\"list\">\n                  \n                  \n\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"pi-american_express\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\"><title id=\"pi-american_express\">American Express</title><path fill=\"#000\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z\" opacity=\".07\"></path><path fill=\"#006FCF\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z\"></path><path fill=\"#FFF\" d=\"M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z\"></path><path fill=\"#006FCF\" d=\"M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z\"></path><path fill=\"#006FCF\" d=\"m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z\"></path><path fill=\"#FFF\" d=\"M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z\"></path><path fill=\"#006FCF\" d=\"m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z\"></path><path fill=\"#006FCF\" d=\"M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z\"></path></svg>\n\n                    </li>\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" x=\"0\" y=\"0\" width=\"38\" height=\"24\" viewBox=\"0 0 165.521 105.965\" xml:space=\"preserve\" aria-labelledby=\"pi-apple_pay\"><title id=\"pi-apple_pay\">Apple Pay</title><path fill=\"#000\" d=\"M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z\"></path><path fill=\"#FFF\" d=\"M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875\"></path><g><g><path fill=\"#000\" d=\"M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858\"></path><path fill=\"#000\" d=\"M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048\"></path></g><g><path fill=\"#000\" d=\"M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z\"></path><path fill=\"#000\" d=\"M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z\"></path><path fill=\"#000\" d=\"M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z\"></path></g></g></svg>\n\n                    </li>\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" aria-labelledby=\"pi-google_pay\"><title id=\"pi-google_pay\">Google Pay</title><path d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\" opacity=\".07\"></path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\" fill=\"#FFF\"></path><path d=\"M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z\" fill=\"#5F6368\"></path><path d=\"M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z\" fill=\"#4285F4\"></path><path d=\"M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z\" fill=\"#34A853\"></path><path d=\"M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z\" fill=\"#FBBC04\"></path><path d=\"M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z\" fill=\"#EA4335\"></path></svg>\n\n                    </li>\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-maestro\"><title id=\"pi-maestro\">Maestro</title><path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><circle fill=\"#EB001B\" cx=\"15\" cy=\"12\" r=\"7\"></circle><circle fill=\"#00A2E5\" cx=\"23\" cy=\"12\" r=\"7\"></circle><path fill=\"#7375CF\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"></path></svg>\n                    </li>\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-master\"><title id=\"pi-master\">Mastercard</title><path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><circle fill=\"#EB001B\" cx=\"15\" cy=\"12\" r=\"7\"></circle><circle fill=\"#F79E1B\" cx=\"23\" cy=\"12\" r=\"7\"></circle><path fill=\"#FF5F00\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"></path></svg>\n                    </li>\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-paypal\"><title id=\"pi-paypal\">PayPal</title><path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path fill=\"#003087\" d=\"M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z\"></path><path fill=\"#3086C8\" d=\"M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z\"></path><path fill=\"#012169\" d=\"M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z\"></path></svg>\n                    </li>\n                    <li class=\"list-payment__item\">\n                      <svg class=\"icon icon--full-color\" viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-visa\"><title id=\"pi-visa\">Visa</title><path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path d=\"M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z\" fill=\"#142688\"></path></svg>\n                    </li></ul>"
+          }
+        },
+        "liquid_ChUBCY": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;\">\n    <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/2_8921b470-21c7-41bb-8269-59cbaec3fd76.png?v=1721845485\" alt=\"Livraison à domicile\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong>Livraison gratuite : sous <strong>7 à 9 jours</strong></strong><br>\n            <span style=\"color: #2BB04A; font-family: sans-serif; font-weight: bold;\">Transport via La Poste</span>\n        </div>\n    </div>\n    <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/3_af5bdc9a-fc62-4ed0-a213-d1c0ff644ad5.png?v=1721845485\" alt=\"Garantie d'achat\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong>Garantie d’achat 30 jours</strong><br>\n            <span style=\"color:#2BB04A; font-family: sans-serif; font-weight: bold;\">100% Satisfait ou remboursé</span>\n        </div>\n    </div>\n    <div style=\"display: flex; align-items: center;\">\n        <img src=\"https://cdn-icons-png.flaticon.com/512/3135/3135715.png\" alt=\"Assistance clientèle\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong> Assistance clientèle 24/7</strong>\n        </div>\n    </div>\n</div>"
+          }
+        },
+        "liquid_g9pnE9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"font-family: Poppins, sans-serif; max-width: 600px; margin: 0 auto;\">\n    <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/2_8921b470-21c7-41bb-8269-59cbaec3fd76.png?v=1721845485\" alt=\"Livraison à domicile\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong>Livraison Gratuite : sous <strong>7 à 9 jours</strong></strong><br>\n            <span style=\"color: #2BB04A; font-family: Poppins; font-weight: bold;\">Transport via La Poste</span>\n        </div>\n    </div>\n    <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0855/1674/7083/files/3_af5bdc9a-fc62-4ed0-a213-d1c0ff644ad5.png?v=1721845485\" alt=\"Garantie d'achat\" style=\"width: 24px; height: 24px; margin-right: 10px;\">\n        <div>\n            <strong>Garantie d’achat 30 jours</strong><br>\n            <span style=\"color:#2BB04A; font-family: Poppins; font-weight: bold;\">100% Satisfait ou remboursé</span>\n        </div>\n    </div>\n</div>"
+          }
+        },
+        "collapsible_text_qmMEH4": {
+          "type": "collapsible_text",
+          "disabled": true,
+          "settings": {
+            "title": "Notre garantie",
+            "content": "<p>Nous voulons que vous soyez <strong>100% confiant et ravi</strong> de l'<strong>impression finale</strong>. </p><p>C'est pourquoi nous offrons des <strong>aperçus gratuits</strong> et des <strong>éditions illimitées</strong> pour toutes les commandes. </p><p>Nous travaillerons en <strong>étroite collaboration</strong> avec vous, en apportant tous les <strong>ajustements nécessaires</strong> jusqu'à ce que le <strong>portrait de votre animal</strong> dépasse vos attentes et que vous nous fassiez part de votre <strong>satisfaction</strong>.</p>"
+          }
+        },
+        "text_Eg7Txw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em>Marre des cils fins et clairsemés, et du regard sans éclat ? Nous avons créé </em><em><strong>un mascara pro-âge spécialement pour les femmes matures</strong></em><em>, qui vous vaudra plus de compliments que vous ne l’auriez imaginé.</em></p>"
+          }
+        },
+        "text_YCqw6V": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Des années de recherche ont permis de <strong>concevoir le duo parfait</strong> : une brosse qui sépare les plus petits cils pour zéro grumeaux, et une formule qui lifte et épaissit les cils existants tout en stimulant leur croissance naturelle. Équilibré en pH, 100 % naturel. Finis les irritations et les yeux de panda.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_nk3BAA",
+        "image_PTkRzF",
+        "title",
+        "liquid_9LWxY3",
+        "price",
+        "liquid_YiPbJG",
+        "liquid_CekThB",
+        "liquid_UmpXd9",
+        "badges",
+        "text_4ixFdK",
+        "liquid_DaYMAb",
+        "rating",
+        "inventory_zV6jxc",
+        "variant_picker",
+        "payment_terms",
+        "liquid_wFzpm3",
+        "separator",
+        "description",
+        "quantity_selector",
+        "liquid_Wae4Vg",
+        "image_a63bqq",
+        "buy_buttons",
+        "liquid_xkrNTV",
+        "liquid_3KpW4E",
+        "liquid_ChUBCY",
+        "liquid_g9pnE9",
+        "collapsible_text_qmMEH4",
+        "text_Eg7Txw",
+        "text_YCqw6V"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "media_with_text_gfPwBB": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_PRfgG4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PRIME_LASH.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Pourquoi PrimeLash Mascara a conquis des milliers de femmes matures !?</h3><h4>1 - Brosse magique</h4><p>Dites adieu à votre gros problème : les cils clairsemés et les brosses qui ne les attrapent pas. PrimeLash est doté d'une brosse unique qui atteint les cils les plus fins et les recouvre tous.</p><h4>2 - Lift & longueur instantanés</h4><p>Sa formule modulable transforme les cils tombants en éventails fiers et volumineux. Pas de sécheresse, pas de casse, juste une belle épaisseur.</p><h4>3- Soin à long terme</h4><p>PrimeLash est plus qu'un simple mascara. Il est réparateur, avec des ingrédients de qualité qui nourrissent les cils pour les rendre plus épais et plus longs.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PRfgG4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "custom_liquid_rjDyEF": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"features-section\">\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/3_da4e258c-1017-45f9-ba71-9761a6c1d212.avif?v=1728664982\" alt=\"Easy & precise application\" class=\"feature-icon\">\n      <p class=\"feature-text\">Hypoallergénique</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/2_b4b96f48-5623-4964-b05c-349a54a64ea7.avif?v=1728664982\" alt=\"Water-resistant and smudge-proof\" class=\"feature-icon\">\n      <p class=\"feature-text\">pH équilibré</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/4_a8cae54c-a8c7-4df3-91f3-f81efeeec184.avif?v=1728664982\" alt=\"Buildable, velvety, deep colors\" class=\"feature-icon\">\n      <p class=\"feature-text\">Résistant à l'eau</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .features-section {\n    display: flex;\n    justify-content: space-around;\n    padding: 5px 0;\n  }\n\n  .feature-item {\n    flex: 1;\n    display: flex;\n    justify-content: center;\n  }\n\n  .feature-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  .feature-icon {\n    margin-bottom: 10px;\n    max-width: 50px;\n  }\n\n  .feature-text {\n    font-size: 12px; /* Taille de texte par défaut, que tu peux modifier */\n  }\n\n  .text-center {\n    text-align: center;\n  }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_Gy4mEx": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_9j3W3k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PRIME_LASH_copie.webp",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>L'attente est terminée. Enfin, un mascara pour les yeux matures ! Les femmes de plus de 50 ans peuvent se réjouir.</h3><h5>Adieu les grandes promesses. Bonjour aux résultats impressionnants.</h5><p>PrimeLash n'est pas seulement un cosmétique pour \"avoir l'air plus jeune\". C'est un soin en flacon qui révèle la croissance et l'éclat de vos cils naturels.</p><p><strong>Conçu par des experts en maquillage pro-âge, PrimeLash réduira votre routine maquillage de plusieurs minutes.</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_9j3W3k"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "custom_liquid_NthLwH": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"features-section\">\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/eye.webp?v=1728666001\" alt=\"Easy & precise application\" class=\"feature-icon\">\n      <p class=\"feature-text\">Sans grumeaux. Sans bavures. Sans taches.</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/tree.webp?v=1728666001\" alt=\"Water-resistant and smudge-proof\" class=\"feature-icon\">\n      <p class=\"feature-text\">Sans danger. Faites ce qu'il faut !</p>\n    </div>\n  </div>\n  <div class=\"feature-item text-center\">\n    <div class=\"feature-content\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0895/0284/3226/files/vegan.webp?v=1728666001\" alt=\"Buildable, velvety, deep colors\" class=\"feature-icon\">\n      <p class=\"feature-text\">Allongement instantané. Croissance naturelle durable.</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .features-section {\n    display: flex;\n    justify-content: space-around;\n    padding: 10px 0;\n  }\n\n  .feature-item {\n    flex: 1;\n    display: flex;\n    justify-content: center;\n  }\n\n  .feature-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  .feature-icon {\n    margin-bottom: 10px;\n    max-width: 50px;\n  }\n\n  .feature-text {\n    font-size: 12px; /* Taille de texte par défaut, que tu peux modifier */\n  }\n\n  .text-center {\n    text-align: center;\n  }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_XAEkkP": {
+      "type": "faq",
+      "blocks": {
+        "item_3XCmbb": {
+          "type": "item",
+          "settings": {
+            "title": "Le mascara PrimeLash, fonctionne t-il vraiment ?",
+            "content": "<p><strong>Le mascara PrimeLash est le seul mascara au monde conçu pour soigner les cils matures. Laissez-nous vous expliquer ce que cela signifie.</strong></p><p>Lorsque vous utilisez un mascara classique, les cils sont recouverts de pigments et rigidifiés. La plupart du résultat vient du volume de pigment appliqué. Plus vous ajoutez de couches, plus vos cils s'allongent.</p><p>Cela entraîne plusieurs problèmes :</p><ul><li>Les produits chimiques des formules de mascara assèchent vos cils déjà fins et fragiles.</li><li>Les doubles ou triples couches sont difficiles à retirer, surtout si le mascara est waterproof.</li><li>Trop de pigment provoque des paquets de cils collés et ces vilaines taches noires sous les yeux – appelées \"yeux de panda\".</li></ul><p><strong>Mais le mascara PrimeLash adopte une approche différente.</strong></p><ol><li>Il peigne et sépare les cils fins et clairsemés.</li><li>L'applicateur dépose un volume optimal de pigment, suffisant pour recouvrir chaque cil de façon homogène, sans excès qui pourrait former des grumeaux.</li><li>La formule est développée pour nourrir vos cils avec des vitamines essentielles et de l'hydratation (en deux couches légères), offrant jusqu'à 20 fois plus de longueur instantanément.</li><li>Les huiles végétales contiennent des nutriments bioactifs qui réparent les dommages tout au long de la journée, tout en vous offrant des cils magnifiques.</li><li>Ce produit est équilibré en pH, hypoallergénique, végan et non testé sur les animaux.</li></ol><p><strong>En bref, le mascara PrimeLash convient aux femmes de toutes origines, qu'elles aient 50, 60, 70 ans ou plus.</strong></p>"
+          }
+        },
+        "item_dziVW4": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que cela va traiter mes cils fins et clairsemés ?",
+            "content": "<p>Oui, absolument.</p><p>C’est précisément pour cela que ce mascara a été conçu. Nous avons sélectionné les meilleurs ingrédients, après de longues années de développement, pour aider les femmes aux cils fins et clairsemés, et les rendre longs et épais !</p>"
+          }
+        },
+        "item_BhcQLg": {
+          "type": "item",
+          "settings": {
+            "title": "Qu'est-ce qui rend PrimeLash Mascara différent des autres sur le marché ?",
+            "content": "<p><strong>PrimeLash se distingue des autres mascaras parce qu'il est spécialement conçu pour les femmes dans la cinquantaine, la soixantaine et au-delà.</strong></p><ul><li>Il est formulé pour allonger, donner du volume, séparer et définir les cils plus courts et plus fins que les femmes peuvent avoir après 50 ans.</li><li>C’est un mascara hydratant qui met en valeur vos cils sans les assécher.</li><li>Sa couleur noir doux s'adapte à toutes les carnations et couleurs de cheveux sans paraître trop dure ou sévère. (Cette teinte est particulièrement flatteuse pour les cheveux argentés !)</li><li>Il est formulé avec des ingrédients sûrs et sains qui aident les cils à conserver leur hydratation, favorisent la pousse, et préviennent la casse.</li><li>Hypoallergénique, il convient aux yeux les plus sensibles.</li><li>Il est conçu pour être porté toute la journée.</li><li>Sa brosse allongeante et définissante empêche les paquets et les flocons.</li><li>Il résiste aux bavures, aux coulures et aux traces.</li><li>Sa formule à base d'eau sèche rapidement et évite que les cils ne collent entre eux, contrairement aux formules à base d'huile.</li><li>Il est facile à appliquer grâce à sa brosse en silicone de taille moyenne, légèrement effilée pour atteindre tous les cils.</li><li>Il n'est PAS waterproof, car les mascaras waterproof contiennent des ingrédients agressifs qui peuvent rendre les cils secs et cassants après 50 ans.</li><li>Grâce à son pH neutre, ce mascara à base d'eau est un choix plus sain pour les peaux délicates autour des yeux.</li><li>Sa formule modulable permet d'ajouter facilement plusieurs couches pour un look plus discret ou plus intense, selon vos envies.</li><li>C'est une formule beauté propre avec des ingrédients dont nous sommes fiers.</li><li>Il s’applique et s’enlève facilement, s’intégrant parfaitement à une routine maquillage \"moins c’est plus\" en 10 minutes ou moins.</li></ul><p>De haut en bas, PrimeLash est conçu pour sublimer vos yeux, votre peau et votre teint à partir de 50 ans. Nous vous invitons à l’essayer et à constater la différence par vous-même.</p>"
+          }
+        },
+        "item_gTyWJk": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Pouvez-vous présenter mon animal de compagnie sur votre site web ?",
+            "content": "<p>C'est une question très populaire ! Si vous nous <strong>taguez sur Instagram</strong> en utilisant <strong>@crownandpaw</strong>, nous ferons de notre mieux pour faire de votre <strong>animal notre prochaine superstar</strong>.</p>"
+          }
+        },
+        "item_AbjgWY": {
+          "type": "item",
+          "settings": {
+            "title": "Quelles teintes sont disponibles pour le mascara PrimeLash ? Et quand les utiliser ?",
+            "content": "<p>Le mascara PrimeLash est proposé en trois teintes populaires adaptées aux femmes mûres :</p><ul><li><strong>Noir</strong> : Un noir doux et intense qui convient aux teints pâles et aux cheveux argentés. Nous avons utilisé des oxydes de fer de qualité supérieure pour une saturation parfaite, évitant un look trop prononcé ou sévère. Utilisez cette teinte pour un effet instantané et captivant. Idéale pour les soirées et les rendez-vous.</li><li><strong>Brun foncé</strong> : Un véritable brun, pas un noir déguisé. Riche… presque boisé. C'est l’allié des blondes. Les sous-tons bordeaux flattent aussi les rousses. Parfait avec des taches de rousseur ! Envoûtant et presque discret, tout en offrant longueur et volume impressionnants.</li><li><strong>Bleu marine</strong> : Pas le bleu électrique des années 80. Cette nuance est un bleu saphir profond, évoquant les yeux de Lady Diana. Elle illumine et ravive les yeux fatigués. Se marie avec les tons cuivrés, bruns, dorés et toutes les teintes de pierres précieuses. Finition ultra-naturelle. Personne ne saura deviner.</li></ul>"
+          }
+        },
+        "item_EgPLdR": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il hypoallergénique ?",
+            "content": "<p>Oui ! PrimeLash est conçu pour être hypoallergénique. Il est spécialement formulé pour les yeux les plus sensibles et la peau délicate autour du contour des yeux. Sa formule unique ne contient aucun des produits chimiques agressifs ou additifs qui provoquent souvent des réactions oculaires.</p><p>PrimeLash utilise une formule à base d'eau, contrairement aux formules à base d'huile que l'on trouve souvent dans les mascaras. Nous avons choisi cette formule à base d'eau en raison de son pH neutre, ce qui la rend plus saine pour la peau délicate autour de vos yeux.</p><p>PrimeLash est fabriqué avec des ingrédients purs et sûrs, sans tests sur les animaux. Chaque ingrédient a été soigneusement sélectionné, afin qu'il puisse être utilisé par les femmes aux yeux les plus sensibles.</p><p>L'effritement du mascara est une des principales raisons d'irritation des yeux. La formule hydratante de PrimeLash, associée à sa brosse, empêche ce problème.</p>"
+          }
+        },
+        "item_ibeNBr": {
+          "type": "item",
+          "settings": {
+            "title": "PrimeLash Mascara est-il waterproof ?",
+            "content": "<p><strong>NON, il n'est PAS waterproof, mais il est résistant à l'eau.</strong></p><p>Quelle est la différence ?</p><p>Les mascaras waterproof contiennent des ingrédients agressifs qui peuvent rendre les cils secs et cassants après 50 ans. Ils sont également très difficiles à enlever.</p><p><strong>En revanche, un mascara résistant à l'eau, comme notre PrimeLash Mascara, tient toute la journée et résiste aux journées chaudes, à la transpiration, aux larmes, à la pluie et à toute autre situation où les yeux peuvent s'humidifier.</strong></p>"
+          }
+        },
+        "item_YnbicP": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il facile de retirer le mascara en fin de journée ?",
+            "content": "<p>Bien que notre mascara soit résistant à l'eau et qu'il dure toute la journée, même pendant les journées les plus chaudes et les activités sportives intensives, il est <strong>facile à retirer après une longue journée.</strong></p>"
+          }
+        },
+        "item_jf9YY3": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les ingrédients de PrimeLash ?",
+            "content": "<p><strong>PrimeLash Mascara. </strong><em><strong>Noir</strong></em></p><ul><li>Aqua (Eau), Copolymère de styrène/acrylates, Cire de Candelilla synthétique, Cire d'abeille, Alcool polyvinylique, CI 77499, Glycérine, Acide stéarique, Monostéarate de glycéryle, Alcool cétostéarylique, Polysorbate 80, Triéthanolamine, Hydroxyéthylcellulose, Méthylparabène, Propylparabène, Parfum.</li></ul><p><strong>PrimeLash Mascara. </strong><em><strong>Bleu marine</strong></em></p><ul><li>Aqua (Eau), Copolymère de styrène/acrylates, Cire de Candelilla synthétique, Cire d'abeille, Alcool polyvinylique, Bleu ultramarine, CI 77499, Glycérine, Acide stéarique, Monostéarate de glycéryle, Alcool cétostéarylique, Polysorbate 80, Triéthanolamine, Hydroxyéthylcellulose, Méthylparabène, Propylparabène, Parfum.</li></ul><p><strong>PrimeLash Mascara. </strong><em><strong>Marron</strong></em></p><ul><li>Aqua (Eau), Cire de Carnauba, Copolymère d'acrylates, Cire synthétique, Propylène glycol, Stéarate de glycéryle, Myristate d'éthylhexyle, CI 77499, CI 77491, Carbomère, Phénoxyéthanol, Méthylparabène, Éthylparabène, Propylparabène.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "item_3XCmbb",
+        "item_dziVW4",
+        "item_BhcQLg",
+        "item_gTyWJk",
+        "item_AbjgWY",
+        "item_EgPLdR",
+        "item_ibeNBr",
+        "item_YnbicP",
+        "item_jf9YY3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FOIRE AUX QUESTIONS",
+        "content": "",
+        "team_avatar_width": 200,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "shopify://pages/contact",
+        "text_position": "center",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "rgba(0,0,0,0)",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "batana-power-mask"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Nos produits s'accordent mieux",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "1723627144a4dac4dd": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "media_with_text_gfPwBB",
+    "custom_liquid_rjDyEF",
+    "media_with_text_Gy4mEx",
+    "custom_liquid_NthLwH",
+    "faq_XAEkkP",
+    "related-products",
+    "1723627144a4dac4dd"
+  ]
+}
