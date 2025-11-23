@@ -49,10 +49,9 @@
     },
     "luma_collection_intro_zcrfKg": {
       "type": "luma-collection-intro",
-      "disabled": true,
       "name": "Luma Header Collection",
       "settings": {
-        "heading": "Pro-Age Cosmetics That Heal Instead of Hiding.",
+        "heading": "Makijaż, który szanuje Twój wiek i podkreśla Twoje piękno.",
         "heading_font_size_mobile": 28,
         "heading_line_height_mobile": 1.2,
         "subtitle_font_size_mobile": 16,
@@ -66,11 +65,14 @@
         "feature_text_font_size_desktop": 16,
         "feature_text_line_height_desktop": 1.4,
         "heading_color": "#333333",
-        "subtitle": "Look Stunning At Any Age. Live In The Prime Of Your Life.",
-        "subtitle_color": "#666666",
-        "feature_text_color": "#666666",
-        "icon_1_text": "30-Nights Money Back Guarantee.",
-        "icon_2_text": "Hypoallergenic. Cruelty Free.",
+        "subtitle": "Stworzony, aby subtelnie podkreślać urodę kobiet po 50. roku życia — bez przesady i bez efektu „za dużo”.",
+        "subtitle_color": "#342c40",
+        "feature_text_color": "#342c40",
+        "icon_1": "shopify://shop_images/cruetly_freee.webp",
+        "icon_1_text": "Hipoalergiczny.\nNietestowany na zwierzętach.",
+        "icon_2": "shopify://shop_images/RETRUN_LOGO_LUMA_V2.webp",
+        "icon_2_text": "Gwarancja zwrotu pieniędzy przez 30 dni.",
+        "desktop_image": "shopify://shop_images/3D_RENDU_MASCARA_INSANE_V2.webp",
         "reverse_layout": false
       }
     },
@@ -144,7 +146,6 @@
         "product_9rxfyB",
         "product_MHfcpL"
       ],
-      "disabled": true,
       "name": "LUMA Collection Products",
       "settings": {}
     }
