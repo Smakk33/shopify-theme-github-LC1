@@ -79,6 +79,73 @@
     "luma_collection_JrnAiC": {
       "type": "luma-collection",
       "blocks": {
+        "collection_header_qr9QyD": {
+          "type": "collection_header",
+          "settings": {
+            "collection_title": "EDYCJA LIMITOWANA",
+            "collection_id": "bundle-save"
+          }
+        },
+        "product_jRwTwh": {
+          "type": "product",
+          "settings": {
+            "collection_id": "bundle-save",
+            "product": "luma-linea-eyeliner-eyeliner-dla-dojrzalych-oczu-packs",
+            "custom_title": "Zestaw Idealne Spojrzenie",
+            "custom_description": "",
+            "custom_price": "199,90 zł",
+            "rating": 4.9,
+            "reviews_count": "247",
+            "show_badge": false,
+            "badge_text": "NEW",
+            "button_text": "Zobacz więcej"
+          }
+        },
+        "product_9knjGJ": {
+          "type": "product",
+          "settings": {
+            "collection_id": "bundle-save",
+            "product": "luma-lash-mascara-tusz-do-rzes-dla-dojrzalych-kobiet-packs",
+            "custom_title": "Zestaw Olśniewające Spojrzenie",
+            "custom_description": "",
+            "custom_price": "159,90 zł",
+            "rating": 4.9,
+            "reviews_count": "167",
+            "show_badge": false,
+            "badge_text": "NEW",
+            "button_text": "Zobacz więcej"
+          }
+        },
+        "product_DRdHNp": {
+          "type": "product",
+          "settings": {
+            "collection_id": "bundle-save",
+            "product": "luma-bright-eyeliner-eyeliner-rozswietlajacy-dla-dojrzalych-kobiet-packs",
+            "custom_title": "Zestaw Rozświetlone Spojrzenie",
+            "custom_description": "",
+            "custom_price": "159,90 zł",
+            "rating": 4.9,
+            "reviews_count": "78",
+            "show_badge": false,
+            "badge_text": "NEW",
+            "button_text": "Zobacz więcej"
+          }
+        },
+        "product_VULder": {
+          "type": "product",
+          "settings": {
+            "collection_id": "bundle-save",
+            "product": "luma-bright-eyeliner-eyeliner-rozswietlajacy-dla-dojrzalych-kobiet-packs2",
+            "custom_title": "Zestaw Ikoniczne Spojrzenie",
+            "custom_description": "",
+            "custom_price": "159,90 zł",
+            "rating": 4.9,
+            "reviews_count": "84",
+            "show_badge": false,
+            "badge_text": "NEW",
+            "button_text": "Zobacz więcej"
+          }
+        },
         "collection_header_y6XkxA": {
           "type": "collection_header",
           "settings": {
@@ -130,21 +197,18 @@
             "badge_text": "NEW",
             "button_text": "Zobacz więcej"
           }
-        },
-        "collection_header_qr9QyD": {
-          "type": "collection_header",
-          "settings": {
-            "collection_title": "EDYCJA LIMITOWANA",
-            "collection_id": "bundle-save"
-          }
         }
       },
       "block_order": [
+        "collection_header_qr9QyD",
+        "product_jRwTwh",
+        "product_9knjGJ",
+        "product_DRdHNp",
+        "product_VULder",
         "collection_header_y6XkxA",
         "product_hiKm9b",
         "product_hXz3fr",
-        "product_znn4Yz",
-        "collection_header_qr9QyD"
+        "product_znn4Yz"
       ],
       "name": "LUMA Collection Products",
       "settings": {}
