@@ -11,6 +11,19 @@
   "type": "header",
   "name": "Header group",
   "sections": {
+    "custom_liquid_wDB9zq": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap\" rel=\"stylesheet\">\n\n<div class=\"bf-timer-section\">\n  <div class=\"bf-container\">\n    \n    <h2 class=\"bf-title\">BLACK FRIDAY - NASZE NAJLEPSZE CENY</h2>\n    \n    <div class=\"bf-grid-wrapper\">\n      <div id=\"bf-countdown\" class=\"bf-grid\">\n        \n        <div class=\"bf-cell\">\n          <span id=\"days\" class=\"bf-number\">00</span>\n          <span class=\"bf-label\">DNI</span>\n        </div>\n        \n        <div class=\"bf-sep\">:</div>\n        \n        <div class=\"bf-cell\">\n          <span id=\"hours\" class=\"bf-number\">00</span>\n          <span class=\"bf-label\">GODZINY</span>\n        </div>\n        \n        <div class=\"bf-sep\">:</div>\n        \n        <div class=\"bf-cell\">\n          <span id=\"minutes\" class=\"bf-number\">00</span>\n          <span class=\"bf-label\">MINUTY</span>\n        </div>\n        \n        <div class=\"bf-sep\">:</div>\n        \n        <div class=\"bf-cell\">\n          <span id=\"seconds\" class=\"bf-number\">00</span>\n          <span class=\"bf-label\">SEKUNDY</span>\n        </div>\n        \n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n  .bf-timer-section {\n    background-color: #A83232;\n    color: #ffffff;\n    padding: 15px 0;\n    width: 100%;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n  }\n  \n  .bf-container {\n    max-width: 1200px;\n    margin: 0 auto;\n    text-align: center;\n    padding: 0 15px;\n  }\n  \n  .bf-title {\n    margin: 0 0 15px 0;\n    font-size: 20px;\n    font-weight: 700;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    color: inherit;\n  }\n\n  .bf-grid-wrapper {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .bf-grid {\n    display: grid;\n    /* On garde les colonnes verrouillées */\n    grid-template-columns: 75px 20px 75px 20px 75px 20px 75px;\n    align-items: start;\n    justify-content: center;\n  }\n\n  .bf-cell {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%; \n    overflow: hidden;\n  }\n\n  .bf-sep {\n    font-size: 24px;\n    font-weight: 700;\n    text-align: center;\n    line-height: 1.2;\n    padding-top: 2px;\n    font-family: 'Roboto Mono', monospace;\n  }\n\n  .bf-number {\n    display: inline-block;\n    font-size: 28px;\n    font-weight: 700;\n    line-height: 1;\n    /* Police stable obligatoire */\n    font-family: 'Roboto Mono', monospace, ui-monospace, SFMono-Regular, Menlo, Consolas !important;\n    font-variant-numeric: tabular-nums;\n  }\n\n  .bf-label {\n    font-size: 10px;\n    margin-top: 5px;\n    opacity: 0.9;\n    font-weight: 400;\n    text-transform: uppercase;\n    text-align: center;\n    width: 100%;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n  }\n\n  /* MOBILE */\n  @media (max-width: 768px) {\n    .bf-title { font-size: 16px; margin-bottom: 10px; }\n    \n    .bf-grid {\n      grid-template-columns: 55px 15px 55px 15px 55px 15px 55px;\n    }\n    \n    .bf-number { font-size: 22px; }\n    .bf-sep { font-size: 18px; }\n    .bf-label { font-size: 8px; }\n  }\n</style>\n\n<script>\n(function() {\n  // DATE : 28 Novembre 2025 à 23:59:00\n  const endDateStr = \"Nov 28, 2025 23:59:00\"; \n  const countDownDate = new Date(endDateStr).getTime();\n  \n  const elDays = document.getElementById(\"days\");\n  const elHours = document.getElementById(\"hours\");\n  const elMinutes = document.getElementById(\"minutes\");\n  const elSeconds = document.getElementById(\"seconds\");\n  const elTimer = document.getElementById(\"bf-countdown\");\n\n  const x = setInterval(function() {\n    const now = new Date().getTime();\n    const distance = countDownDate - now;\n\n    const days = Math.floor(distance / (1000 * 60 * 60 * 24));\n    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));\n    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));\n    const seconds = Math.floor((distance % (1000 * 60)) / 1000);\n\n    const pad = (num) => num < 10 ? \"0\" + num : num;\n\n    if(elDays) {\n        elDays.textContent = pad(days);\n        elHours.textContent = pad(hours);\n        elMinutes.textContent = pad(minutes);\n        elSeconds.textContent = pad(seconds);\n    }\n\n    if (distance < 0) {\n      clearInterval(x);\n      // Message de fin traduit en Polonais\n      if(elTimer) elTimer.innerHTML = \"<div style='grid-column: span 7; font-weight:bold; font-size:18px; text-align:center;'>OFERTA ZAKOŃCZONA</div>\";\n    }\n  }, 1000);\n})();\n</script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -146,6 +159,7 @@
     }
   },
   "order": [
+    "custom_liquid_wDB9zq",
     "announcement-bar",
     "announce_bar_gyetkg",
     "header"
