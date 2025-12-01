@@ -27,6 +27,7 @@
     },
     "custom_liquid_rRMiRn": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
